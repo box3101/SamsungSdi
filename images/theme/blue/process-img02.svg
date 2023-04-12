@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="53" height="59" viewBox="0 0 53 59">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="사각형_4" data-name="사각형 4" width="53" height="59" transform="translate(0 0)" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="벡터_고급_개체" data-name="벡터 고급 개체" transform="translate(0 0)">
+    <path id="패스_5" data-name="패스 5" d="M12.121,8.095h9.251" fill="none" stroke="#253378" stroke-miterlimit="10" stroke-width="2.023"/>
+    <g id="그룹_6" data-name="그룹 6">
+      <g id="그룹_5" data-name="그룹 5" clip-path="url(#clip-path)">
+        <path id="패스_6" data-name="패스 6" d="M40.213,8.088H51.989v49.9H9.6V25.3" fill="none" stroke="#253378" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.025"/>
+      </g>
+    </g>
+    <path id="패스_7" data-name="패스 7" d="M14.733,12.816h6.638" fill="none" stroke="#253378" stroke-miterlimit="10" stroke-width="2.023"/>
+    <path id="패스_8" data-name="패스 8" d="M35.5,52.943h-21.2V33.184" fill="none" stroke="#253378" stroke-miterlimit="10" stroke-width="2.025"/>
+    <path id="패스_9" data-name="패스 9" d="M40.213,12.816h7.065V41.141" fill="none" stroke="#253378" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.025"/>
+    <g id="그룹_8" data-name="그룹 8">
+      <g id="그룹_7" data-name="그룹 7" clip-path="url(#clip-path)">
+        <path id="패스_10" data-name="패스 10" d="M35.5,5.735a4.711,4.711,0,1,0-9.421,0H21.372v9.442H40.213V5.735Z" fill="none" stroke="#253378" stroke-linejoin="round" stroke-width="2.025"/>
+        <path id="패스_11" data-name="패스 11" d="M35.5,41.141H47.278L35.5,52.943Z" fill="none" stroke="#253378" stroke-linejoin="round" stroke-width="2.025"/>
+        <path id="패스_12" data-name="패스 12" d="M28.309,45.543,18.322,39.59,27.8,33.777Z" fill="none" stroke="#253378" stroke-linejoin="round" stroke-width="2.025"/>
+        <rect id="사각형_5" data-name="사각형 5" width="11.113" height="28.957" transform="translate(3.242 14.89) rotate(-31.462)" fill="none" stroke="#253378" stroke-linejoin="round" stroke-width="2.025"/>
+        <path id="패스_13" data-name="패스 13" d="M6.4,5.122,2.606,7.447A3.345,3.345,0,0,0,1.5,12.04l1.74,2.851L12.72,9.077l-1.74-2.85A3.33,3.33,0,0,0,6.4,5.122Z" fill="none" stroke="#253378" stroke-linejoin="round" stroke-width="2.025"/>
+        <line id="선_1" data-name="선 1" x1="3.449" transform="translate(32.053 46.525)" fill="none" stroke="#253378" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.023"/>
+        <line id="선_2" data-name="선 2" x1="2.923" transform="translate(32.053 41.527)" fill="none" stroke="#253378" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.023"/>
+        <line id="선_3" data-name="선 3" x1="9.31" transform="translate(32.053 36.583)" fill="none" stroke="#253378" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.023"/>
+        <line id="선_4" data-name="선 4" x1="15.137" transform="translate(26.177 31.118)" fill="none" stroke="#253378" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.023"/>
+        <line id="선_5" data-name="선 5" x1="18.453" transform="translate(22.862 25.687)" fill="none" stroke="#253378" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.023"/>
+        <line id="선_6" data-name="선 6" x1="21.478" transform="translate(19.836 20.257)" fill="none" stroke="#253378" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.023"/>
+      </g>
+    </g>
+  </g>
+</svg>

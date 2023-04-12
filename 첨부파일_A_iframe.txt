@@ -1,0 +1,443 @@
+<iframe class="initAttachFile  iframe114" id="upload1664263572105">
+<html><head></head><body style="display: block;">
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		
+			
+		
+		
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+	
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div style="background: none;">
+	
+		
+		
+		
+		
+		
+		
+		
+	
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		
+			
+		
+		
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+	
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 첨부파일 관련 초기화 CSS -->
+<style type="text/css">
+	 .attach_container {
+	      width: 100%;
+	     text-align: center;
+	     margin-top:5px;
+	     margin-bottom:5px;
+	     cursor: pointer;
+	     border-radius: 8px;
+	     box-sizing:border-box;
+	}
+	 .attach_container h1 {
+	     font-size: 42px;
+	     font-weight: 300;
+	     color: #0f3c4b;
+	     margin-bottom: 40px;
+	}
+	 .attach_container h1 a:hover, .attach_container h1 a:focus {
+	     color: #39bfd3;
+	}
+	 .attach_container nav {
+	     margin-bottom: 40px;
+	}
+	 .attach_container nav a {
+	     border-bottom: 2px solid #c8dadf;
+	     display: inline-block;
+	     padding: 4px 8px;
+	     margin: 0 5px;
+	}
+	 .attach_container nav a.is-selected {
+	     font-weight: 700;
+	     color: #39bfd3;
+	     border-bottom-color: currentColor;
+	}
+	 .attach_container nav a:not ( .is-selected ):hover, .attach_container nav a:not ( .is-selected ):focus {
+	     border-bottom-color: #0f3c4b;
+	}
+	 .attach_container footer {
+	     color: #92b0b3;
+	     margin-top: 40px;
+	}
+	 .attach_container footer p+p {
+	     margin-top: 1em;
+	}
+	 .attach_container footer a:hover, .attach_container footer a:focus {
+	     color: #39bfd3;
+	}
+	 .attach_box
+	 {
+	     font-size: 0.9rem;
+	     background-color: #f2f4f7;
+	     position: relative;
+	     padding: 10px 10px;
+	     min-height: 70px;
+	}
+	 .attach_box.has-advanced-upload {
+	     border: 1px dashed #d4dae2;
+	     border-radius: 8px;
+	     /* -webkit-transition: outline-offset .15s ease-in-out, background-color .15s linear;
+	     transition: outline-offset .15s ease-in-out, background-color .15s linear; */
+	}
+	 .attach_box.is-dragover {
+	     outline-offset: -20px;
+	     outline-color: #c8dadf;
+	     background-color: #fff;
+	}
+	 .attach_box__dragndrop, .attach_box__icon {
+	     display: none;
+	     color: #8b8f96;
+	}
+	 .attach_box.has-advanced-upload .attach_box__dragndrop {
+	     font-weight: normal;
+	     margin-top: 5px;
+	     display: block;
+	}
+	 .attach_box.has-advanced-upload .attach_box__icon {
+	     width: 100%;
+	     height: 30px;
+	     fill: #92b0b3;
+	     display: block;
+	     margin-bottom: 40px;
+	}
+	.attach_box__input label{
+		cursor: pointer;
+		font-family: NotoSansKR;  /*200629 폰트 추가 */
+		font-size: 12px;  /*200629 폰트 추가 */
+
+	}
+
+	.attach_box.is-uploading .attach_box__input, .attach_box.is-success .attach_box__input, .attach_box.is-error .attach_box__input {
+	     visibility: hidden;
+	}
+	 .attach_box__uploading, .attach_box__success, .attach_box__error {
+	     display: none;
+	}
+	 .attach_box.is-uploading .attach_box__uploading, .attach_box.is-success .attach_box__success, .attach_box.is-error .attach_box__error {
+	     display: block;
+	     position: absolute;
+	     top: 50%;
+	     right: 0;
+	     left: 0;
+	     -webkit-transform: translateY(-50%);
+	     transform: translateY(-50%);
+	}
+	 .attach_box__uploading {
+	     font-style: italic;
+	}
+	 .attach_box__success {
+	     -webkit-animation: appear-from-inside .25s ease-in-out;
+	     animation: appear-from-inside .25s ease-in-out;
+	}
+	 @ -webkit-keyframes appear-from-inside {
+	    from {
+	         -webkit-transform:translateY(-50%)scale(0);
+	    }
+	     75% {
+	         -webkit-transform : translateY ( -50% ) scale ( 1 .1 );
+	    }
+	     to {
+	         -webkit-transform: translateY(-50%) scale(1);
+	    }
+	}
+	 @ keyframes appear-from-inside {
+	    from {
+	         transform:translateY(-50%)scale(0);
+	    }
+	     75% {
+	         transform : translateY ( -50% ) scale ( 1 .1 );
+	    }
+	     to {
+	         transform: translateY(-50%) scale(1);
+	    }
+	}
+	 .attach_box__restart {
+	     font-weight: 700;
+	}
+	 .attach_box__restart:focus, .attach_box__restart:hover {
+	     color: #39bfd3;
+	}
+	 .js .attach_box__file {
+	     width: 0.1px;
+	     height: 0.1px;
+	     opacity: 0;
+	     overflow: hidden;
+	     position: absolute;
+	     z-index: -1;
+	}
+	 .js .attach_box__file+label {
+	     max-width: 80%;
+	     text-overflow: ellipsis;
+	     white-space: nowrap;
+	     cursor: pointer;
+	     display: inline-block;
+	     overflow: hidden;
+	}
+	 .js .attach_box__file+label:hover strong, .attach_box__file:focus+label strong, .attach_box__file.has-focus+label strong {
+	     color: #39bfd3;
+	}
+	 .js .attach_box__file:focus+label, .js .attach_box__file.has-focus+label {
+	     outline: 1px dotted #000;
+	     outline: -webkit-focus-ring-color auto 5px;
+	}
+
+	 .no-js .attach_box__file+label {
+	     display: none;
+	}
+	 .no-js .attach_box__button {
+	     display: block;
+	}
+	 .attach_box__button {
+	     font-weight: 700;
+	     color: #e5edf1;
+	     background-color: #39bfd3;
+	     display: block;
+	     padding: 8px 16px;
+	     margin: 40px auto 0;
+	}
+	 .attach_box__button:hover, .attach_box__button:focus {
+	     background-color: #0f3c4b;
+	}
+
+	.fileList li {
+		line-height:20px;
+		font-size:13px;
+		vertical-align:middle;
+	}
+
+	.divNewFileList li {
+		line-height:20px;
+		font-size:13px;
+		vertical-align:middle;
+	}
+
+	.attach_box__input {
+	    height: 50px;
+	    vertical-align: middle;
+	}
+
+	.filename {
+	    vertical-align: middle;
+	    max-width: 435px;
+	    line-height: 16px;
+	    text-overflow: ellipsis;
+        white-space: normal;
+        overflow: hidden;
+        display: -webkit-inline-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+	}
+
+</style>
+
+
+
+	
+	
+	<div id="upload1664263572105_validation" class="validation" data-max_file_cnt="1" data-max_total_size="20971520" data-allow_file_exts="gif,jpg,jpeg,png"></div>
+	
+
+	<div class="attach_container attach_box mt5 no-js js has-advanced-upload" role="main">
+	    <div class="attach_box__input">
+	        <input type="file" id="upload1664263572105" name="upload1664263572105" class="attach_box__file" multiple="">
+	        <input type="hidden" id="upload1664263572105_atchFileId" data-atch_file_column_name="atchFileId" value="FILE_000000000001111">
+	        <label for="upload1664263572105"><div><img src="./images/new_img/ico-attatch-file.png"></div>
+	            <span class="attach_box__dragndrop">Choose a file or drag it here.</span>
+	        </label>
+	    </div>
+	</div>
+	<div id="upload1664263572105_divStatus" class="divStatus mt5 mb5">
+		
+			<span style="color:#aaa; font-size:12px;">
+				<label>Files : </label>
+				<label id="upload1664263572105_currentAttachCnt" class="currentAttachCnt">1</label><label> / 1</label>
+			</span>
+		
+		<span class="ml10" style="color:#aaa; font-size:12px;">
+			
+			
+				
+					
+				
+			
+			<label>Total Size : </label><label id="upload1664263572105_currentAttachSize">539</label><label> / 20971520 bytes </label>
+			<label class="ml10">파일허용확장자 : </label><label>gif,jpg,jpeg,png</label>
+		</span>
+	</div>
+
+
+
+	<div id="upload1664263572105_divFileList" class="divFileList mt5">
+	    <ul class="fileList" style="margin:10px 0px">
+
+	    	
+	        <li>
+	            <a href="#" onclick="parent.fileDownload('459AxU3yhIWVXeAO+mMsobRZADxCc793KqSICmDoN4o=', '0', '');return false;">
+	                <!-- <span class="ico-file" style="margin-top:10px;">file</span> -->
+	                <span><span class="filename">PGM0001.png</span></span>
+
+	                <label style="line-height:16px;" class="fileSize">
+	                    
+	                    (1,455 bytes)
+	                </label>
+	            </a>
+	            
+		            <input type="checkbox" data-file_id="upload1664263572105" data-atch_file_id="FILE_000000000001111" data-file_sn="0" data-file_size="1455" class="ml5 chkAttachFiles" id="delChk_upload1664263572105_1" value="0" onclick="parent.delFileCheck(event)">
+		            <label for="delChk_upload1664263572105_1" style="font-size:13px; color:#aaa;"><span></span>첨부파일 삭제</label>
+	            
+	        </li>
+	        
+	    </ul>
+	</div>
+
+
+
+	<div id="upload1664263572105_divNewFileList" class="divNewFileList">
+	    <ul class="newFileList">
+
+	    </ul>
+	<li data-file_id="upload1664263572105" data-file_uid="fl8jvkkw40" data-file_size="539"><span class="filename">bg-menu02.png</span> (539 bytes)<input type="button" value="x" data-new="true" class="delAttachFiles ml5" style="border:none;"></li></div>
+
+
+</div></body></html>
+</iframe>

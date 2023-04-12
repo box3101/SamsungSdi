@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="38" height="55" viewBox="0 0 38 55">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="사각형_13" data-name="사각형 13" width="38" height="55" transform="translate(0 0)" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="벡터_고급_개체" data-name="벡터 고급 개체" transform="translate(-833 -185)">
+    <g id="벡터_고급_개체-2" data-name="벡터 고급 개체" transform="translate(833 185)">
+      <g id="그룹_16" data-name="그룹 16">
+        <g id="그룹_15" data-name="그룹 15" clip-path="url(#clip-path)">
+          <path id="패스_24" data-name="패스 24" d="M3.287,24.392l4.68,5.339,4.679-5.339" fill="none" stroke="#253378" stroke-miterlimit="10" stroke-width="2.025"/>
+        </g>
+      </g>
+      <g id="그룹_33" data-name="그룹 33">
+        <g id="그룹_14" data-name="그룹 14">
+          <g id="그룹_13" data-name="그룹 13" clip-path="url(#clip-path)">
+            <rect id="사각형_10" data-name="사각형 10" width="14.27" height="17.796" transform="translate(1.013 36.193)" fill="none" stroke="#253378" stroke-linejoin="round" stroke-width="2.025"/>
+            <rect id="사각형_11" data-name="사각형 11" width="14.27" height="17.796" transform="translate(22.717 1.011)" fill="none" stroke="#253378" stroke-linejoin="round" stroke-width="2.025"/>
+          </g>
+        </g>
+        <path id="패스_23" data-name="패스 23" d="M7.967,29.063V9.488h9.81" fill="none" stroke="#253378" stroke-linejoin="round" stroke-width="2.025"/>
+        <path id="패스_25" data-name="패스 25" d="M30.033,25.937V45.512h-9.81" fill="none" stroke="#253378" stroke-linejoin="round" stroke-width="2.025"/>
+      </g>
+      <g id="그룹_18" data-name="그룹 18">
+        <g id="그룹_17" data-name="그룹 17" clip-path="url(#clip-path)">
+          <path id="패스_26" data-name="패스 26" d="M34.713,30.608l-4.68-5.339-4.679,5.339" fill="none" stroke="#253378" stroke-miterlimit="10" stroke-width="2.025"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

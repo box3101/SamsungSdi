@@ -1,0 +1,147 @@
+.metricMap .metricMapHeader {
+	margin:10px 0;
+}
+.metricMap .metricMapHeader ul {
+	width:100%;
+	padding:0;
+	margin:0;
+}
+.metricMap .metricMapHeader li {
+	list-style-type:none;
+	display:inline-block;
+	margin-left:4%;
+	margin-right:4%;
+	width:25.333333%;
+	padding:12px;
+	box-sizing:border-box;
+	background-color:#F5F5F5;
+	text-align:center;
+	border-width:0;
+	border-top:2px solid #0195D3;
+	border-bottom:2px solid #D1D1D1;
+}
+.metricMap .metricMapHeader li label {
+	font-weight:bolder;
+}
+
+.metricMap a, .metricMap label {
+	font-size:15px;
+	font-weight:bold;
+}
+.metricMap {
+	width:100%;
+	/*border:1px solid black;*/
+	box-sizing:border-box;
+	padding:20px 0;
+}
+.metricMap ul {
+	padding:0;
+}
+.metricMap li {
+	list-style-type:none;
+	padding:0;
+	width:100%;
+	position:relative;
+}
+.metricMap li div {
+	margin-top:5px;
+	margin-bottom:5px;
+	vertical-align:top;
+	box-sizing:border-box;
+	padding:12px 12px;
+	border:2px solid #D1D1D1;
+	border-radius:3px;
+}
+.metricMap > ul {
+	width:100%
+}
+.metricMap li > div,
+.metricMap li > ul {
+	display:inline-block;
+}
+.metricMap .metricMapLvl1 > li > div {
+	margin-left:5%;
+	margin-right:5%;
+	width:23.3333%;
+}
+.metricMap .metricMapLvl2 {
+	width:66.6666%;
+}
+.metricMap .metricMapLvl2 > li > div {
+	margin-left:7.5%;
+	margin-right:7.5%;
+	width:35%;
+}
+.metricMap .metricMapLvl3 {
+	width:50%;
+}
+.metricMap .metricMapLvl3 > li > div {
+	margin-left:15%;
+	margin-right:15%;
+	width:70%;
+}
+
+.metricMap .metricMapLvl1 > li > div+span.vLine,
+.metricMap .metricMapLvl2 > li > div+span.vLine {
+	content:"";
+	height:100%;
+	border-left:2px solid #D1D1D1;
+	position:absolute;
+}
+
+.metricMap .metricMapLvl2 > li > span.hLine,
+.metricMap .metricMapLvl3 > li > span.hLine {
+	content:"";
+	width:7.5%;
+	border-top:2px solid #D1D1D1;
+	position:absolute;
+	left:0;
+	top:50%;
+}
+.metricMap .metricMapLvl2 > li:first-child > span.hLine {
+	width:15%;
+	left:-7.5%;
+}
+.metricMap .metricMapLvl3 > li > span.hLine {
+	width:15%;
+}
+.metricMap .metricMapLvl3 > li:first-child > span.hLine {
+	width:30%;
+	left:-15%;
+}
+
+.metricMap .divNode a {
+	display:inline-block;
+	width:calc(100% - 40px);
+	/* 
+	overflow:hidden;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+	 */
+}
+.metricMap .metricMapLvl3 .divNode a {
+	width:calc(100% - 30px);
+	cursor:auto;
+}
+.metricMap .divNode .btnExpand {
+	vertical-align:top;
+	border:1px solid #D1D1D1;
+	border-radius:3px;
+	width:20px !important;
+	text-align:center;
+	margin-right:10px;
+}
+.metricMap .divNode.expandOn+span+ul,
+.metricMap .divNode.expandOn+ul {
+	display:inline-block !important;
+}
+.metricMap .divNode.expandOff+span+ul,
+.metricMap .divNode.expandOff+ul {
+	display:none !important;
+}
+.metricMap .signal {
+	width:15px !important;
+	margin-right:10px;
+	border-radius:10px;
+	vertical-align:top;
+}

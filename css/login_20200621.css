@@ -1,0 +1,196 @@
+@charset "utf-8";
+
+/*
+ @font-face {
+ font-family: 'NotoSansKR';
+ font-style: normal;
+ src: url('font/NotoSansKR-Regular-Hestia.eot'),
+		url('font/NotoSansKR-Regular-Hestia.eot?#iefix') format('embedded-opentype'),
+		url('font/NotoSansKR-Regular-Hestia.woff') format('woff'),
+			url('font/NotoSansKR-Regular-Hestia.otf') format('opentype');
+}
+
+@font-face {
+ font-family: 'NotoSansKR_B';
+ font-style: normal;
+ src: url('font/NotoSansKR-Bold-Hestia.eot'),
+		url('font/NotoSansKR-Bold-Hestia.eot?#iefix') format('embedded-opentype'),
+		url('font/NotoSansKR-Bold-Hestia.woff') format('woff'),
+			url('font/NotoSansKR-Bold-Hestia.otf') format('opentype');
+}
+
+@font-face {
+ font-family: 'NotoSansKR_M';
+ font-style: normal;
+ src: url('font/NotoSansKR-Medium-Hestia.eot'),
+		url('font/NotoSansKR-Medium-Hestia.eot?#iefix') format('embedded-opentype'),
+		url('font/NotoSansKR-Medium-Hestia.woff') format('woff'),
+			url('font/NotoSansKR-Medium-Hestia.otf') format('opentype');
+}
+
+@font-face {
+ font-family: 'NotoSansKR_L';
+ font-style: normal;
+ src: url('font/NotoSansKR-Light-Hestia.eot'),
+		url('font/NotoSansKR-Light-Hestia.eot?#iefix') format('embedded-opentype'),
+		url('font/NotoSansKR-Light-Hestia.woff') format('woff'),
+			url('font/NotoSansKR-Light-Hestia.otf') format('opentype');
+}
+
+@font-face {
+ font-family: 'NotoSansKR_T';
+ font-style: normal;
+ src: url('font/NotoSansKR-Thin-Hestia.eot'),
+		url('font/NotoSansKR-Thin-Hestia.eot?#iefix') format('embedded-opentype'),
+		url('font/NotoSansKR-Thin-Hestia.woff') format('woff'),
+			url('font/NotoSansKR-Thin-Hestia.otf') format('opentype');
+}
+ */
+
+* {
+	padding: 0;
+	margin: 0
+}
+
+body, html {
+	height: 100%;
+
+}
+
+body {
+	background-color: #000;
+	background-image: url("../images/common/login/login_bg.jpg");
+	color: #222;
+	font-family: 'NotoSansKR', 'Nanum Gothic',  Dotum, 'dotum', Gulim, 'gulim';
+}
+
+#floater {
+	float: left;
+	height: 50%;
+	margin-bottom: -340px
+}
+
+.loginLayout {
+	clear: both;
+	position: relative;
+	background-image: url("../images/common/login/login_area.png");
+	margin: 0 auto;
+	width: 560px;
+	height: 634px;
+}
+
+.loginLayout>div {
+	width: 100%;
+	box-sizing: border-box;
+	display: block
+}
+
+.loginLayout .logoDiv {
+	text-align: center;
+	padding: 5.5em 0 .5em 0;
+}
+
+.loginLayout .formDiv {
+	padding: 1em;
+	text-align: center
+}
+
+.loginLayout .formDiv label, .modal-window button {
+	width: 150px;
+	display: inline-block;
+	font-size: 1em;
+	line-height: 1em;
+	text-align: left
+}
+
+.loginLayout .formDiv input, .modal-window input {
+	width: 21.1em;
+	height: 1.5em;
+	padding: 0.7em;
+	display: inline-block;
+	font-size: 1em;
+	font-weight: bold;
+	font-family: 'NotoSansKR', 'Nanum Gothic',  Dotum, 'dotum', Gulim, 'gulim';
+	margin-bottom: 12px;
+	border: 1px solid #b7b7b7;
+}
+
+.loginLayout .formDiv button, .modal-window button{
+	width: 22.5em;
+	height: 3.2em;
+	font-size: 1em;
+	font-weight: bold;
+	font-family: 'NotoSansKR', 'Nanum Gothic',  Dotum, 'dotum', Gulim, 'gulim';
+	color: #fff;
+	background-image: url( "../images/common/login/login_btn_bg.png" );
+	border-width: 0px;
+}
+
+.loginLayout .formDiv .chkDiv {
+	text-align: right;
+	margin-right: 1.3em;
+}
+
+.loginLayout .formDiv .chkDiv input {
+	width: inherit;
+	margin-right: .5em;
+	margin-top: 0.5em;
+}
+
+.loginLayout .formDiv .chkDiv label {
+	width: 110px;
+	font-size: 0.8em;
+}
+
+.loginLayout .lineDiv {
+	width: 27.2em;
+	border-top: 1px solid #d2d2d2;
+	margin-bottom: 1.5em;
+	margin-left: 3.9em;
+}
+
+.loginLayout .noticeDiv {
+	font-size: 0.7em;
+	margin-left: 8em;
+	font-family: 'NotoSansKR', 'Nanum Gothic',  Dotum, 'dotum', Gulim, 'gulim';
+}
+
+.loginLayout .bottomLink {
+	font-size: 0.7em;
+	font-weight : bold;
+	text-align:right;
+	padding-right:6em;
+	position: absolute;
+    bottom: 0;
+    margin-bottom:16px;
+	font-family: 'NotoSansKR', 'Nanum Gothic',  Dotum, 'dotum', Gulim, 'gulim';
+}
+
+.loginLayout .noticeDiv h4 {
+	font-weight: bold;
+	margin: 0 0 0 1em;
+	font-size: 1.2em !important;
+}
+
+.loginLayout .noticeDiv ul {
+	margin: .2em 1em 0 2.2em
+}
+
+.loginLayout .noticeDiv ul li {
+	line-height: 1.4em;
+}
+
+.loginLayout .noticeDiv ul li a {
+	color: #4975ac;
+	display: inline-block;
+	vertical-align: middle;
+	width: 25em;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	-o-text-overflow: ellipsis
+}
+
+input[type='radio'] {
+	margin: 5px 5px 5px 10px
+}

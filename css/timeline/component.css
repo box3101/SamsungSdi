@@ -1,0 +1,223 @@
+.cbp_tmtimeline {
+	margin: 0; /* 200731 hishin */
+	padding-right: 12px;
+	padding-top: 8px;
+	list-style: none;
+	position: relative;
+}
+
+/* The line */
+.cbp_tmtimeline:before {
+	content: '';
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	width: 3px;
+	background: #eff1f5;
+	left: 16.3%;
+	margin-left: -25px;
+}
+
+/* The date/time */
+.cbp_tmtimeline > li .cbp_tmtime {
+	display: block;
+    width: 37px;
+    margin-top: 7px;
+	position: absolute;
+	/*margin-left:5px;*/
+	font-size:12px;
+
+}
+
+.cbp_tmtimeline > li .cbp_tmtime span {
+	display: block;
+	text-align: right;
+}
+
+.cbp_tmtimeline > li .cbp_tmtime span:first-child {
+	font-size: 0.9em;
+	color: #6c82a9b;
+}
+
+.cbp_tmtimeline > li .cbp_tmtime span:last-child {
+	font-size: 1.5em;
+	color: #6c82a9;
+}
+
+/*.cbp_tmtimeline > li:nth-child(odd) .cbp_tmtime span:last-child {
+	color: #6cbfee;
+}*/
+
+/* Right content */
+.cbp_tmtimeline > li .cbp_tmlabel {
+	margin: 0 0 15px 18%; /* 200731 hishin */
+	background: #eff1f5;
+	color: black;
+	padding: 14px 16px 14px 16px; /* 200731 padding값 수정 hishin */
+	font-size: 1.4em;
+	font-weight: 300;
+	line-height: 1.4;
+	position: relative;
+	/* border: solid 1px #dcdcdc; 200731 디자인 수정 hishin */
+	border-radius: 12px; /* 200731 r값 수정 hishin */
+
+}
+
+.cbp_tmtimeline > li .target {
+	margin: 0 0 15px 18%; /* 200731 hishin */
+	background: #fff9db;
+	color: black;
+	padding: 14px 16px 14px 16px; /* 200731 padding값 수정 hishin */
+	font-size: 1.4em;
+	font-weight: 300;
+	line-height: 1.4;
+	position: relative;
+	/* border: solid 1px #dcdcdc; 200731 디자인 수정 hishin */
+	border-radius: 12px; /* 200731 r값 수정 hishin */
+
+}
+
+.cbp_tmtimeline > li .feedback {
+	margin: 0 0 15px 18%; /* 200731 hishin */
+	background: #e1f4ef;
+	color: black;
+	padding: 14px 16px 14px 16px; /* 200731 padding값 수정 hishin */
+	font-size: 1.4em;
+	font-weight: 300;
+	line-height: 1.4;
+	position: relative;
+	/* border: solid 1px #dcdcdc; 200731 디자인 수정 hishin */
+	border-radius: 12px; /* 200731 r값 수정 hishin */
+
+}
+
+
+.cbp_tmtimeline > li:nth-child(odd) .cbp_tmlabel {
+    /* background: #e3e4ee; */
+
+}
+
+.cbp_tmtimeline > li .cbp_tmlabel > p {
+    line-height: 25px;
+}
+
+.cbp_tmtimeline > li .cbp_tmlabel h2 {
+	margin: 0;
+	padding: 0 0 4px 0;
+	/*border-bottom: 1px solid #ccc; */
+	font-size: 14px;
+	font-weight: normal;
+}
+
+
+/* The triangle */
+.cbp_tmtimeline > li .cbp_tmlabel:after {
+	right: 100%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-right-color: #f0f0f0;
+	border-width: 7px;
+	top: 10px;
+}
+
+.cbp_tmtimeline > li:nth-child(odd) .cbp_tmlabel:after {
+	border-right-color: #f0f0f0; /* 200731 hishin */
+}
+
+
+/* The icons */
+.cbp_tmtimeline > li .cbp_tmicon {
+	width: 35px;
+	height: 35px;
+	font-family: 'ecoico';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	font-size: 1.4em;
+	line-height: 40px;
+	-webkit-font-smoothing: antialiased;
+	position: absolute;
+	color: #eff1f5; /* 200731 hishin */
+	background: gray;
+	border-radius: 50%;
+	box-shadow: 0 0 0 4px #c3c3c3;
+	text-align: center;
+	left: 16%; /* 200731 */
+	margin: 0 0 0 -40px;
+}
+
+/*
+.cbp_tmicon-phone:before {
+	content: "\e000";
+}
+
+.cbp_tmicon-screen:before {
+	content: "\e001";
+}
+
+.cbp_tmicon-mail:before {
+	content: "\e002";
+}
+
+.cbp_tmicon-earth:before {
+	content: "\e003";
+}
+*/
+
+/* Example Media Queries */
+@media screen and (max-width: 65.375em) {
+
+	.cbp_tmtimeline > li .cbp_tmtime span:last-child {
+		font-size: 1.5em;
+	}
+}
+
+@media screen and (max-width: 47.2em) {
+	.cbp_tmtimeline:before {
+		display: none;
+	}
+
+	.cbp_tmtimeline > li .cbp_tmtime {
+		width: 100%;
+		position: relative;
+		padding: 0 0 20px 0;
+	}
+
+	.cbp_tmtimeline > li .cbp_tmtime span {
+		text-align: left;
+	}
+
+	.cbp_tmtimeline > li .cbp_tmlabel {
+		margin: 0 0 30px 0;
+		padding: 1em;
+		font-weight: 400;
+		font-size: 95%;
+	}
+
+	.cbp_tmtimeline > li .cbp_tmlabel:after {
+		right: auto;
+		left: 20px;
+		border-right-color: transparent;
+		border-bottom-color: #3594cb;
+		top: -20px;
+	}
+
+	.cbp_tmtimeline > li:nth-child(odd) .cbp_tmlabel:after {
+		border-right-color: transparent;
+		border-bottom-color: #6cbfee;
+	}
+
+	.cbp_tmtimeline > li .cbp_tmicon {
+		position: relative;
+		float: right;
+		left: auto;
+		margin: -55px 5px 0 0px;
+	}
+}
+

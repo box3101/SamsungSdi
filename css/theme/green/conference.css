@@ -1,0 +1,40 @@
+@charset "utf-8";
+
+table {border-collapse: collapse; border-spacing: 0;}
+
+.row1 {min-width:768px; margin: 0; padding: 0;border: 0; font: inherit; vertical-align:top; height:200px; width:100%;border-top:solid 2px #000; border-bottom:solid 1px #eaeaea;}
+.row1 tr {margin: 0px;padding: 0px; border:0; font: inherit; vertical-align:top;}
+.row1 td {margin: 0px;padding: 20px; border: 0; font: inherit; vertical-align:top;}
+
+.row2 {min-width:768px; border-collapse: collapse; border-spacing: 0; margin-top: 20px; padding: 0; border: 0; font: inherit; width:100%;}
+.row2 tr {margin: 0px;padding: 0px;border: 0;font: inherit; height:200px;}
+.row2 .td {margin: 0px;padding: 0px;border: 0;font: inherit; width:49.5%;}
+.row2 .margin {margin: 0px;padding: 0px;border: 0;font: inherit;vertical-align:middle;width:1%;} 
+.row2 .table {border-collapse: collapse;border-spacing: 0;margin: 0;padding: 0;border: 0;font-size: 100%; width:100%; font: inherit; table-layout:fixed;}
+.row2 .table .ltd {vertical-align:top;padding: 20px;margin: 0px;border: 0; width:30%; background-color:#ffffff; border-top:solid 1px #000; border-bottom:solid 1px #eaeaea;}
+.row2 .table .rtd {vertical-align:top;padding: 20px;margin: 0px;border: 0; width:20%; background-color:#f7f7f7; border-top:solid 1px #000; border-bottom:solid 1px #eaeaea;}
+
+.row3 {min-width: 768px; border-collapse: collapse;border-spacing: 0;margin-top: 20px;padding: 0;border: 0;font: inherit; width:100%;}
+.row3 tr {margin: 0px;padding: 0px;border: 0;font: inherit;}
+.row3 td {margin: 0px;padding: 0px;border: 0;font: inherit; width:100%;}
+.row3 .table {border-collapse: collapse;border-spacing: 0;margin: 0;padding: 0;border: 0;width:100%;font: inherit; table-layout:fixed;}
+.row3 .table tr {height:300px;}
+.row3 .table .ltd {vertical-align:top;padding: 20px;margin: 0px;border: 0; width:75%; background-color:#ffffff; border-top:solid 1px #000; border-bottom:solid 1px #eaeaea;}
+.row3 .table .rtd {vertical-align:top;padding: 20px;margin: 0px;border: 0; width:25%; min-width:210px; background-color:#f7f7f7; border-top:solid 1px #000; border-bottom:solid 1px #eaeaea;}
+
+/* 190709 신해인 추가 경영회의 슬라이드쇼 */
+.leftListOpen {position: absolute; width:31px; height:36px; background: url(../../../images/theme/blue/btn-slideshow-open.png) no-repeat center center; top: 50px; z-index: 99;}
+.leftMenuDiv {position:absolute;top:50px;font-size:16px; line-height:20px;left:0px;z-index:99; border-right: solid 1px #efefef; display:none;}
+.leftMenuDiv ul {background-color:#fff;}
+.leftMenuDiv ul li {font-size:14px; padding: 10px 20px 10px 20px; border-bottom: solid 1px #efefef;}
+.leftMenuDiv .leftListClose {float:right; width:31px; height:36px; background: url(../../../images/theme/blue/btn-slideshow-close.png) no-repeat center center; }
+.leftMenuDiv .conferenceMenubar {border-right: solid 1px #efefef;}
+.leftMenuDiv .conferenceMenubar .title {padding:10px; background-color:#fff;  border-bottom: solid 2px #323232;}
+
+.conHeader {background-color:#323232;height:50px;text-align:center;}
+.conHeader .pageConName {color:white;font-size:23px;padding:10px;}
+
+.conBottom {background-color:#323232;height:50px;text-align:center;position: fixed;bottom: 0;width: 100%;font-size:20px;}
+.conBottom .pageCnt {color:white;font-size:16px;padding:14px 0px 0px 20px;float:left;}
+.conBottom .pageNav {color:white;font-size:20px;padding:14px 20px 0px 0px;}
+.conBottom .pageNav a {color:white;font-size:16px;padding:8px 20px 0px 0px;font-weight:normal;}

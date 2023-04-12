@@ -1,0 +1,18 @@
+@charset "utf-8";
+
+/* 190709 신해인 추가 경영회의 슬라이드쇼 */
+.leftListOpen {position: absolute; width:31px; height:36px; background: url(../../../images/theme/blue/btn-slideshow-open.png) no-repeat center center; top: 50px; z-index: 99;}
+.leftMenuDiv {position:absolute;top:50px;font-size:16px; line-height:20px;left:0px;z-index:99; border-right: solid 1px #efefef; display:none;}
+.leftMenuDiv ul {background-color:#fff;}
+.leftMenuDiv ul li {font-size:14px; padding: 10px 20px 10px 20px; border-bottom: solid 1px #efefef;}
+.leftMenuDiv .leftListClose {float:right; width:31px; height:36px; background: url(../../../images/theme/blue/btn-slideshow-close.png) no-repeat center center; }
+.leftMenuDiv .conferenceMenubar {border-right: solid 1px #efefef;}
+.leftMenuDiv .conferenceMenubar .title {padding:10px; background-color:#fff;  border-bottom: solid 2px #323232;}
+
+.conHeader {background-color:#323232;height:50px;text-align:center;}
+.conHeader .pageConName {color:white;font-size:23px;padding:10px;}
+
+.conBottom {background-color:#323232;height:50px;text-align:center;position: fixed;bottom: 0;width: 100%;font-size:20px;}
+.conBottom .pageCnt {color:white;font-size:16px;padding:14px 0px 0px 20px;float:left;}
+.conBottom .pageNav {color:white;font-size:20px;padding:14px 20px 0px 0px;}
+.conBottom .pageNav a {color:white;font-size:16px;padding:8px 20px 0px 0px;font-weight:normal;}

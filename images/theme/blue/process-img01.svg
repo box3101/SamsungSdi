@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="55" height="53" viewBox="0 0 55 53">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="사각형_1" data-name="사각형 1" width="55" height="53" transform="translate(0 0)" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="벡터_고급_개체" data-name="벡터 고급 개체" transform="translate(0 0)">
+    <g id="그룹_2" data-name="그룹 2">
+      <g id="그룹_1" data-name="그룹 1" clip-path="url(#clip-path)">
+        <path id="패스_1" data-name="패스 1" d="M15.775,9.08V2.548H35.65L54,22.153V51.989H15.775V32.927" fill="none" stroke="#253378" stroke-linejoin="round" stroke-width="2.014"/>
+        <path id="패스_2" data-name="패스 2" d="M54,22.153H35.65V2.548Z" fill="none" stroke="#253378" stroke-linejoin="round" stroke-width="2.014"/>
+      </g>
+    </g>
+    <path id="패스_3" data-name="패스 3" d="M30.971,46.184,20.008,39.61l10.406-6.418Z" fill="none" stroke="#253378" stroke-linejoin="round" stroke-width="2.014"/>
+    <g id="그룹_4" data-name="그룹 4">
+      <g id="그룹_3" data-name="그룹 3" clip-path="url(#clip-path)">
+        <rect id="사각형_2" data-name="사각형 2" width="12.2" height="31.971" transform="matrix(0.853, -0.522, 0.522, 0.853, 3.452, 12.34)" fill="none" stroke="#253378" stroke-linejoin="round" stroke-width="2.014"/>
+        <path id="패스_4" data-name="패스 4" d="M6.916,1.554,2.754,4.121A3.705,3.705,0,0,0,1.542,9.193l1.91,3.147L13.859,5.922,11.948,2.776A3.642,3.642,0,0,0,6.916,1.554Z" fill="none" stroke="#253378" stroke-linejoin="round" stroke-width="2.014"/>
+      </g>
+    </g>
+  </g>
+</svg>

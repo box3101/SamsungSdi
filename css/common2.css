@@ -1,0 +1,107 @@
+@charset "utf-8";
+/* kimyh custom
+디자인이 완료되면 common.css와 합칠 것
+*/
+.formHiddenData, .gridData {display:none}
+.ui-dialog {z-index:2000 !important;}
+
+.loadingDiv {display:none;position:absolute;top:0;border:0;z-index:3000;width:100%;height:100%;}
+.loadingImgDiv {position:absolute;z-index:10;width:200px;height:30px;left:0;right:0;margin:auto;}
+.loadingBGDiv {position:absolute;width:100%;height:100%;background-color:#65A4E0;opacity:0.3}
+#hiddenFrame {width:0;height:0;display:none;}
+
+/* 디자인 시안 custom */
+.btn-dw {height:21px}
+.tbl-bottom2 {width:300px; float:right; margin-top:-50px}
+.mapp .active2, .oga-bx .active2, .acList .active2, .acList .active2Over {background-color:#d6ecf5 !important;} 
+.mapp .red > p >label {color:#FF0000 !important;}
+.mapp > ul {overflow-y:scroll}
+.mapp > ul ul {display:none;}
+.mapp > ul a.active + ul, .mapp > ul p.active + ul {display:block !important;}
+.mapp .distributionList li {line-height:25px;padding-left:20px;}
+.contents h3 { display: block; line-height: 52px; padding-left: 28px; background: #ffffff; font-size: 18px; font-weight: 800; color: #2d7ec0; border-bottom: 1px solid #e1e1e1; }
+
+#bookmark #favoBtns, #bookmark input[type="checkbox"] {display:none;}
+#bookmark.showEdit #favoBtns, #bookmark.showEdit input[type="checkbox"] {display:inline-block;}
+
+#calList .calTemplate {display:none;}
+
+/* sgFileUploader */
+.sgFileUploader {min-width:300px}
+.sgFileUploader .boxDragndrop {display:none;}
+.sgFileUploader .inputFile {display:none;}
+.sgFileUploader .fileBox {width:300px; font-size:1.25rem;background-color:#c8dadf;position:relative;padding:30px 15px;}
+.sgFileUploader .fileBox.has-advanced-upload {outline:2px dashed black;outline-offset:-10px;}
+.sgFileUploader .fileBox.has-advanced-upload .boxDragndrop {display:inline;}
+.sgFileUploader .fileBox.is-dragover {background-color:#E8FAFF;}
+.sgFileUploader .divInputFile label {cursor:pointer;width:100%;display:block;text-align:center;}
+.sgFileUploader .divStatus, .sgFileUploader .divFileList, .sgFileUploader .divNewFileList {font-size:14px; min-width:500px;}
+.sgFileUploader .fileList a label {cursor:pointer}
+.sgFileUploader .close {cursor:pointer; border:none; background: url(../images/common/btn-close.png) no-repeat; display: inline-block; width: 18px; height: 18px; vertical-align: middle; margin-left: 10px; text-indent: -9999px;}
+
+/* jqgrid 관련 */
+div.jqgridTextareaDiv {
+	max-height:50px;
+	overflow:auto;
+}
+.ui-jqgrid td.noGridResult {text-align:center;height:30px}
+.ui-datepicker {z-index:100 !important;}
+.ui-jqgrid tr.jqgrow td {text-overflow:ellipsis;-o-text-overflow:ellipsis;}
+.ui-jqgrid-bdiv {border-bottom:1px solid #EEE}
+
+.ui-jqgrid {background:none;font-size:13px;}
+.ui-jqgrid input[type="text"] {height:24px;font-size:13px;}
+.ui-widget.ui-widget-content {margin:0px 20px;border-top:2px solid #484848;border-left-width:0;border-right-width:0;}
+.ui-widget.ui-widget-content.ui-datepicker {border:1px solid #484848 !important; margin-left:0;}
+.ui-jqgrid-hdiv {background-color:#F5F5F5}
+.ui-th-ltr, .ui-jqgrid .ui-jqgrid-htable th {color:#000000;font-weight:normal;background:#F5F5F5;height:40px;border-left:1px solid #d1d1d1;border-bottom:1px solid  #d1d1d1;}
+.ui-th-ltr, .ui-jqgrid .ui-jqgrid-htable th:last-child {border-right-color:#F5F5F5;}
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {border:1px solid #d1d1d1}
+.ui-jqgrid-hbox {background-color:#F5F5F5}
+.ui-widget-content {border-bottom-width:0 !important;}
+.ui-widget-content .ui-row-ltr {border-top-width:0 !important;border-color:#EEE !important;color:#555;}
+.ui-widget-content .ui-row-ltr td {padding:0 10px !important;height:35px !important;}
+.ui-widget-content .ui-row-ltr {border-left-width:0;border-right-width:0;}
+.ui-widget-content .ui-row-ltr td:last-child {border-right-width:0;}
+.ui-widget-content .ui-jqgrid-view {background:#FFF}
+.ui-widget-content .ui-jqgrid-pager {background:none;}
+.ui-jqgrid .ui-jqgrid-pager, .ui-jqgrid .ui-jqgrid-pager .ui-pager-control {height:50px}
+.ui-jqgrid .ui-pg-input {text-align:center;width:22px;height:24px;border:1px solid #e1e1e1;padding:0px 10px;}
+.ui-state-disabled, .ui-widget-content .ui-state-disabled, .ui-widget-header .ui-state-disabled {opacity:1;filter:none}
+.ui-jqgrid .ui-separator {display:none !important;}
+.ui-jqgrid .ui-pg-button {border-style:hidden;border-width:1px; padding:0 !important;}
+.ui-jqgrid .jqgrid-selectedRow {background-color:#FFDDDD}
+.ui-widget-content td a {text-decoration:underline;}
+.ui-widget-content td.edit-cell select {max-width:95%;}
+
+/* 개발 가이드 */
+.devGuide {font-size:14px;margin:20px;padding:10px;border-radius:5px;background-color:#F0F0F0;}
+.devGuide h1,.devGuide h2,.devGuide h3,.devGuide h4,.devGuide h5 {clear:both}
+.devGuide ol {margin:10px 0 0 25px;}
+.devGuide li {line-height:1.8em;clear:both}
+.devGuide dl {float:left;padding-top:10px}
+.devGuide dl dt {float:left;font-weight:bold;min-width:150px;}
+.devGuide dl dd {float:left;margin-left:1em;line-height:1.8em;}
+.devGuide .devGuideSource {background-color:white;font-weight:bold;padding:2px 5px;border-radius:5px}
+.devGuide .tab {width:40px;display:inline-block;}
+
+/* 임시 */
+#scDeptLayer {display:none; position:absolute; z-index:1}
+#userList li {cursor:pointer;}
+
+#popDistributionList li span {cursor:pointer;}
+
+/* 조직도 검색조건 */
+.sch-oga > ul {min-width:100px;}
+.sch-oga > ul > li {display:inline-block}
+.sch-oga .liScDeptList, .sch-oga .liAcList {display:block}
+.sch-oga .liAc, .sch-oga .liAcList {display:none}
+.sch-oga .scDeptList {top:31px}
+.sch-oga .scDeptList > ul {width:248px;}
+.sch-oga .liAcList {display:block}
+.sch-oga .acInput {border-width:0px !important;}
+.sch-oga .acList {position:absolute; z-index:1; border:1px solid #D1D1D1; background-color:#fbfbfb;
+					min-width:200px; height:208px; margin-left:-46px; margin-top:-2px;}
+.sch-oga .acList ul {height:200px; overflow-y:auto; margin:3px; border:1px solid #E1E1E1; background-color:#FFF;}
+.sch-oga .acList li {font-size:13px; padding:5px}
+.sch-oga .acList .acMatchedStr {font-weight:bold; color:red/*#0195D3*/}

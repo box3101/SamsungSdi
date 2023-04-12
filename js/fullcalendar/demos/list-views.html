@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8' />
+<link href='../packages/core/main.css' rel='stylesheet' />
+<link href='../packages/bootstrap/main.css' rel='stylesheet' />
+<link href='../packages/timegrid/main.css' rel='stylesheet' />
+<link href='../packages/daygrid/main.css' rel='stylesheet' />
+<link href='../packages/list/main.css' rel='stylesheet' />
+<script src='../packages/core/main.js'></script>
+<script src='../packages/interaction/main.js'></script>
+<script src='../packages/bootstrap/main.js'></script>
+<script src='../packages/daygrid/main.js'></script>
+<script src='../packages/timegrid/main.js'></script>
+<script src='../packages/list/main.js'></script>
+<script>
+
+  document.addEventListener('DOMContentLoaded', function() {
+    var calendarEl = document.getElementById('calendar');
+
+    var calendar = new FullCalendar.Calendar(calendarEl, {
+
+			 eventClick: function(info) {
+		    console.log(info);
+        alert("title:"+info.event.title+ " - id:"+info.event.id);
+		  },
+      height: 550,
+      locale:'ko',
+      plugins: [ 'bootstrap', 'interaction', 'dayGrid', 'timeGrid', 'list' ],
+
+      header: {
+        //left: 'prev,next today',
+        left: 'prev,next',
+        center: 'title',
+        right: 'dayGridMonth,listMonth,listYear'
+        //right: 'listWeek,listMonth,listYear'
+      },
+
+      // customize the button names,
+      // otherwise they'd all just say "list"
+			buttonText:{
+								  dayGridMonth:    '월달력',
+								  //timeGridWeek:    '주달력',
+								  listMonth:     '월목록',
+								  listYear:      '년목록',
+								},
+
+      defaultView: 'listYear',
+      defaultDate: '2019-04-12',
+      navLinks: true, // can click day/week names to navigate views
+      editable: false,
+      eventLimit: true, // allow "more" link when too many events
+      resources: [
+		    {
+		      id: 'a',
+		      title: 'Room A'
+		    }
+		  ],
+      events: [
+        {
+          id: 'C000004',
+          resourceId: 'R4',
+          title: '2019년1사분기 경영회의',
+          start: '2019-04-05',
+          end: '2019-04-05'
+        },
+{
+          id: 'C000004',
+          resourceId: 'R4',
+          title: '2019년1사분기 경영회의',
+          start: '2019-04-05',
+          end: '2019-04-05'
+        },
+{
+          id: 'C000004',
+          resourceId: 'R4',
+          title: '2019년1사분기 경영회의',
+          start: '2019-04-05',
+          end: '2019-04-05'
+        },
+{
+          id: 'C000004',
+          resourceId: 'R4',
+          title: '2019년1사분기 경영회의',
+          start: '2019-04-05',
+          end: '2019-04-05'
+        },
+        {
+          id: 'C000002',
+          resourceId: 'R2',
+          title: '2019년4월 경영지원팀 경영회의',
+          start: '2019-04-20T16:30:00',
+          end: '2019-04-20T18:00:00'
+        },
+        {
+          //groupId: 999,
+          id: 'C000001',
+          resourceId: 'R1',
+          title: '2019년상반기 결산회의',
+          //url: 'http://google.com/',
+          start: '2019-04-25',
+          end: '2019-04-25'
+        },
+{
+          //groupId: 999,
+          id: 'C000001',
+          resourceId: 'R1',
+          title: '2019년상반기 결산회의',
+          //url: 'http://google.com/',
+          start: '2019-04-25',
+          end: '2019-04-25'
+        }
+      ]
+    });
+
+    calendar.render();
+  });
+
+</script>
+<style>
+
+  body {
+    margin: 40px 10px;
+    padding: 0;
+    font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+    font-size: 14px;
+  }
+  
+  #calendar {width:900px; height:400px;}  
+
+
+</style>
+</head>
+<body>
+
+  <div id='calendar'></div>
+
+</body>
+</html>

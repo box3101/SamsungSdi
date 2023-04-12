@@ -1,0 +1,60 @@
+svg:not(:root) {overflow: hidden;}
+.svgChartLayout, .svgOrgLayout {margin-bottom:10px}
+.svgChart {overflow:hidden}
+.svgChartLayout {background-color:#f7f7f7; margin:0 auto;}
+.svgChartLayout .box {stroke-width:0.5}
+.svgChartLayout .arrow {stroke:#BCBCBD;stroke-width:1.5;fill:none;}
+.svgChartLayout .arrowBorder {stroke:white;stroke-width:5;fill:none;stroke-opacity:0;fill-opacity:0;}
+.svgChartLayout .arrowGrp .hiddenClickPoint {cursor:pointer}
+.svgChartLayout .arrowGrp .handle {stroke:#000;fill:red;cursor:move}
+.svgChartLayout .handleGrp {display:none}
+.svgChartLayout .handleLine {stroke:green;stroke-width:1;stroke-dasharray:3,5;fill:none}
+.svgChartLayout .firstHandle {stroke-opacity:0;fill:#fff;fill-opacity:0}
+.svgChartLayout .lastHandle {stroke:#000;fill:#fff!important}
+.svgChartLayout .scBtns, .svgOrgLayout .scBtns {width:100%;text-align:right}
+.svgChartLayout .scBtns .scBtnGrps {float:right; max-width:800px}
+.svgChartLayout .scBtns .scBtnGrps div {display:inline-block}
+.svgChartLayout .scBtns .scBtnGrps .scBtnGrp1 {margin-right:15px;}
+.svgChartLayout .scBtns .scBtnGrps .scBtnGrp3 {margin-right:15px;}
+.svgChartLayout .scBtns .scBtnGrps .scBtnGrp4 {display:none !important;}
+.svgChartLayout .scBtns button, .svgOrgLayout .scBtns button, .svgTreeLayout .scBtns button {min-width:100px;margin-left:3px;letter-spacing:-1px}
+.svgChartLayout .scChkboxDiv {float:left}
+.svgChartLayout .removedArrow {display:none}
+.svgChartLayout .hideArrow {display:none}
+.arrowHead {fill:#BCBCBD;stroke-width:1}
+
+/*.svgChartLayout .boxGrp rect,.svgChartLayout .boxGrp ellipse,.svgChartLayout .boxGrp .title {cursor:pointer}*/
+.svgChartLayout .boxGrp rect {cursor:pointer}
+.svgChartLayout .boxGrp .title:hover {/* paint-order:stroke;stroke:#FFF;stroke-width:2px; */font-weight:bold;}
+.svgChartLayout .boxGrpClicked .box {stroke:#77D;stroke-width:2}
+.svgChartLayout .boxGrpClicked circle {stroke:#77D;stroke-width:1px}
+
+.svgChartLayout .cursorPointer {cursor:pointer !important}
+.svgChartLayout .cursorMove * {cursor:move !important}
+.svgChartLayout .cursorVMove * {cursor:n-resize !important}
+
+.svgChartLayout .hLine {stroke:#AAAAAA;stroke-width:1;fill:none;stroke-dasharray:2}
+.svgChartLayout .hLineGrp .hLineBorder {stroke:black;stroke-width:5;stroke-dasharray:none;stroke-opacity:0;fill-opacity:0;}
+.svgChartLayout .hLineGrp .hLineBorderClicked {stroke-opacity:0.2;fill-opacity:0.2}
+
+.svgOrgLayout {background-color:#f7f7f7; margin:0 auto;}
+.svgOrgLayout .boxClick {cursor:pointer}
+.svgOrgLayout .boxMove, .svgOrgLayout .boxMove rect, .svgOrgLayout .boxMove text, .svgOrgLayout .boxMove circle {cursor:move}
+.svgOrgLayout .orgGrp {stroke:#E3E3E3;stroke-width:1;fill:#FBFBFB}
+.svgOrgLayout .orgLine {stroke:#CBCBC9;stroke-width:1}
+.svgOrgLayout .box {stroke-width:0.5}
+
+.svgTreeLayout .boxBorder,
+.svgTreeLayout .treeLine {stroke:rgb(0,0,0);stroke-width:1}
+.svgTreeLayout .btnLine {stroke:rgb(0,0,0);stroke-width:1;cursor:pointer}
+.svgTreeLayout .boxBtn {cursor:pointer}
+.svgTreeLayout .boxGrp .title {font-weight:normal;cursor:pointer}
+.svgTreeLayout .boxAttr {stroke:#B7BABC;stroke-width:0.5;fill:#F9F9F9}
+.svgTreeLayout .scBtns {width:100%;text-align:right;margin-bottom:2px}
+.svgTreeLayout .scBtns .scZoomRange {padding:0;margin-left:3px;height:10px}
+.svgTreeLayout .svgTreeDiv {overflow:auto}
+.svgTreeLayout .svgTree {padding:20px 0 0 20px; box-sizing:border-box}
+.svgTreeLayout .scZoomRange {width:100px}
+.svgTreeLayout .scChkAttr {margin-left:3px}
+
+.tbl-rbtn .title {cursor:move}

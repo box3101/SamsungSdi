@@ -1,0 +1,1652 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta name="_csrf_parameter" content="_csrf">
+  <meta name="_csrf_header" content="X-CSRF-TOKEN">
+  <meta name="_csrf" content="b4084fc7-d7f9-415d-9a28-e50c41b7192a">
+
+  <title>GSOP</title>
+
+  <link rel="shortcut icon" href="data:image/x-icon" type="image/x-icon">
+  <link rel="stylesheet" type="text/css" href="css/smoothness/jquery-ui.min.css">
+  <link rel="stylesheet" type="text/css" href="css/ui.jqgrid.css">
+  <link rel="stylesheet" type="text/css" href="css/jquery.fancybox-1.3.4.css">
+  <link rel="stylesheet" type="text/css" href="css/theme/blue/common_ko_darknavy.css?20220906162652">
+  <link rel="stylesheet" type="text/css" href="css/theme/blue/conference.css">
+  <!-- <link rel="stylesheet" type="text/css" href="css/common.vue.css?20220906162652">
+  <link rel="stylesheet" type="text/css" href="css/custom_design.css?20220906162652">
+  <link rel="stylesheet" type="text/css" href="css/jquery.minicolors.css"> -->
+
+
+  <link rel="stylesheet" type="text/css" href="css/select2.min.css">
+
+  <link rel="stylesheet" type="text/css" href="css/selectize.default.css">
+  <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+
+
+  <!-- pub add -->
+  <link rel="stylesheet" type="text/css" href="css/tooltip.css">
+  <link rel="stylesheet" type="text/css" href="css/new_design.css?20220906162652">
+  <link rel="stylesheet" type="text/css" href="css/gantt_style.css">
+
+
+  <script type="text/javascript" src="js/new_design.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sortablejs@1.6.1/Sortable.min.js"></script>
+  <!-- pub add -->
+
+  <script type="text/javascript" src="js/jquery-ui.js"></script>
+  <!-- <script type="text/javascript" src="js/jquery.i18n.properties.min.js"></script>
+  <script type="text/javascript" src="js/i18n/grid.locale-ko.js"></script>
+  <script type="text/javascript" src="js/jquery.jqGrid.min.js"></script>
+  <script type="text/javascript" src="js/jquery.cookie.js"></script> -->
+  <script type="text/javascript" src="js/common.js?20220906162652"></script>
+  <!-- <script type="text/javascript" src="js/jquery.fancybox-1.3.4.pack.js"></script>
+  <script type="text/javascript" src="js/Chart.bundle.min.js"></script> -->
+  <!-- 
+  <script type="text/javascript" src="js/common.vue.js?20220906162652"></script>
+
+
+  <script type="text/javascript" src="js/cleave.min.js?20220906162652"></script> -->
+
+  <!-- 
+  <script type="text/javascript" src="js/rsa/jsbn.js"></script>
+  <script type="text/javascript" src="js/rsa/rsa.js"></script>
+  <script type="text/javascript" src="js/rsa/prng4.js"></script>
+  <script type="text/javascript" src="js/rsa/rng.js"></script> -->
+
+
+  <!-- custom scrollbar stylesheet -->
+  <link rel="stylesheet" href="css/jquery.mCustomScrollbar.css">
+  <!-- custom scrollbar plugin -->
+  <script src="js/jquery.mCustomScrollbar.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
+
+</head>
+
+<body class="Basic">
+  <div id="wrap">
+    <!-- 콘텐츠 시작 -->
+    <div id="container" class="gnb_open">
+      <div class="containerCellL">
+        <div id="gnb" style="width: 220px;">
+          <ul style="display: none;">
+            <li>
+
+              <a href="#">
+                <img src="./images/theme/blue/m-logo.png" alt="">
+              </a>
+
+            </li>
+            <li><a href="#" data-target-menu="allmenu" class="home"></a></li>
+            <li><a href="#" data-target-menu="allmenu" onclick="showMenu(this);return false;" class="gnb01">전체메뉴펼침</a>
+            </li>
+          </ul>
+          <div id="menu01" class="menu01 depth2" style="display: block;">
+            <div id="menu" class="menu">
+              <div class="logo"><a href="main.do#PGM1770"><img src="images/common/main_logo.png"></a>
+              </div>
+              <ul class="menu2
+                                        
+                                            
+                                                menuLvl2
+                                            
+                                            
+                                            
+                                        
+                                        ">
+                <li id="menu_PGM1722"><a href="main.do" onclick="return false;"><span class="leafN">대시보드</span></a>
+                  <ul
+                    class="menu3                                                                                                                                                                                                    menuLvl3">
+                    <li id="menu_PGM1770"><a href="main.do#PGM1770"><span class="leafY">대시보드</span></a></li>
+                    <li id="menu_PGM1824"><a href="main.do#PGM1824"><span class="leafY">조직도</span></a></li>
+                  </ul>
+                </li>
+                <li id="menu_PGM1739"><a href="main.do" onclick="return false;" class="active"><span
+                      class="leafN">표준체계</span></a>
+                  <ul
+                    class="menu3                                                                                                                                                                                                    menuLvl3 active">
+                    <li id="menu_PGM1746"><a href="main.do" onclick="return false;"><span
+                          class="leafN">분류체계현황</span></a>
+                      <ul
+                        class="menu4                                                                                                                                                                                                                                                     menuLvl4">
+                        <li id="menu_PGM1841" class="active"><a href="main.do#PGM1841"><span class="leafY">프로세스Type
+                            </span></a></li>
+                        <li id="menu_PGM1831" class="currentMenu"><a href="main.do#PGM1831"><span class="leafY">업무Type
+                            </span></a></li>
+                        <li id="menu_PGM1831" class="currentMenu"><a href="main.do#PGM1831"><span class="leafY">Level1단계
+                            </span></a></li>
+                        <li id="menu_PGM1831" class="currentMenu"><a href="main.do#PGM1831"><span class="leafY">Level2단계
+                            </span></a></li>
+                        <li id="menu_PGM1831" class="currentMenu"><a href="main.do#PGM1831"><span class="leafY">Level3단계
+                            </span></a></li>
+                        <li id="menu_PGM1831" class="currentMenu "><a href="main.do#PGM1831"><span
+                              class="leafY">분류체계요청확인
+                            </span></a></li>
+                      </ul>
+                    </li>
+                    <li id="menu_PGM1746"><a href="main.do" onclick="return false;"><span class="leafN">기준일정 및
+                          아이템</span></a>
+                      <ul
+                        class="menu4                                                                                                                                                                                                                                                     menuLvl4">
+                        <li id="menu_PGM1841" class="active" lass="currentMenu active"><a href="main.do#PGM1841"><span
+                              class="leafY">Phase단계
+                            </span></a></li>
+                        <li id="menu_PGM1831"><a href="main.do#PGM1831"><span class="leafY">건설Item
+                            </span></a></li>
+                        <li id="menu_PGM1831"><a href="main.do#PGM1831"><span class="leafY">기술Item
+                            </span></a></li>
+                        <li id="menu_PGM1831"><a href="main.do#PGM1831"><span class="leafY">기준일정
+                            </span></a></li>
+                        <li id="menu_PGM1831"><a href="main.do#PGM1831"><span class="leafY">단계및유형정보
+                            </span></a></li>
+                      </ul>
+                    </li>
+                    <li id="menu_PGM1747"><a href="main.do" onclick="return false;" class="active"><span
+                          class="leafN ">표준
+                          Activity</span></a>
+                      <ul
+                        class="menu4                                                                                                                                                                                                                                                     menuLvl4 active">
+                        <li id="menu_PGM1752"><a href="main.do#PGM1752"><span class="leafY">Value-Up 실행자</span></a></li>
+                        <li id="menu_PGM1753" class=""><a href="main.do#PGM1753" class=""><span class="leafY">Value-Up
+                              리더</span></a></li>
+                        <li id="menu_PGM1754" class=""><a href="main.do#PGM1754" class=""><span class="leafY">Value-Up
+                              성장위원</span></a></li>
+                        <li id="menu_PGM1751" class=""><a href="main.do#PGM1751" class=""><span class="leafY">Value-Up
+                              조직구성원</span></a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li id="menu_PGM1757"><a href="main.do" onclick="return false;" class=""><span
+                      class="leafN">업무</span></a>
+                  <ul
+                    class="menu3                                                                                                                                                                                                    menuLvl3">
+                    <li id="menu_PGM1758" class=""><a href="main.do#PGM1758" class=""><span
+                          class="leafY">수습평가설정</span></a></li>
+                    <li id="menu_PGM1759"><a href="main.do" onclick="return false;" class=""><span
+                          class="leafN">수습평가자선정</span></a>
+                      <ul
+                        class="menu4                                                                                                                                                                                                                                                     menuLvl4">
+                        <li id="menu_PGM1811" class=""><a href="main.do#PGM1811" class=""><span
+                              class="leafY">평가자선정</span></a></li>
+                        <li id="menu_PGM1812" class=""><a href="main.do#PGM1812" class=""><span
+                              class="leafY">평가자승인</span></a></li>
+                      </ul>
+                    </li>
+                    <li id="menu_PGM1760"><a href="main.do" onclick="return false;" class=""><span
+                          class="leafN">수습평가실시</span></a>
+                      <ul
+                        class="menu4                                                                                                                                                                                                                                                     menuLvl4">
+                        <li id="menu_PGM1813" class=""><a href="main.do#PGM1813" class=""><span
+                              class="leafY">평가실시</span></a></li>
+                        <li id="menu_PGM1814" class=""><a href="main.do#PGM1814" class=""><span
+                              class="leafY">평가결과</span></a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li id="menu_PGM1775"><a href="main.do" onclick="return false;" class=""><span
+                      class="leafN">커뮤니티</span></a>
+                  <ul
+                    class="menu3                                                                                                                                                                                                    menuLvl3">
+                    <li id="menu_PGM1776" class=""><a href="main.do#PGM1776" class=""><span
+                          class="leafY">진단설정</span></a></li>
+                    <li id="menu_PGM1777"><a href="main.do" onclick="return false;" class=""><span
+                          class="leafN">진단실시</span></a>
+                      <ul
+                        class="menu4                                                                                                                                                                                                                                                     menuLvl4">
+                        <li id="menu_PGM1782" class=""><a href="main.do#PGM1782" class=""><span
+                              class="leafY">우리의믿음진단</span></a></li>
+                        <li id="menu_PGM1837" class=""><a href="main.do#PGM1837" class=""><span
+                              class="leafY">우리의믿음진단자확인</span></a></li>
+                      </ul>
+                    </li>
+                    <li id="menu_PGM1778"><a href="main.do" onclick="return false;" class=""><span
+                          class="leafN">진단결과</span></a>
+                      <ul
+                        class="menu4                                                                                                                                                                                                                                                     menuLvl4">
+                        <li id="menu_PGM1784" class=""><a href="main.do#PGM1784" class=""><span
+                              class="leafY">진단현황</span></a></li>
+                        <li id="menu_PGM1834" class=""><a href="main.do#PGM1834" class=""><span
+                              class="leafY">피진단자통계</span></a></li>
+                        <li id="menu_PGM1835" class=""><a href="main.do#PGM1835" class=""><span
+                              class="leafY">진단자통계</span></a></li>
+                        <li id="menu_PGM1836" class=""><a href="main.do#PGM1836" class=""><span
+                              class="leafY">조직별통계</span></a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li id="menu_PGM1785"><a href="main.do" onclick="return false;" class=""><span
+                      class="leafN">설정관리</span></a>
+                  <ul
+                    class="menu3                                                                                                                                                                                                    menuLvl3">
+                    <li id="menu_PGM1786"><a href="main.do#PGM1786"><span class="leafY">S.P평가설정</span></a></li>
+                    <li id="menu_PGM1787" class=""><a href="main.do#PGM1787" class=""><span class="leafY">Succession
+                          Plan실행</span></a></li>
+                    <li id="menu_PGM1788" class=""><a href="main.do#PGM1788" class=""><span class="leafY">Succession
+                          Plan결과</span></a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div> <a href="#" onclick="showMenu(null);return false;" class="close" style="display: inline;">닫기</a>
+        </div>
+        <div transition="modal" class="modal-mask" style="display: none;">
+          <div class="modal-wrapper">
+            <div class="modal-container">
+              <div class="modal-header">
+                <!---->
+                <div class="header"></div>
+              </div>
+              <div class="modal-body">
+                <div class="body"></div>
+              </div>
+              <div class="modal-footer"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="containerCellR">
+        <div class="head">
+          <div class="lnb">
+            <div id="nav" class="nav " style="float: left; clear: both;">
+              <ul style="margin-top: 10px;">
+                <li><a href="#" class="home">홈</a></li>
+                <li>표준체계</li>
+                <li>Acticity관리</li>
+                <li class="active">기본정보</li>
+              </ul>
+            </div>
+          </div>
+          <div class="rnb">
+            <div style="float: left; clear: both;">
+              <div class="ico-bg has-tooltip" data-original-title="null"><a href="#"><img
+                    src="images/theme/blue/ico-amenu.png" onclick="gnbApp.popMNA();return false;" alt="전체메뉴"></a></div>
+              <div class="ico-bg has-tooltip" data-original-title="null"><a href="#"><img
+                    src="images/theme/blue/ico-manual.png" onclick="gnbApp.popMNA();return false;" alt="매뉴얼"></a></div>
+              <div class="ico-bg has-tooltip" data-original-title="null"><a href="#"><img
+                    src="images/theme/blue/ico-notice.png" onclick="gnbApp.popNotice();return false;" alt="공지사항"></a>
+              </div>
+              <div class="ico-bg has-tooltip" data-original-title="null"><a href="#"><img
+                    src="images/theme/blue/ico-help.png" onclick="gnbApp.popQnA();return false;" alt="Q&amp;A"></a>
+              </div>
+            </div>
+            <div class="user"><a href="#"><img src="http://gwa.visang.com/upload/img/profile/visang/2793_thum.jpg"
+                  alt="유저 이미지" onerror="this.src='images/theme/blue/ico-user-pic.png'" class="profileImg"></a>
+              <div id="pop-user-info" class="user-info" style="display: none;"><a href="#"
+                  class="mem-modify ml10 user-info-txt"><span>
+                    민덕기
+                    (mindk)
+                  </span> <span></span></a>
+                <div
+                  style="text-align: left; margin-top: 12px; padding-top: 6px; line-height: 130%; border-top: 1px solid rgb(234, 234, 234);">
+                  <a class="logout-bg mt20"></a> <a href="#" onclick="doLogout();return false;" class="mem-logout "
+                    style="color: rgb(85, 85, 85);"><img src="images/theme/blue/ico-session-time.png" alt="접속시간"
+                      style="margin-top: -2px; padding-right: 3px;">time : <span id="sessionTimeCheck">59 :
+                      51</span></a> <span class="txt"><a href="#" onclick="doLogout();return false;"><img
+                        src="images/theme/blue/ico-logout.png" alt="로그아웃">로그아웃</a></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="CellR-main-tab">
+          <ul>
+            <li>
+              <a href="#">
+                Home
+              </a>
+            </li>
+            <li class="is-active">
+              <a href="#">
+                Activity
+              </a>
+            </li>
+            <li class="active">
+              <a href="#">
+                기본정보
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                정의서
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                위치선정
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                적용대상
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                결재관리
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div id="contents">
+          <div class="contentsWrap ">
+            <div class="contents" style="opacity: 1;">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+              <!--
+*************************************************************************
+* CLASS 명	: valueCompManagerList.jsp
+* 작 업 자	: 임성지
+* 작 업 일	: 2021. 02. 25
+* 기	능	: Value-Up 조직목표부서장
+* ---------------------------- 변 경 이 력 --------------------------------
+* 번호	작 업 자		작	업	일			변 경 내 용				비고
+* ----	---------	----------------	---------------------	-----------
+*	1	임성지		2021. 02. 25		최 초 작 업
+**************************************************************************
+-->
+
+
+
+
+              <div class="container tbl-bg">
+
+                <div class="process-wrap">
+                  <!-- project 등록증 -->
+                  <div class="process-wrap-top">
+                    <div class="left bd-line-type1">
+                      <div class="com-tpy-had2">
+                        <p>
+                          Project 등록증
+                        </p>
+                      </div>
+                      <ul class="protype1">
+                        <li class="is-active">
+                          <a href="#">
+                            <div class="wrap">
+                              <div class="tit">Project 등록증</div>
+                              <div class="bot">
+                                <svg style="position: relative; top:3px;" class="icoWrite"
+                                  xmlns="http://www.w3.org/2000/svg" height="59" width="65" viewBox="0 0 65 59">
+                                  <path
+                                    d="M11 44q-1.2 0-2.1-.9Q8 42.2 8 41V7q0-1.2.9-2.1Q9.8 4 11 4h17l12 12v7.8h-3V18H26V7H11v34h15v3Zm0-3V7v34Zm26.8-11.15 1.4 1.4-8.2 8.2V42h2.55l8.2-8.2 1.4 1.4-8.8 8.8H29v-5.35Zm5.35 5.35-5.35-5.35 3.05-3.05q.45-.45 1.05-.45.6 0 1.05.45l3.25 3.25q.45.45.45 1.05 0 .6-.45 1.05Z" />
+                                </svg>
+                                <p>3</p>
+                              </div>
+                            </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <div class="wrap">
+                              <div class="tit">Member 등록증</div>
+                              <div class="bot">
+                                <svg class="svg-search" xmlns="http://www.w3.org/2000/svg"
+                                  xmlns:xlink="http://www.w3.org/1999/xlink" width="65" height="59" viewBox="0 0 65 59">
+                                  <defs>
+                                    <clipPath id="clip-path">
+                                      <rect id="사각형_3" data-name="사각형 3" width="65" height="59"
+                                        transform="translate(0 0)" fill="none" stroke="#253378" />
+                                    </clipPath>
+                                  </defs>
+                                  <g id="그룹_3" data-name="그룹 3" transform="translate(0 0)" clip-path="url(#clip-path)">
+                                    <ellipse id="타원_1" data-name="타원 1" cx="5.508" cy="5.473" rx="5.508" ry="5.473"
+                                      transform="translate(22.992 1.01)" fill="none" stroke="#253378"
+                                      stroke-miterlimit="10" stroke-width="2.027" />
+                                    <path id="패스_13" data-name="패스 13"
+                                      d="M35.358,20.469a1.017,1.017,0,0,0,1.015-1.148,7.965,7.965,0,0,0-15.745,0,1.016,1.016,0,0,0,1.015,1.148Z"
+                                      fill="none" stroke="#253378" stroke-miterlimit="10" stroke-width="2.027" />
+                                    <ellipse id="타원_2" data-name="타원 2" cx="5.508" cy="5.473" rx="5.508" ry="5.473"
+                                      transform="translate(3.392 31.532)" fill="none" stroke="#253378"
+                                      stroke-miterlimit="10" stroke-width="2.027" />
+                                    <path id="패스_14" data-name="패스 14"
+                                      d="M2.041,50.99a1.017,1.017,0,0,1-1.015-1.148,7.965,7.965,0,0,1,15.745,0,1.016,1.016,0,0,1-1.015,1.148Z"
+                                      fill="none" stroke="#253378" stroke-miterlimit="10" stroke-width="2.027" />
+                                    <ellipse id="타원_3" data-name="타원 3" cx="5.508" cy="5.473" rx="5.508" ry="5.473"
+                                      transform="translate(22.992 31.532)" fill="none" stroke="#253378"
+                                      stroke-miterlimit="10" stroke-width="2.027" />
+                                    <path id="패스_15" data-name="패스 15"
+                                      d="M21.642,50.99a1.017,1.017,0,0,1-1.015-1.148,7.965,7.965,0,0,1,15.745,0,1.016,1.016,0,0,1-1.015,1.148Z"
+                                      fill="none" stroke="#253378" stroke-miterlimit="10" stroke-width="2.027" />
+                                    <ellipse id="타원_4" data-name="타원 4" cx="5.508" cy="5.473" rx="5.508" ry="5.473"
+                                      transform="translate(42.593 31.532)" fill="none" stroke="#253378"
+                                      stroke-miterlimit="10" stroke-width="2.027" />
+                                    <path id="패스_16" data-name="패스 16"
+                                      d="M41.243,50.99a1.017,1.017,0,0,1-1.015-1.148,7.965,7.965,0,0,1,15.745,0,1.016,1.016,0,0,1-1.015,1.148Z"
+                                      fill="none" stroke="#253378" stroke-miterlimit="10" stroke-width="2.027" />
+                                    <path id="패스_17" data-name="패스 17"
+                                      d="M8.9,31.531V28.247a2.026,2.026,0,0,1,2.033-2.02H46.067a2.026,2.026,0,0,1,2.033,2.02v3.284"
+                                      fill="none" stroke="#253378" stroke-miterlimit="10" stroke-width="2.027" />
+                                    <line id="선_6" data-name="선 6" y1="11.063" transform="translate(28.5 20.468)"
+                                      fill="none" stroke="#253378" stroke-miterlimit="10" stroke-width="2.02" />
+                                  </g>
+                                </svg>
+
+                                <p>3</p>
+                              </div>
+                            </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <div class="wrap">
+                              <div class="tit">과제점검중</div>
+                              <div class="bot">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                  width="65" height="59" viewBox="0 0 65 59">
+                                  <defs>
+                                    <clipPath id="a">
+                                      <rect width="65.001" height="59" transform="translate(0 0)" fill="none" />
+                                    </clipPath>
+                                  </defs>
+                                  <g transform="translate(0 0)">
+                                    <path d="M43.6,34.943V8.088H31.773" fill="none" stroke="#253378"
+                                      stroke-linecap="round" stroke-linejoin="round" stroke-width="2.03" />
+                                    <g clip-path="url(#a)">
+                                      <path d="M12.846,8.095H1.016V57.986H43.6V41.6" fill="none" stroke="#253378"
+                                        stroke-linecap="round" stroke-linejoin="round" stroke-width="2.03" />
+                                    </g>
+                                    <path d="M38.871,39.776V12.816h-7.1" fill="none" stroke="#253378"
+                                      stroke-linecap="round" stroke-linejoin="round" stroke-width="2.03" />
+                                    <path d="M12.846,12.816h-7.1V52.944H38.871V46.525" fill="none" stroke="#253378"
+                                      stroke-linecap="round" stroke-linejoin="round" stroke-width="2.03" />
+                                    <g clip-path="url(#a)">
+                                      <path d="M27.041,5.735a4.732,4.732,0,0,0-9.464,0H12.846v9.442H31.773V5.735Z"
+                                        fill="none" stroke="#253378" stroke-linejoin="round" stroke-width="2.03" />
+                                      <path
+                                        d="M47.549,31.714l3.435,2.9L35.693,49.1l-6.978-5.621,3.638-4.09,3.485,3.508Z"
+                                        fill="none" stroke="#253378" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2.03" />
+                                      <line x1="15.739" transform="translate(11.303 46.525)" fill="none"
+                                        stroke="#253378" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2.032" />
+                                      <line x1="15.209" transform="translate(11.303 41.527)" fill="none"
+                                        stroke="#253378" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2.032" />
+                                      <line x1="21.625" transform="translate(11.303 36.583)" fill="none"
+                                        stroke="#253378" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2.032" />
+                                      <line x1="21.577" transform="translate(11.304 31.118)" fill="none"
+                                        stroke="#253378" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2.032" />
+                                      <line x1="21.577" transform="translate(11.304 25.687)" fill="none"
+                                        stroke="#253378" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2.032" />
+                                      <line x1="21.577" transform="translate(11.304 20.257)" fill="none"
+                                        stroke="#253378" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2.032" />
+                                    </g>
+                                  </g>
+                                </svg>
+
+                                <p>3</p>
+                              </div>
+                            </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <div class="wrap">
+                              <div class="tit">RoadMap점검중</div>
+                              <div class="bot">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                  width="65" height="57" viewBox="0 0 65 57">
+                                  <defs>
+                                    <clipPath id="clip-path">
+                                      <rect id="사각형_6" data-name="사각형 6" width="65" height="57"
+                                        transform="translate(0 0)" fill="none" />
+                                    </clipPath>
+                                  </defs>
+                                  <g id="Vector_Smart_Object" data-name="Vector Smart Object"
+                                    transform="translate(0 0)">
+                                    <line id="선_13" data-name="선 13" x1="8.265" transform="translate(16.134 7.061)"
+                                      fill="none" stroke="#253378" stroke-miterlimit="10" stroke-width="2.013" />
+                                    <g id="그룹_10" data-name="그룹 10">
+                                      <g id="그룹_9" data-name="그룹 9" clip-path="url(#clip-path)">
+                                        <path id="패스_24" data-name="패스 24"
+                                          d="M47.123,28.5h1.742A10.724,10.724,0,0,0,59.595,17.781h0A10.724,10.724,0,0,0,48.865,7.06H37.08"
+                                          fill="none" stroke="#253378" stroke-miterlimit="10" stroke-width="2.012" />
+                                        <line id="선_14" data-name="선 14" x2="7.534" transform="translate(26.313 28.5)"
+                                          fill="none" stroke="#253378" stroke-miterlimit="10" stroke-width="2.013" />
+                                        <path id="패스_25" data-name="패스 25"
+                                          d="M22.367,49.939H16.135A10.724,10.724,0,0,1,5.406,39.22h0a10.726,10.726,0,0,1,7.7-10.287"
+                                          fill="none" stroke="#253378" stroke-miterlimit="10" stroke-width="2.012" />
+                                        <line id="선_15" data-name="선 15" x1="8.016" transform="translate(35.881 49.94)"
+                                          fill="none" stroke="#253378" stroke-miterlimit="10" stroke-width="2.013" />
+                                        <ellipse id="타원_5" data-name="타원 5" cx="6.06" cy="6.055" rx="6.06" ry="6.055"
+                                          transform="translate(4.21 1.006)" fill="none" stroke="#253378"
+                                          stroke-miterlimit="10" stroke-width="2.012" />
+                                        <ellipse id="타원_6" data-name="타원 6" cx="6.06" cy="6.055" rx="6.06" ry="6.055"
+                                          transform="translate(24.96 1.006)" fill="none" stroke="#253378"
+                                          stroke-miterlimit="10" stroke-width="2.012" />
+                                        <ellipse id="타원_7" data-name="타원 7" cx="6.06" cy="6.055" rx="6.06" ry="6.055"
+                                          transform="translate(13.679 22.446)" fill="none" stroke="#253378"
+                                          stroke-miterlimit="10" stroke-width="2.012" />
+                                        <ellipse id="타원_8" data-name="타원 8" cx="6.06" cy="6.055" rx="6.06" ry="6.055"
+                                          transform="translate(34.428 22.446)" fill="none" stroke="#253378"
+                                          stroke-miterlimit="10" stroke-width="2.012" />
+                                        <ellipse id="타원_9" data-name="타원 9" cx="6.06" cy="6.055" rx="6.06" ry="6.055"
+                                          transform="translate(23.147 43.885)" fill="none" stroke="#253378"
+                                          stroke-miterlimit="10" stroke-width="2.012" />
+                                        <ellipse id="타원_10" data-name="타원 10" cx="6.06" cy="6.055" rx="6.06" ry="6.055"
+                                          transform="translate(43.897 43.885)" fill="none" stroke="#253378"
+                                          stroke-miterlimit="10" stroke-width="2.012" />
+                                        <path id="패스_26" data-name="패스 26" d="M54.946,13.447l4.648,5.31,4.647-5.31"
+                                          fill="none" stroke="#253378" stroke-miterlimit="10" stroke-width="2.012" />
+                                        <path id="패스_27" data-name="패스 27" d="M.758,36.091,5.406,41.4l4.647-5.31"
+                                          fill="none" stroke="#253378" stroke-miterlimit="10" stroke-width="2.012" />
+                                      </g>
+                                    </g>
+                                  </g>
+                                </svg>
+
+                                <p>3</p>
+                              </div>
+                            </div>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="right bd-line-type1">
+                      <div class="com-tpy-had2">
+                        <p>
+                          Project 완료
+                        </p>
+                      </div>
+                      <ul class="protype1">
+                        <li>
+                          <a href="#">
+                            <div class="wrap">
+                              <div class="tit">Project 진행중</div>
+                              <div class="bot">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                  width="65" height="59" viewBox="0 0 65 59">
+                                  <defs>
+                                    <clipPath id="clip-path">
+                                      <rect id="사각형_10" data-name="사각형 10" width="65" height="59"
+                                        transform="translate(0 0)" fill="none" />
+                                    </clipPath>
+                                  </defs>
+                                  <g id="그룹_12" data-name="그룹 12" transform="translate(0 0)">
+                                    <g id="그룹_11" data-name="그룹 11" clip-path="url(#clip-path)">
+                                      <path id="패스_28" data-name="패스 28"
+                                        d="M23.26,10.262H21.566A9.18,9.18,0,0,0,20.43,7.546l1.2-1.19a.707.707,0,0,0,0-1.006L19.6,3.334a.722.722,0,0,0-1.015,0l-1.2,1.191A9.3,9.3,0,0,0,14.649,3.4V1.717A.715.715,0,0,0,13.931,1H11.06a.714.714,0,0,0-.718.712V3.4A9.3,9.3,0,0,0,7.605,4.525l-1.2-1.191a.722.722,0,0,0-1.015,0L3.361,5.349a.707.707,0,0,0,0,1.006l1.2,1.19a9.151,9.151,0,0,0-1.135,2.716H1.73a.715.715,0,0,0-.718.712v2.849a.716.716,0,0,0,.718.712h1.7A9.134,9.134,0,0,0,4.56,17.25l-1.2,1.19a.708.708,0,0,0,0,1.007l2.03,2.014a.722.722,0,0,0,1.015,0l1.2-1.19A9.3,9.3,0,0,0,10.342,21.4V23.08a.714.714,0,0,0,.718.712h2.871a.715.715,0,0,0,.718-.712V21.4a9.3,9.3,0,0,0,2.736-1.127l1.2,1.19a.722.722,0,0,0,1.015,0l2.03-2.014a.708.708,0,0,0,0-1.007l-1.2-1.19a9.163,9.163,0,0,0,1.136-2.715H23.26a.715.715,0,0,0,.718-.712V10.974A.714.714,0,0,0,23.26,10.262Z"
+                                        fill="none" stroke="#253378" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2.017" />
+                                      <path id="패스_29" data-name="패스 29"
+                                        d="M18.236,12.4a5.741,5.741,0,1,1-5.742-5.7A5.72,5.72,0,0,1,18.236,12.4Z"
+                                        fill="none" stroke="#253378" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2.017" />
+                                      <path id="패스_30" data-name="패스 30"
+                                        d="M42.844,16.367H41.472a7.415,7.415,0,0,0-.919-2.2l.971-.963a.574.574,0,0,0,0-.816l-1.643-1.63a.584.584,0,0,0-.821,0l-.971.963a7.513,7.513,0,0,0-2.216-.911V9.45a.578.578,0,0,0-.58-.576H32.969a.578.578,0,0,0-.58.576v1.362a7.513,7.513,0,0,0-2.216.911L29.2,10.76a.584.584,0,0,0-.821,0l-1.643,1.63a.574.574,0,0,0,0,.816l.971.963a7.414,7.414,0,0,0-.919,2.2H25.418a.579.579,0,0,0-.581.577v2.305a.579.579,0,0,0,.581.577H26.79a7.414,7.414,0,0,0,.919,2.2l-.971.963a.574.574,0,0,0,0,.816l1.643,1.63a.584.584,0,0,0,.821,0l.971-.964a7.515,7.515,0,0,0,2.216.912v1.361a.579.579,0,0,0,.58.577h2.324a.578.578,0,0,0,.58-.577V25.38a7.515,7.515,0,0,0,2.216-.912l.971.964a.584.584,0,0,0,.821,0l1.643-1.63a.574.574,0,0,0,0-.816l-.971-.963a7.415,7.415,0,0,0,.919-2.2h1.372a.579.579,0,0,0,.581-.577V16.943A.579.579,0,0,0,42.844,16.367Z"
+                                        fill="none" stroke="#253378" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2.017" />
+                                      <path id="패스_31" data-name="패스 31"
+                                        d="M38.777,18.1a4.647,4.647,0,1,1-4.646-4.611A4.629,4.629,0,0,1,38.777,18.1Z"
+                                        fill="none" stroke="#253378" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2.017" />
+                                      <path id="패스_32" data-name="패스 32"
+                                        d="M27.668,30.462h-1.05a5.661,5.661,0,0,0-.7-1.681l.742-.737a.438.438,0,0,0,0-.624L25.4,26.172a.446.446,0,0,0-.629,0l-.743.737a5.773,5.773,0,0,0-1.7-.7V25.169a.443.443,0,0,0-.444-.441H20.112a.443.443,0,0,0-.444.441v1.042a5.767,5.767,0,0,0-1.695.7l-.743-.737a.446.446,0,0,0-.629,0l-1.257,1.248a.44.44,0,0,0,0,.624l.743.737a5.69,5.69,0,0,0-.7,1.681H14.335a.443.443,0,0,0-.445.441v1.764a.443.443,0,0,0,.445.441h1.049a5.707,5.707,0,0,0,.7,1.682l-.743.737a.44.44,0,0,0,0,.624L16.6,37.4a.446.446,0,0,0,.629,0l.743-.737a5.74,5.74,0,0,0,1.695.7V38.4a.443.443,0,0,0,.444.441H21.89a.443.443,0,0,0,.444-.441V37.358a5.746,5.746,0,0,0,1.7-.7l.743.737a.446.446,0,0,0,.629,0l1.256-1.247a.438.438,0,0,0,0-.624l-.742-.737a5.678,5.678,0,0,0,.7-1.682h1.05a.442.442,0,0,0,.444-.441V30.9A.443.443,0,0,0,27.668,30.462Z"
+                                        fill="none" stroke="#253378" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2.017" />
+                                      <path id="패스_33" data-name="패스 33"
+                                        d="M24.557,31.785A3.556,3.556,0,1,1,21,28.257,3.542,3.542,0,0,1,24.557,31.785Z"
+                                        fill="none" stroke="#253378" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2.017" />
+                                      <path id="패스_34" data-name="패스 34"
+                                        d="M28.112,6.2H61.227a1.755,1.755,0,0,1,1.76,1.749v38.3A1.755,1.755,0,0,1,61.227,48H6.658A1.755,1.755,0,0,1,4.9,46.247V25.915"
+                                        fill="none" stroke="#253378" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2.017" />
+                                      <line id="선_16" data-name="선 16" x2="26.117" transform="translate(32.183 43.459)"
+                                        fill="none" stroke="#253378" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2.025" />
+                                      <rect id="사각형_7" data-name="사각형 7" width="4.46" height="25.063"
+                                        transform="translate(51.796 18.397)" fill="none" stroke="#253378"
+                                        stroke-linecap="round" stroke-linejoin="round" stroke-width="2.017" />
+                                      <rect id="사각형_8" data-name="사각형 8" width="4.46" height="9.488"
+                                        transform="translate(42.975 33.971)" fill="none" stroke="#253378"
+                                        stroke-linecap="round" stroke-linejoin="round" stroke-width="2.017" />
+                                      <rect id="사각형_9" data-name="사각형 9" width="4.46" height="6.086"
+                                        transform="translate(34.154 37.373)" fill="none" stroke="#253378"
+                                        stroke-linecap="round" stroke-linejoin="round" stroke-width="2.017" />
+                                    </g>
+                                  </g>
+                                </svg>
+
+
+                                <p>3</p>
+                              </div>
+                            </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <div class="wrap">
+                              <div class="tit">Project 완료</div>
+                              <div class="bot">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="48" width="48">
+                                  <path
+                                    d="M6.6 42q-1.2 0-2.1-.9-.9-.9-.9-2.1V9q0-1.2.9-2.1.9-.9 2.1-.9h34.8q1.2 0 2.1.9.9.9.9 2.1v30q0 1.2-.9 2.1-.9.9-2.1.9Zm0-3h34.8V9H6.6v30Zm3.4-5h10v-4H10Zm19.1-4 9.9-9.9-2.85-2.85-7.05 7.1-2.85-2.85-2.8 2.85ZM10 26h10v-4H10Zm0-8h10v-4H10ZM6.6 39V9v30Z" />
+                                </svg>
+                                <p>3</p>
+                              </div>
+                            </div>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div class="section2">
+                    <div class="com-border com-sarch-type01 li-mb0">
+                      <div class="flex">
+                        <div class="lef">
+                          <ul>
+                            <li>
+                              <dl>
+                                <dt>유형Type</dt>
+                                <dd>
+                                  <select name="" id="" class="c-form-select">
+                                    <option value="전체">전체</option>
+                                  </select>
+                                </dd>
+                              </dl>
+                            </li>
+                            <li>
+                              <dl>
+                                <dt>진행상태</dt>
+                                <dd>
+                                  <select name="" id="" class="c-form-select">
+                                    <option value="전체">전체</option>
+                                  </select>
+                                </dd>
+                              </dl>
+                            </li>
+                            <li>
+                              <dl>
+                                <dt>Project명</dt>
+                                <dd>
+                                  <input type="text" class="c-form-input">
+                                </dd>
+                              </dl>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="ref">
+                          <button type="button" class="bg-main size-mid">검색</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="section2">
+                    <div class="com-had-type01">
+                      <a href="#" class="download">
+                        <img src="./images/theme/blue/ico-excel.png" alt="">
+                        <span>엑셀다운로드</span>
+                      </a>
+                      <ul class="c-btn-set">
+                        <li>
+                          <a href="#">
+                            <img src="./images/theme/blue/c-add.png" alt="">
+                            <span>신규</span>
+                          </a>
+                        </li>
+                        <li class="delete">
+                          <a href="#">
+                            <img src="./images/theme/blue/c-delete.png" alt="">
+                            <span>삭제
+                            </span></a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="com-tbl-wrap mt0 mh500">
+                      <table class="com-table">
+                        <thead>
+                          <tr>
+                            <th>
+                              <div class="form-chkbox">
+                                <label class="form-chkbox__control control--checkbox">
+                                  <input type="checkbox">
+                                  <div class="form-chkbox__indicator"></div>
+                                </label>
+                              </div>
+                            </th>
+                            <th>Project명</th>
+                            <th>유형Type</th>
+                            <th>Activity갯수</th>
+                            <th>진행상태</th>
+                            <th>국가</th>
+                            <th>법인</th>
+                            <th>목표일</th>
+                            <th>Champion</th>
+                            <th>최초등록일</th>
+                            <th>결재상태</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>
+                              <div class="form-chkbox">
+                                <label class="form-chkbox__control control--checkbox">
+                                  <input type="checkbox">
+                                  <div class="form-chkbox__indicator"></div>
+                                </label>
+                              </div>
+                            </td>
+                            <td class="left" class="left">Jv 미국스텔란티스 공장 증설</td>
+                            <td>J/V</td>
+                            <td>1,057</td>
+                            <td>Project등록</td>
+                            <td>미국</td>
+                            <td>미국법인</td>
+                            <td>2025.05.01</td>
+                            <td>홍길동</td>
+                            <td>2022.07.01</td>
+                            <td>미상신</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="form-chkbox">
+                                <label class="form-chkbox__control control--checkbox">
+                                  <input type="checkbox">
+                                  <div class="form-chkbox__indicator"></div>
+                                </label>
+                              </div>
+                            </td>
+                            <td class="left">증설 말레이시아 원형 2공장 증설</td>
+                            <td>증설</td>
+                            <td>857</td>
+                            <td>Member등록</td>
+                            <td>말레이시아</td>
+                            <td>말레이법인</td>
+                            <td>2025.05.01</td>
+                            <td>김길동</td>
+                            <td>2022.07.01</td>
+                            <td>미상신</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="form-chkbox">
+                                <label class="form-chkbox__control control--checkbox">
+                                  <input type="checkbox">
+                                  <div class="form-chkbox__indicator"></div>
+                                </label>
+                              </div>
+                            </td>
+                            <td class="left">Jv 미국스텔란티스 공장 증설</td>
+                            <td>J/V</td>
+                            <td>1,057</td>
+                            <td>결재중</td>
+                            <td>미국</td>
+                            <td>미국법인</td>
+                            <td>2025.05.01</td>
+                            <td>홍길동</td>
+                            <td>2022.07.01</td>
+                            <td>결재중</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="form-chkbox">
+                                <label class="form-chkbox__control control--checkbox">
+                                  <input type="checkbox">
+                                  <div class="form-chkbox__indicator"></div>
+                                </label>
+                              </div>
+                            </td>
+                            <td class="left">증설 말레이시아 원형 2공장 증설</td>
+                            <td>증설</td>
+                            <td>857</td>
+                            <td>Member등록</td>
+                            <td>말레이시아</td>
+                            <td>말레이법인</td>
+                            <td>2025.05.01</td>
+                            <td>김길동</td>
+                            <td>2022.07.01</td>
+                            <td>미상신</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="form-chkbox">
+                                <label class="form-chkbox__control control--checkbox">
+                                  <input type="checkbox">
+                                  <div class="form-chkbox__indicator"></div>
+                                </label>
+                              </div>
+                            </td>
+                            <td class="left">Jv 미국스텔란티스 공장 증설</td>
+                            <td>J/V</td>
+                            <td>1,057</td>
+                            <td>등록완료</td>
+                            <td>미국</td>
+                            <td>미국법인</td>
+                            <td>2025.05.01</td>
+                            <td>홍길동</td>
+                            <td>2022.07.01</td>
+                            <td>결재완료</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="form-chkbox">
+                                <label class="form-chkbox__control control--checkbox">
+                                  <input type="checkbox">
+                                  <div class="form-chkbox__indicator"></div>
+                                </label>
+                              </div>
+                            </td>
+                            <td class="left">증설 말레이시아 원형 2공장 증설</td>
+                            <td>증설</td>
+                            <td>857</td>
+                            <td>Member등록</td>
+                            <td>말레이시아</td>
+                            <td>말레이법인</td>
+                            <td>2025.05.01</td>
+                            <td>김길동</td>
+                            <td>2022.07.01</td>
+                            <td>미상신</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="form-chkbox">
+                                <label class="form-chkbox__control control--checkbox">
+                                  <input type="checkbox">
+                                  <div class="form-chkbox__indicator"></div>
+                                </label>
+                              </div>
+                            </td>
+                            <td class="left">Jv 미국스텔란티스 공장 증설</td>
+                            <td>J/V</td>
+                            <td>1,057</td>
+                            <td>Project등록</td>
+                            <td>미국</td>
+                            <td>미국법인</td>
+                            <td>2025.05.01</td>
+                            <td>홍길동</td>
+                            <td>2022.07.01</td>
+                            <td>미상신</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="form-chkbox">
+                                <label class="form-chkbox__control control--checkbox">
+                                  <input type="checkbox">
+                                  <div class="form-chkbox__indicator"></div>
+                                </label>
+                              </div>
+                            </td>
+                            <td class="left">증설 말레이시아 원형 2공장 증설</td>
+                            <td>증설</td>
+                            <td>857</td>
+                            <td>Member등록</td>
+                            <td>말레이시아</td>
+                            <td>말레이법인</td>
+                            <td>2025.05.01</td>
+                            <td>김길동</td>
+                            <td>2022.07.01</td>
+                            <td>미상신</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="form-chkbox">
+                                <label class="form-chkbox__control control--checkbox">
+                                  <input type="checkbox">
+                                  <div class="form-chkbox__indicator"></div>
+                                </label>
+                              </div>
+                            </td>
+                            <td class="left">Jv 미국스텔란티스 공장 증설</td>
+                            <td>J/V</td>
+                            <td>1,057</td>
+                            <td>Project등록</td>
+                            <td>미국</td>
+                            <td>미국법인</td>
+                            <td>2025.05.01</td>
+                            <td>홍길동</td>
+                            <td>2022.07.01</td>
+                            <td>미상신</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="form-chkbox">
+                                <label class="form-chkbox__control control--checkbox">
+                                  <input type="checkbox">
+                                  <div class="form-chkbox__indicator"></div>
+                                </label>
+                              </div>
+                            </td>
+                            <td class="left">증설 말레이시아 원형 2공장 증설</td>
+                            <td>증설</td>
+                            <td>857</td>
+                            <td>Member등록</td>
+                            <td>말레이시아</td>
+                            <td>말레이법인</td>
+                            <td>2025.05.01</td>
+                            <td>김길동</td>
+                            <td>2022.07.01</td>
+                            <td>미상신</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="form-chkbox">
+                                <label class="form-chkbox__control control--checkbox">
+                                  <input type="checkbox">
+                                  <div class="form-chkbox__indicator"></div>
+                                </label>
+                              </div>
+                            </td>
+                            <td class="left">Jv 미국스텔란티스 공장 증설</td>
+                            <td>J/V</td>
+                            <td>1,057</td>
+                            <td>Project등록</td>
+                            <td>미국</td>
+                            <td>미국법인</td>
+                            <td>2025.05.01</td>
+                            <td>홍길동</td>
+                            <td>2022.07.01</td>
+                            <td>미상신</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="form-chkbox">
+                                <label class="form-chkbox__control control--checkbox">
+                                  <input type="checkbox">
+                                  <div class="form-chkbox__indicator"></div>
+                                </label>
+                              </div>
+                            </td>
+                            <td class="left">증설 말레이시아 원형 2공장 증설</td>
+                            <td>증설</td>
+                            <td>857</td>
+                            <td>Member등록</td>
+                            <td>말레이시아</td>
+                            <td>말레이법인</td>
+                            <td>2025.05.01</td>
+                            <td>김길동</td>
+                            <td>2022.07.01</td>
+                            <td>미상신</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="form-chkbox">
+                                <label class="form-chkbox__control control--checkbox">
+                                  <input type="checkbox">
+                                  <div class="form-chkbox__indicator"></div>
+                                </label>
+                              </div>
+                            </td>
+                            <td class="left">Jv 미국스텔란티스 공장 증설</td>
+                            <td>J/V</td>
+                            <td>1,057</td>
+                            <td>Project등록</td>
+                            <td>미국</td>
+                            <td>미국법인</td>
+                            <td>2025.05.01</td>
+                            <td>홍길동</td>
+                            <td>2022.07.01</td>
+                            <td>미상신</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="form-chkbox">
+                                <label class="form-chkbox__control control--checkbox">
+                                  <input type="checkbox">
+                                  <div class="form-chkbox__indicator"></div>
+                                </label>
+                              </div>
+                            </td>
+                            <td class="left">증설 말레이시아 원형 2공장 증설</td>
+                            <td>증설</td>
+                            <td>857</td>
+                            <td>Member등록</td>
+                            <td>말레이시아</td>
+                            <td>말레이법인</td>
+                            <td>2025.05.01</td>
+                            <td>김길동</td>
+                            <td>2022.07.01</td>
+                            <td>미상신</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="form-chkbox">
+                                <label class="form-chkbox__control control--checkbox">
+                                  <input type="checkbox">
+                                  <div class="form-chkbox__indicator"></div>
+                                </label>
+                              </div>
+                            </td>
+                            <td class="left">Jv 미국스텔란티스 공장 증설</td>
+                            <td>J/V</td>
+                            <td>1,057</td>
+                            <td>Project등록</td>
+                            <td>미국</td>
+                            <td>미국법인</td>
+                            <td>2025.05.01</td>
+                            <td>홍길동</td>
+                            <td>2022.07.01</td>
+                            <td>미상신</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="form-chkbox">
+                                <label class="form-chkbox__control control--checkbox">
+                                  <input type="checkbox">
+                                  <div class="form-chkbox__indicator"></div>
+                                </label>
+                              </div>
+                            </td>
+                            <td class="left">증설 말레이시아 원형 2공장 증설</td>
+                            <td>증설</td>
+                            <td>857</td>
+                            <td>Member등록</td>
+                            <td>말레이시아</td>
+                            <td>말레이법인</td>
+                            <td>2025.05.01</td>
+                            <td>김길동</td>
+                            <td>2022.07.01</td>
+                            <td>미상신</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="form-chkbox">
+                                <label class="form-chkbox__control control--checkbox">
+                                  <input type="checkbox">
+                                  <div class="form-chkbox__indicator"></div>
+                                </label>
+                              </div>
+                            </td>
+                            <td class="left">Jv 미국스텔란티스 공장 증설</td>
+                            <td>J/V</td>
+                            <td>1,057</td>
+                            <td>Project등록</td>
+                            <td>미국</td>
+                            <td>미국법인</td>
+                            <td>2025.05.01</td>
+                            <td>홍길동</td>
+                            <td>2022.07.01</td>
+                            <td>미상신</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="form-chkbox">
+                                <label class="form-chkbox__control control--checkbox">
+                                  <input type="checkbox">
+                                  <div class="form-chkbox__indicator"></div>
+                                </label>
+                              </div>
+                            </td>
+                            <td class="left">증설 말레이시아 원형 2공장 증설</td>
+                            <td>증설</td>
+                            <td>857</td>
+                            <td>Member등록</td>
+                            <td>말레이시아</td>
+                            <td>말레이법인</td>
+                            <td>2025.05.01</td>
+                            <td>김길동</td>
+                            <td>2022.07.01</td>
+                            <td>미상신</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="form-chkbox">
+                                <label class="form-chkbox__control control--checkbox">
+                                  <input type="checkbox">
+                                  <div class="form-chkbox__indicator"></div>
+                                </label>
+                              </div>
+                            </td>
+                            <td class="left">Jv 미국스텔란티스 공장 증설</td>
+                            <td>J/V</td>
+                            <td>1,057</td>
+                            <td>Project등록</td>
+                            <td>미국</td>
+                            <td>미국법인</td>
+                            <td>2025.05.01</td>
+                            <td>홍길동</td>
+                            <td>2022.07.01</td>
+                            <td>미상신</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="form-chkbox">
+                                <label class="form-chkbox__control control--checkbox">
+                                  <input type="checkbox">
+                                  <div class="form-chkbox__indicator"></div>
+                                </label>
+                              </div>
+                            </td>
+                            <td class="left">증설 말레이시아 원형 2공장 증설</td>
+                            <td>증설</td>
+                            <td>857</td>
+                            <td>Member등록</td>
+                            <td>말레이시아</td>
+                            <td>말레이법인</td>
+                            <td>2025.05.01</td>
+                            <td>김길동</td>
+                            <td>2022.07.01</td>
+                            <td>미상신</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="mask" style="display: none;"></div>
+
+      <!-- 콘텐츠 끝 -->
+      <!-- 다이어로그 -->
+      <div class="loadingDiv" style="display: none; height: 900px;">
+        <div class="loadingImgDiv" style="top: 426px;">
+          <img src="images/theme/blue/loading.gif">
+          <div class="loadingPercentDiv" style="display: none;"></div>
+        </div>
+        <div class="loadingBGDiv"></div>
+      </div>
+
+
+
+
+
+
+
+      <form id="command" name="logoutForm" action="logout.do" method="POST"
+        data-egovframework.double.submit.preventer.parameter.name="E0961786-7722-45DB-9480-FE0D583DFAD0">
+        <div>
+          <input type="hidden" name="_csrf" value="b4084fc7-d7f9-415d-9a28-e50c41b7192a">
+        </div>
+      </form>
+
+
+
+      <iframe name="hiddenFrame" id="hiddenFrame" frameborder="0"></iframe>
+      <form id="layoutPopForm" name="layoutPopForm" action="main.do" method="post"
+        data-egovframework.double.submit.preventer.parameter.name="E0961786-7722-45DB-9480-FE0D583DFAD0"><input
+          type="hidden" name="findYear">
+        <div>
+          <input type="hidden" name="_csrf" value="b4084fc7-d7f9-415d-9a28-e50c41b7192a">
+        </div>
+      </form>
+
+      <form id="moveMenu" name="moveMenu"></form>
+
+
+      <div id="popBoardApp">
+        <div transition="modal" class="modal-mask" style="display: none;">
+          <div class="modal-wrapper">
+            <div class="modal-container">
+              <div class="modal-header">
+                <!---->
+                <div class="header"></div>
+              </div>
+              <div class="modal-body">
+                <div class="body">
+                  <div class="popup wx800" style="min-height: 400px;">
+                    <!---->
+                    <form id="popBoardform" name="popBoardform">
+                      <div class="container">
+                        <div class="sch-bx mt10 mb10">
+                          <ul>
+                            <li><label for="popSearchKeyword" class="ptitle" style="font-weight: normal;">제목</label>
+                              <input type="text" id="popSearchKeyword" name="popSearchKeyword"
+                                onkeyup="if(event.keyCode == 13) masterVm.getList();return false;"
+                                class="t-box02 wx200">
+                            </li>
+                            <li><label for="popUserNm">등록자</label> <input type="text" id="popUserNm" name="popUserNm"
+                                onkeyup="if(event.keyCode == 13) masterVm.getList();return false;"
+                                class="t-box02 wx100"></li>
+                          </ul> <a href="#" onclick="masterVm.getList();return false;" class="btn-sch">검색</a>
+                        </div>
+                        <pop-list-component module-name="popList" list=""
+                          list-column="[object Object],[object Object],[object Object],[object Object]">
+                        </pop-list-component>
+                        <div style="text-align: center; margin-top: 10px;">
+                          <ul class="pagination">
+                            <div></div>
+                          </ul>
+                        </div>
+                        <div transition="modal" class="modal-mask" style="display: none;">
+                          <div class="modal-wrapper">
+                            <div class="modal-container">
+                              <div class="modal-header">
+                                <!---->
+                                <div class="header"></div>
+                              </div>
+                              <div class="modal-body">
+                                <div class="body"></div>
+                              </div>
+                              <div class="modal-footer"></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script type="text/javascript">
+
+      new Vue({
+        el: ".containerCellR"
+      });
+
+
+
+      //--------------------VUE 인스턴스--------------------//
+      var masterVm = new Vue({
+        el: '#popBoardApp',
+        mixins: [commonMixin],
+        data:
+        {
+          popModuleName: 'popList',
+          boardId: '',
+          popDataList: [],
+          popDataListColumn: [
+            { label: '제목', column: 'title', width: '45', 'align': 'left', 'formatter': 'fmtListTitle', data: ['seq'] },
+            { label: '등록자', column: 'userNm', width: '10', 'align': 'center' },
+            { label: '조회수', column: 'hit', width: '7', 'align': 'center' },
+            { label: '등록일', column: 'createDt', width: '10', 'align': 'center' }
+          ],
+          paging: '', nowPage: 1, totalCount: 1000, pageCount: 10, pageRecordCount: 10, totalPage: 1, params: '',
+        },
+        updated: function () {
+          var self = this;
+        },
+        mounted: function () {
+          var _s = this;
+        },
+        methods: {
+          getList: function (boardId) {
+            var self = this;
+
+            if (isNotEmpty(boardId)) {
+              self.boardId = boardId;
+            }
+
+            self.popDataList = [];
+            axios.get('comPop/system/system/board/boardList_json.do', {
+              params:
+              {
+                'page': this.nowPage,
+                'rows': this.pageRecordCount,
+                'searchKeyword': $('#popSearchKeyword').val(),
+                'userNm': $('#popUserNm').val(),
+                'colName': $('#colName').val(),
+                'boardId': self.boardId
+              }
+            }).then(function (response) {
+              self.popDataList = self.nonEscapeHTMLArrayByObject(response.data.list);
+              self.totalCount = response.data.totalCount;
+
+              masterVm.page(self.totalCount, '', 'masterVm');
+            });
+          },
+          popShowDetail: function (index) {
+            var self = this;
+            var f = document.popBoardform;
+            var config = {
+              url: 'comPop/system/system/board/boardDetail.do',
+              params: '&seq=' + this.popDataList[index].seq + '&boardId=' + self.boardId
+            }
+            self.$refs.innerCommonModal.openDialog(config);
+          }
+        }
+      });
+      //--------------------VUE 인스턴스--------------------//
+
+      var gnbApp = new Vue({
+        el: ".containerCellL",
+        mixins: [commonMixin],
+        data: function () {
+          return {
+            menuList: [],
+            subMenuList: [],
+            dialog: {
+              home: {
+                visible: false
+              }
+            },
+            lnbType: 'flat'
+          }
+        },
+        created: function () {
+
+          this.common().getMenuData();
+          this.loadProfileImg();
+
+        },
+        mounted: function () {
+          $(this.$refs.iconmenu).removeClass("hide");
+          showMenu(this);
+        },
+        methods: {
+          common: function () {
+            var _self = this;
+            return {
+              getMenuData: function () {
+                axios({
+                  method: 'post',
+                  url: 'common/menuList_ajax.do',
+                  headers: {
+                    'X-CSRF-TOKEN': 'b4084fc7-d7f9-415d-9a28-e50c41b7192a'
+                  }
+                }).then(function (response) {
+
+                  _self.menuList = response.data.menuList;
+                  _self.subMenuList = response.data.menuList;
+
+                  _self.loadDefaultMenu();
+                });
+              }
+            }
+          },
+          openHome: function () {
+            var self = this;
+            self.dialog.home.visible = !self.dialog.home.visible;
+          },
+          closeHome: function () {
+            var self = this;
+            self.dialog.home.visible = false;
+          },
+          tooltip: function (pgmId) {
+            return '메뉴설명이 나올 공간입니다!';
+          },
+          clickMenu: function () {
+            var self = this;
+            self.closeHome();
+            $(event.target).click();
+          },
+          loadDefaultMenu: function () {
+            var self = this;
+            let defaultFirstDepthPgmId;
+
+            $.each(self.menuList, function (i, el) {
+              if (isNotEmpty(el.url)) {
+                if (isNotEmpty(el.fullPgmId)) {
+                  let fullPgmIdArr = el.fullPgmId.split('/');
+                  if (fullPgmIdArr.length > 2) {
+                    defaultFirstDepthPgmId = fullPgmIdArr[2];
+                    return false;
+                  }
+                }
+              }
+            });
+
+            let nowFirstDepthPgmId;
+            let nowPgmId = getPgmId();
+            let nowPgmFullId;
+            let nowFullPgmIdArr;
+            if (isNotEmpty(nowPgmId)) {
+              nowPgmFullId = self.menuList.map(function (e) {
+                return e.fullPgmId.indexOf(nowPgmId) != -1 ? e.fullPgmId : null;
+              }).filter(function (e) {
+                return isNotEmpty(e);
+              });
+
+              if (isNotEmpty(nowPgmFullId) && isNotEmpty(nowPgmFullId[0])) {
+
+                let nowFullPgmIdArr = nowPgmFullId[0].split('/');
+                if (nowFullPgmIdArr.length > 2) {
+                  nowFirstDepthPgmId = nowFullPgmIdArr[2];
+                }
+
+                if (defaultFirstDepthPgmId != getPgmId()) {
+                  defaultFirstDepthPgmId = nowFirstDepthPgmId;
+                }
+
+              }
+
+            }
+
+            self.iconMenu().clickFirstDepthIconMenu(defaultFirstDepthPgmId, 'init');
+          },
+          popNotice: function () {
+            var self = this;
+            var config = {
+              url: 'comPop/bsc/system/system/notice/popNoticeList.do',
+              params: ''
+            }
+            self.$refs.commonModal.openDialog(config);
+
+          },
+          popQnA: function () {
+            var self = this;
+            var config = {
+              url: 'comPop/system/system/board/boardList.do?boardId=QNA',
+              params: '',
+            }
+            $('#popSearchKeyword').val("");
+            $('#popUserNm').val("");
+            masterVm.nowPage = '1';
+            masterVm.$nextTick(function () {
+              masterVm.$refs.commonModal.openWithCloseIcon();
+              masterVm.getList('QNA');
+            });
+          },
+          popMNA: function () {
+            var self = this;
+            var config = {
+              url: 'comPop/system/system/board/boardList.do?boardId=MNA',
+              params: '',
+            }
+            $('#popSearchKeyword').val("");
+            $('#popUserNm').val("");
+            masterVm.nowPage = '1';
+            masterVm.$nextTick(function () {
+              masterVm.$refs.commonModal.openWithCloseIcon();
+              masterVm.getList('MNA');
+            });
+          },
+          popPDS: function () {
+            var self = this;
+            var config = {
+              url: 'comPop/system/system/board/boardList.do?boardId=PDS',
+              params: '',
+            }
+            $('#popSearchKeyword').val("");
+            $('#popUserNm').val("");
+            masterVm.nowPage = '1';
+            masterVm.$nextTick(function () {
+              masterVm.$refs.commonModal.openWithCloseIcon();
+              masterVm.getList('PDS');
+            });
+          },
+          iconMenu: function () {
+            var self = this;
+            return {
+              clickFirstDepthIconMenu: function (pgmId, _gbn) {
+
+                let isLeafCnt = 0;
+                let lnbTypeStandCnt = 10;
+                self.subMenuList = [];
+                $.each(self.menuList, function (i, el) {
+                  if (isNotEmpty(el.fullPgmId)) {
+                    if (el.levelId == 4 && el.fullPgmId.indexOf(pgmId) != -1 && isNotEmpty(el.url)) {
+                      if (el.isLeaf == 'Y') {
+                        isLeafCnt++;
+                      }
+                      self.subMenuList.push(el);
+                    }
+                  }
+                });
+
+                self.lnbType = 'flat';
+                if (isLeafCnt > lnbTypeStandCnt) {
+                  self.lnbType = 'slide';
+                }
+
+                self.closeHome();
+
+                self.$nextTick(function () {
+                  if (_gbn === 'menu') {
+                    let url = $(".fniconbg").find("a[href*='main.do#PGM']").first().attr("href");
+                    loadPageByPgmId(url.split("#")[1]);
+                  }
+                })
+
+              },
+              clickIconMenu: function () {
+                var href3 = $(event.target).siblings('ul.icon-depth2').find('ul.icon-depth3').find('a[href*="#PGM"]:eq(0)').attr('href');
+                var href2 = $(event.target).siblings('ul.icon-depth2').find('a[href*="#PGM"]:eq(0)').attr('href');
+                self.closeHome();
+                $(event.target).attr('href', nvl(href3, href2)).click();
+              }
+            }
+          }
+        }
+      });
+
+
+      Vue.component('pop-list-component', {
+        mixins: [listComponentMixin],
+        props: ['list', 'listColumn', 'popModuleName'],
+        updated: function () {
+          var self = this;
+        },
+        template: `
+<div>
+<table ref="table" class="tbl-type02" style="table-layout:fixed">
+<thead>
+  <th v-for="header in listColumn"  class="txt-c pl0" :width="header.width+'%'">
+    <span v-if="header.formatter=='fmtListCheckbox'">
+      <input type="checkbox" v-bind:id="'list-checkbox-all'" v-on:click="listCheckAll" ref="checkboxAll" />
+      <label v-bind:for="'list-checkbox-all'" class="ml0"><span class="mr0"></span><span class="sound_only"></span></label>
+    </span>
+    <span v-else>
+      {{header.label }}
+    </span>
+  </th>
+    </thead>
+
+<tbody v-bind:id="popModuleName+'Tbody'">
+  <tr v-for="(entry, index) in list" v-on:click="clickRow" v-bind:id="popModuleName+'TbodyTr'+index">
+    <td v-for="item in listColumn" v-bind:style="'text-align:'+item.align">
+
+      <div v-if="item.formatter=='fmtListCheckbox'" style="text-align: center!important;">
+        <input type="checkbox" v-bind:id="popModuleName+'-checkbox'+index" ref="checkboxes" />
+        <label v-bind:for="popModuleName+'-checkbox'+index" class="ml0"><span class="mr0"></span><span class="sound_only"></span></label>
+      </div>
+      <div v-else>
+        <span v-for="column in item.data">
+          <input type="hidden" v-bind:class="'hidden ' + column" v-bind:value="entry[column]">
+        </span>
+        <div v-if="item.inputType=='select'">
+          <select style="width: 200px" v-bind:name="item.column" v-bind:id="item.column" v-bind:value="entry[item.column]">
+            <option v-for="code in (item.jsonData.split(';'))" v-bind:value="code.split(':')[0]">{{code.split(':')[1]}}</option>
+          </select>
+        </div>
+        <div v-else-if="item.inputType=='text'">
+          <input type="text" v-bind:name="item.column" v-bind:id="item.column" v-bind:value="entry[item.column]"/>
+        </div>
+        <div v-else>
+          <div v-if="item.formatter" style="text-overflow:ellipsis; white-space:nowrap; overflow:hidden;">
+            <a href="#" @click="masterVm.popShowDetail(index)">{{entry[item.column]}}</a>
+          </div>
+                <div v-else v-bind:class="'label ' + item.column" style="text-overflow:ellipsis; white-space:nowrap; overflow:hidden;">{{entry[item.column]}}</div>
+        </div>
+      </div>
+        </td>
+      </tr>
+      <tr v-if="list.length == 0" style="height:40px;">
+        <td colspan="4" style="text-align: center;">
+          조회된 데이터가 없습니다.
+        </td>
+      </tr>
+    </tbody>
+</table>
+</div>
+`,
+      });
+
+    </script>
+
+
+  </div>
+
+</body>
+
+
+</html>

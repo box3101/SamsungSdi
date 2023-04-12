@@ -1,0 +1,1549 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta name="_csrf_parameter" content="_csrf">
+  <meta name="_csrf_header" content="X-CSRF-TOKEN">
+  <meta name="_csrf" content="b4084fc7-d7f9-415d-9a28-e50c41b7192a">
+
+  <title>GSOP</title>
+
+  <link rel="shortcut icon" href="data:image/x-icon" type="image/x-icon">
+  <link rel="stylesheet" type="text/css" href="css/smoothness/jquery-ui.min.css">
+  <link rel="stylesheet" type="text/css" href="css/ui.jqgrid.css">
+  <link rel="stylesheet" type="text/css" href="css/jquery.fancybox-1.3.4.css">
+  <link rel="stylesheet" type="text/css" href="css/theme/blue/common_ko_darknavy.css?20220906162652">
+  <link rel="stylesheet" type="text/css" href="css/theme/blue/conference.css">
+  <!-- <link rel="stylesheet" type="text/css" href="css/common.vue.css?20220906162652">
+  <link rel="stylesheet" type="text/css" href="css/custom_design.css?20220906162652">
+  <link rel="stylesheet" type="text/css" href="css/jquery.minicolors.css"> -->
+
+
+  <link rel="stylesheet" type="text/css" href="css/select2.min.css">
+
+  <link rel="stylesheet" type="text/css" href="css/selectize.default.css">
+  <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+
+
+  <!-- pub add -->
+  <link rel="stylesheet" type="text/css" href="css/tooltip.css">
+  <link rel="stylesheet" type="text/css" href="css/new_design.css?20220906162652">
+  <link rel="stylesheet" type="text/css" href="css/gantt_style.css">
+
+
+  <script type="text/javascript" src="js/new_design.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sortablejs@1.6.1/Sortable.min.js"></script>
+  <!-- pub add -->
+
+  <script type="text/javascript" src="js/jquery-ui.js"></script>
+  <!-- <script type="text/javascript" src="js/jquery.i18n.properties.min.js"></script>
+  <script type="text/javascript" src="js/i18n/grid.locale-ko.js"></script>
+  <script type="text/javascript" src="js/jquery.jqGrid.min.js"></script>
+  <script type="text/javascript" src="js/jquery.cookie.js"></script> -->
+  <script type="text/javascript" src="js/common.js?20220906162652"></script>
+  <!-- <script type="text/javascript" src="js/jquery.fancybox-1.3.4.pack.js"></script>
+  <script type="text/javascript" src="js/Chart.bundle.min.js"></script> -->
+  <!-- 
+  <script type="text/javascript" src="js/common.vue.js?20220906162652"></script>
+
+
+  <script type="text/javascript" src="js/cleave.min.js?20220906162652"></script> -->
+
+  <!-- 
+  <script type="text/javascript" src="js/rsa/jsbn.js"></script>
+  <script type="text/javascript" src="js/rsa/rsa.js"></script>
+  <script type="text/javascript" src="js/rsa/prng4.js"></script>
+  <script type="text/javascript" src="js/rsa/rng.js"></script> -->
+
+
+  <!-- custom scrollbar stylesheet -->
+  <link rel="stylesheet" href="css/jquery.mCustomScrollbar.css">
+  <!-- custom scrollbar plugin -->
+  <script src="js/jquery.mCustomScrollbar.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
+
+</head>
+
+<body class="Basic">
+  <div id="wrap">
+    <!-- 콘텐츠 시작 -->
+    <div id="container" class="gnb_open">
+      <div class="containerCellL">
+        <div id="gnb" style="width: 220px;">
+          <ul style="display: none;">
+            <li>
+
+
+              <a href="#">
+                <img src="./images/theme/blue/m-logo.png" alt="">
+              </a>
+
+            </li>
+            <li><a href="#" data-target-menu="allmenu" class="home"></a></li>
+            <li><a href="#" data-target-menu="allmenu" onclick="showMenu(this);return false;" class="gnb01">전체메뉴펼침</a>
+            </li>
+            <li>
+            </li>
+          </ul>
+          <div id="menu01" class="menu01 depth2" style="display: block;">
+            <div id="menu" class="menu">
+              <div class="logo"><a href="main.do#PGM1770"><img src="images/common/main_logo.png"></a>
+              </div>
+              <ul class="menu2
+                                        
+                                            
+                                                menuLvl2
+                                            
+                                            
+                                            
+                                        
+                                        ">
+                <li id="menu_PGM1722"><a href="main.do" onclick="return false;"><span class="leafN">대시보드</span></a>
+                  <ul
+                    class="menu3                                                                                                                                                                                                    menuLvl3">
+                    <li id="menu_PGM1770"><a href="main.do#PGM1770"><span class="leafY">대시보드</span></a></li>
+                    <li id="menu_PGM1824"><a href="main.do#PGM1824"><span class="leafY">조직도</span></a></li>
+                  </ul>
+                </li>
+                <li id="menu_PGM1739"><a href="main.do" onclick="return false;" class="active"><span
+                      class="leafN">표준체계</span></a>
+                  <ul
+                    class="menu3                                                                                                                                                                                                    menuLvl3 active">
+                    <li id="menu_PGM1746"><a href="main.do" onclick="return false;"><span
+                          class="leafN">분류체계현황</span></a>
+                      <ul
+                        class="menu4                                                                                                                                                                                                                                                     menuLvl4">
+                        <li id="menu_PGM1841" class="active"><a href="main.do#PGM1841"><span class="leafY">프로세스Type
+                            </span></a></li>
+                        <li id="menu_PGM1831" class="currentMenu"><a href="main.do#PGM1831"><span class="leafY">업무Type
+                            </span></a></li>
+                        <li id="menu_PGM1831" class="currentMenu"><a href="main.do#PGM1831"><span class="leafY">Level1단계
+                            </span></a></li>
+                        <li id="menu_PGM1831" class="currentMenu"><a href="main.do#PGM1831"><span class="leafY">Level2단계
+                            </span></a></li>
+                        <li id="menu_PGM1831" class="currentMenu"><a href="main.do#PGM1831"><span class="leafY">Level3단계
+                            </span></a></li>
+                        <li id="menu_PGM1831" class="currentMenu "><a href="main.do#PGM1831"><span
+                              class="leafY">분류체계요청확인
+                            </span></a></li>
+                      </ul>
+                    </li>
+                    <li id="menu_PGM1746"><a href="main.do" onclick="return false;"><span class="leafN">기준일정 및
+                          아이템</span></a>
+                      <ul
+                        class="menu4                                                                                                                                                                                                                                                     menuLvl4">
+                        <li id="menu_PGM1841" class="active" lass="currentMenu active"><a href="main.do#PGM1841"><span
+                              class="leafY">Phase단계
+                            </span></a></li>
+                        <li id="menu_PGM1831"><a href="main.do#PGM1831"><span class="leafY">건설Item
+                            </span></a></li>
+                        <li id="menu_PGM1831"><a href="main.do#PGM1831"><span class="leafY">기술Item
+                            </span></a></li>
+                        <li id="menu_PGM1831"><a href="main.do#PGM1831"><span class="leafY">기준일정
+                            </span></a></li>
+                        <li id="menu_PGM1831"><a href="main.do#PGM1831"><span class="leafY">단계및유형정보
+                            </span></a></li>
+                      </ul>
+                    </li>
+                    <li id="menu_PGM1747"><a href="main.do" onclick="return false;" class="active"><span
+                          class="leafN ">표준
+                          Activity</span></a>
+                      <ul
+                        class="menu4                                                                                                                                                                                                                                                     menuLvl4 active">
+                        <li id="menu_PGM1752"><a href="main.do#PGM1752"><span class="leafY">Value-Up 실행자</span></a></li>
+                        <li id="menu_PGM1753" class=""><a href="main.do#PGM1753" class=""><span class="leafY">Value-Up
+                              리더</span></a></li>
+                        <li id="menu_PGM1754" class=""><a href="main.do#PGM1754" class=""><span class="leafY">Value-Up
+                              성장위원</span></a></li>
+                        <li id="menu_PGM1751" class=""><a href="main.do#PGM1751" class=""><span class="leafY">Value-Up
+                              조직구성원</span></a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li id="menu_PGM1757"><a href="main.do" onclick="return false;" class=""><span
+                      class="leafN">업무</span></a>
+                  <ul
+                    class="menu3                                                                                                                                                                                                    menuLvl3">
+                    <li id="menu_PGM1758" class=""><a href="main.do#PGM1758" class=""><span
+                          class="leafY">수습평가설정</span></a></li>
+                    <li id="menu_PGM1759"><a href="main.do" onclick="return false;" class=""><span
+                          class="leafN">수습평가자선정</span></a>
+                      <ul
+                        class="menu4                                                                                                                                                                                                                                                     menuLvl4">
+                        <li id="menu_PGM1811" class=""><a href="main.do#PGM1811" class=""><span
+                              class="leafY">평가자선정</span></a></li>
+                        <li id="menu_PGM1812" class=""><a href="main.do#PGM1812" class=""><span
+                              class="leafY">평가자승인</span></a></li>
+                      </ul>
+                    </li>
+                    <li id="menu_PGM1760"><a href="main.do" onclick="return false;" class=""><span
+                          class="leafN">수습평가실시</span></a>
+                      <ul
+                        class="menu4                                                                                                                                                                                                                                                     menuLvl4">
+                        <li id="menu_PGM1813" class=""><a href="main.do#PGM1813" class=""><span
+                              class="leafY">평가실시</span></a></li>
+                        <li id="menu_PGM1814" class=""><a href="main.do#PGM1814" class=""><span
+                              class="leafY">평가결과</span></a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li id="menu_PGM1775"><a href="main.do" onclick="return false;" class=""><span
+                      class="leafN">커뮤니티</span></a>
+                  <ul
+                    class="menu3                                                                                                                                                                                                    menuLvl3">
+                    <li id="menu_PGM1776" class=""><a href="main.do#PGM1776" class=""><span
+                          class="leafY">진단설정</span></a></li>
+                    <li id="menu_PGM1777"><a href="main.do" onclick="return false;" class=""><span
+                          class="leafN">진단실시</span></a>
+                      <ul
+                        class="menu4                                                                                                                                                                                                                                                     menuLvl4">
+                        <li id="menu_PGM1782" class=""><a href="main.do#PGM1782" class=""><span
+                              class="leafY">우리의믿음진단</span></a></li>
+                        <li id="menu_PGM1837" class=""><a href="main.do#PGM1837" class=""><span
+                              class="leafY">우리의믿음진단자확인</span></a></li>
+                      </ul>
+                    </li>
+                    <li id="menu_PGM1778"><a href="main.do" onclick="return false;" class=""><span
+                          class="leafN">진단결과</span></a>
+                      <ul
+                        class="menu4                                                                                                                                                                                                                                                     menuLvl4">
+                        <li id="menu_PGM1784" class=""><a href="main.do#PGM1784" class=""><span
+                              class="leafY">진단현황</span></a></li>
+                        <li id="menu_PGM1834" class=""><a href="main.do#PGM1834" class=""><span
+                              class="leafY">피진단자통계</span></a></li>
+                        <li id="menu_PGM1835" class=""><a href="main.do#PGM1835" class=""><span
+                              class="leafY">진단자통계</span></a></li>
+                        <li id="menu_PGM1836" class=""><a href="main.do#PGM1836" class=""><span
+                              class="leafY">조직별통계</span></a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li id="menu_PGM1785"><a href="main.do" onclick="return false;" class=""><span
+                      class="leafN">설정관리</span></a>
+                  <ul
+                    class="menu3                                                                                                                                                                                                    menuLvl3">
+                    <li id="menu_PGM1786"><a href="main.do#PGM1786"><span class="leafY">S.P평가설정</span></a></li>
+                    <li id="menu_PGM1787" class=""><a href="main.do#PGM1787" class=""><span class="leafY">Succession
+                          Plan실행</span></a></li>
+                    <li id="menu_PGM1788" class=""><a href="main.do#PGM1788" class=""><span class="leafY">Succession
+                          Plan결과</span></a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div> <a href="#" onclick="showMenu(null);return false;" class="close" style="display: inline;">닫기</a>
+        </div>
+        <div transition="modal" class="modal-mask" style="display: none;">
+          <div class="modal-wrapper">
+            <div class="modal-container">
+              <div class="modal-header">
+                <!---->
+                <div class="header"></div>
+              </div>
+              <div class="modal-body">
+                <div class="body"></div>
+              </div>
+              <div class="modal-footer"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="containerCellR">
+        <div class="head">
+          <div class="lnb">
+            <div id="nav" class="nav " style="float: left; clear: both;">
+              <ul style="margin-top: 10px;">
+                <li><a href="#" class="home">홈</a></li>
+                <li>표준체계</li>
+                <li>Acticity관리</li>
+                <li class="active">기본정보</li>
+              </ul>
+            </div>
+          </div>
+          <div class="rnb">
+            <div style="float: left; clear: both;">
+              <div class="ico-bg has-tooltip" data-original-title="null"><a href="#"><img
+                    src="images/theme/blue/ico-amenu.png" onclick="gnbApp.popMNA();return false;" alt="전체메뉴"></a></div>
+              <div class="ico-bg has-tooltip" data-original-title="null"><a href="#"><img
+                    src="images/theme/blue/ico-manual.png" onclick="gnbApp.popMNA();return false;" alt="매뉴얼"></a></div>
+              <div class="ico-bg has-tooltip" data-original-title="null"><a href="#"><img
+                    src="images/theme/blue/ico-notice.png" onclick="gnbApp.popNotice();return false;" alt="공지사항"></a>
+              </div>
+              <div class="ico-bg has-tooltip" data-original-title="null"><a href="#"><img
+                    src="images/theme/blue/ico-help.png" onclick="gnbApp.popQnA();return false;" alt="Q&amp;A"></a>
+              </div>
+            </div>
+            <div class="user"><a href="#"><img src="http://gwa.visang.com/upload/img/profile/visang/2793_thum.jpg"
+                  alt="유저 이미지" onerror="this.src='images/theme/blue/ico-user-pic.png'" class="profileImg"></a>
+              <div id="pop-user-info" class="user-info" style="display: none;"><a href="#"
+                  class="mem-modify ml10 user-info-txt"><span>
+                    민덕기
+                    (mindk)
+                  </span> <span></span></a>
+                <div
+                  style="text-align: left; margin-top: 12px; padding-top: 6px; line-height: 130%; border-top: 1px solid rgb(234, 234, 234);">
+                  <a class="logout-bg mt20"></a> <a href="#" onclick="doLogout();return false;" class="mem-logout "
+                    style="color: rgb(85, 85, 85);"><img src="images/theme/blue/ico-session-time.png" alt="접속시간"
+                      style="margin-top: -2px; padding-right: 3px;">time : <span id="sessionTimeCheck">59 :
+                      51</span></a> <span class="txt"><a href="#" onclick="doLogout();return false;"><img
+                        src="images/theme/blue/ico-logout.png" alt="로그아웃">로그아웃</a></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="CellR-main-tab">
+          <ul>
+            <li>
+              <a href="#">
+                Home
+              </a>
+            </li>
+            <li class="is-active">
+              <a href="#">
+                Activity
+              </a>
+            </li>
+            <li class="active">
+              <a href="#">
+                기본정보
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                정의서
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                위치선정
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                적용대상
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                결재관리
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div id="contents">
+          <div class="contentsWrap ">
+            <div class="contents" style="opacity: 1;">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+              <!--
+*************************************************************************
+* CLASS 명	: valueCompManagerList.jsp
+* 작 업 자	: 임성지
+* 작 업 일	: 2021. 02. 25
+* 기	능	: Value-Up 조직목표부서장
+* ---------------------------- 변 경 이 력 --------------------------------
+* 번호	작 업 자		작	업	일			변 경 내 용				비고
+* ----	---------	----------------	---------------------	-----------
+*	1	임성지		2021. 02. 25		최 초 작 업
+**************************************************************************
+-->
+
+
+
+
+              <div class="container tbl-bg">
+                <div class="com-tpy-had2">
+                  <p>
+                    Project 등록중
+                  </p>
+                </div>
+                <div class="process-wrap">
+                  <div class="bd-line-type1 mt10">
+                    <ul class="protype1">
+                      <li class="is-active">
+                        <a href="#">
+                          <div class="wrap">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                              width="65" height="59" viewBox="0 0 65 59">
+                              <defs>
+                                <clipPath id="a">
+                                  <rect width="65" height="59" transform="translate(0 0)" fill="none" />
+                                </clipPath>
+                              </defs>
+                              <g transform="translate(0 0)">
+                                <g clip-path="url(#a)">
+                                  <path
+                                    d="M21.127,6.707h1.641c1.207,0,2.069.425,2.069,1.661,0,1.2-.862,1.749-2.039,1.749H21.98v2.077h-.854Zm1.59,2.718c.869,0,1.28-.335,1.28-1.057s-.448-.96-1.31-.96H21.98V9.425Z"
+                                    fill="#253378" />
+                                  <path
+                                    d="M25.894,6.708h1.774c1.119,0,1.959.409,1.959,1.592a1.523,1.523,0,0,1-1.134,1.571l1.324,2.323h-.964l-1.229-2.21h-.876v2.21h-.854Zm1.67,2.583c.788,0,1.215-.328,1.215-.991s-.427-.893-1.215-.893h-.817V9.291Z"
+                                    fill="#253378" />
+                                  <path
+                                    d="M30.433,9.432c0-1.764.965-2.822,2.356-2.822s2.362,1.058,2.362,2.822-.972,2.858-2.362,2.858S30.433,11.2,30.433,9.432m3.842,0c0-1.287-.589-2.07-1.486-2.07s-1.48.782-1.48,2.07.582,2.106,1.48,2.106,1.486-.826,1.486-2.106"
+                                    fill="#253378" />
+                                  <path
+                                    d="M35.421,11.382l.6-.439a.96.96,0,0,0,.876.6c.544,0,.817-.3.817-1.1V6.707h.855v3.812c0,.983-.471,1.771-1.576,1.771a1.658,1.658,0,0,1-1.567-.908"
+                                    fill="#253378" />
+                                  <path d="M39.967,6.707h3.2v.73H40.82V8.963h1.988v.729H40.82v1.772H43.25v.729H39.967Z"
+                                    fill="#253378" />
+                                  <path
+                                    d="M44.093,9.469c0-1.786,1.075-2.858,2.443-2.858a2.081,2.081,0,0,1,1.539.692l-.464.551a1.434,1.434,0,0,0-1.06-.492c-.935,0-1.582.789-1.582,2.078s.6,2.1,1.56,2.1a1.56,1.56,0,0,0,1.2-.58l.456.544a2.13,2.13,0,0,1-1.685.789c-1.362,0-2.407-1.028-2.407-2.822"
+                                    fill="#253378" />
+                                  <path d="M50.119,7.437H48.53v-.73H52.57v.73h-1.6v4.757h-.855Z" fill="#253378" />
+                                  <path d="M30.9,49.751l-10.938-6.58,10.382-6.424Z" fill="none" stroke="#253378"
+                                    stroke-linejoin="round" stroke-width="2.013" />
+                                  <rect width="12.172" height="32.002"
+                                    transform="matrix(0.853, -0.522, 0.522, 0.853, 3.444, 15.875)" fill="none"
+                                    stroke="#253378" stroke-linejoin="round" stroke-width="2.013" />
+                                  <path
+                                    d="M6.9,5.079,2.747,7.648a3.716,3.716,0,0,0-1.209,5.077l1.906,3.15L13.827,9.451,11.921,6.3A3.627,3.627,0,0,0,6.9,5.079Z"
+                                    fill="none" stroke="#253378" stroke-linejoin="round" stroke-width="2.013" />
+                                  <path d="M17.864,39.666V52.989H42.379" fill="none" stroke="#253378"
+                                    stroke-miterlimit="10" stroke-width="2.013" />
+                                  <path d="M56,39.216V1.013H17.863V15.875" fill="none" stroke="#253378"
+                                    stroke-miterlimit="10" stroke-width="2.013" />
+                                  <path d="M42.379,39.216H56L42.379,52.988Z" fill="none" stroke="#253378"
+                                    stroke-linejoin="round" stroke-width="2.013" />
+                                  <line x1="3.99" transform="translate(38.39 45.499)" fill="none" stroke="#253378"
+                                    stroke-linecap="round" stroke-linejoin="round" stroke-width="2.002" />
+                                  <line x1="3.381" transform="translate(38.39 39.666)" fill="none" stroke="#253378"
+                                    stroke-linecap="round" stroke-linejoin="round" stroke-width="2.002" />
+                                  <line x1="10.768" transform="translate(38.39 33.897)" fill="none" stroke="#253378"
+                                    stroke-linecap="round" stroke-linejoin="round" stroke-width="2.002" />
+                                  <line x1="17.508" transform="translate(31.594 27.519)" fill="none" stroke="#253378"
+                                    stroke-linecap="round" stroke-linejoin="round" stroke-width="2.002" />
+                                  <line x1="21.342" transform="translate(27.759 21.182)" fill="none" stroke="#253378"
+                                    stroke-linecap="round" stroke-linejoin="round" stroke-width="2.002" />
+                                </g>
+                              </g>
+                            </svg>
+
+                            <p>Project 등록중</p>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <div class="wrap">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                              width="65" height="59" viewBox="0 0 65 59">
+                              <defs>
+                                <clipPath id="clip-path">
+                                  <rect id="사각형_3" data-name="사각형 3" width="65" height="59" transform="translate(0 0)"
+                                    fill="none" stroke="#253378" />
+                                </clipPath>
+                              </defs>
+                              <g id="그룹_3" data-name="그룹 3" transform="translate(0 0)" clip-path="url(#clip-path)">
+                                <ellipse id="타원_1" data-name="타원 1" cx="5.508" cy="5.473" rx="5.508" ry="5.473"
+                                  transform="translate(22.992 1.01)" fill="none" stroke="#253378" stroke-miterlimit="10"
+                                  stroke-width="2.027" />
+                                <path id="패스_13" data-name="패스 13"
+                                  d="M35.358,20.469a1.017,1.017,0,0,0,1.015-1.148,7.965,7.965,0,0,0-15.745,0,1.016,1.016,0,0,0,1.015,1.148Z"
+                                  fill="none" stroke="#253378" stroke-miterlimit="10" stroke-width="2.027" />
+                                <ellipse id="타원_2" data-name="타원 2" cx="5.508" cy="5.473" rx="5.508" ry="5.473"
+                                  transform="translate(3.392 31.532)" fill="none" stroke="#253378"
+                                  stroke-miterlimit="10" stroke-width="2.027" />
+                                <path id="패스_14" data-name="패스 14"
+                                  d="M2.041,50.99a1.017,1.017,0,0,1-1.015-1.148,7.965,7.965,0,0,1,15.745,0,1.016,1.016,0,0,1-1.015,1.148Z"
+                                  fill="none" stroke="#253378" stroke-miterlimit="10" stroke-width="2.027" />
+                                <ellipse id="타원_3" data-name="타원 3" cx="5.508" cy="5.473" rx="5.508" ry="5.473"
+                                  transform="translate(22.992 31.532)" fill="none" stroke="#253378"
+                                  stroke-miterlimit="10" stroke-width="2.027" />
+                                <path id="패스_15" data-name="패스 15"
+                                  d="M21.642,50.99a1.017,1.017,0,0,1-1.015-1.148,7.965,7.965,0,0,1,15.745,0,1.016,1.016,0,0,1-1.015,1.148Z"
+                                  fill="none" stroke="#253378" stroke-miterlimit="10" stroke-width="2.027" />
+                                <ellipse id="타원_4" data-name="타원 4" cx="5.508" cy="5.473" rx="5.508" ry="5.473"
+                                  transform="translate(42.593 31.532)" fill="none" stroke="#253378"
+                                  stroke-miterlimit="10" stroke-width="2.027" />
+                                <path id="패스_16" data-name="패스 16"
+                                  d="M41.243,50.99a1.017,1.017,0,0,1-1.015-1.148,7.965,7.965,0,0,1,15.745,0,1.016,1.016,0,0,1-1.015,1.148Z"
+                                  fill="none" stroke="#253378" stroke-miterlimit="10" stroke-width="2.027" />
+                                <path id="패스_17" data-name="패스 17"
+                                  d="M8.9,31.531V28.247a2.026,2.026,0,0,1,2.033-2.02H46.067a2.026,2.026,0,0,1,2.033,2.02v3.284"
+                                  fill="none" stroke="#253378" stroke-miterlimit="10" stroke-width="2.027" />
+                                <line id="선_6" data-name="선 6" y1="11.063" transform="translate(28.5 20.468)"
+                                  fill="none" stroke="#253378" stroke-miterlimit="10" stroke-width="2.02" />
+                              </g>
+                            </svg>
+
+                            <p>Member 등록중</p>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <div class="wrap">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                              width="65" height="59" viewBox="0 0 65 59">
+                              <defs>
+                                <clipPath id="a">
+                                  <rect width="65.001" height="59" transform="translate(0 0)" fill="none" />
+                                </clipPath>
+                              </defs>
+                              <g transform="translate(0 0)">
+                                <path d="M43.6,34.943V8.088H31.773" fill="none" stroke="#253378" stroke-linecap="round"
+                                  stroke-linejoin="round" stroke-width="2.03" />
+                                <g clip-path="url(#a)">
+                                  <path d="M12.846,8.095H1.016V57.986H43.6V41.6" fill="none" stroke="#253378"
+                                    stroke-linecap="round" stroke-linejoin="round" stroke-width="2.03" />
+                                </g>
+                                <path d="M38.871,39.776V12.816h-7.1" fill="none" stroke="#253378" stroke-linecap="round"
+                                  stroke-linejoin="round" stroke-width="2.03" />
+                                <path d="M12.846,12.816h-7.1V52.944H38.871V46.525" fill="none" stroke="#253378"
+                                  stroke-linecap="round" stroke-linejoin="round" stroke-width="2.03" />
+                                <g clip-path="url(#a)">
+                                  <path d="M27.041,5.735a4.732,4.732,0,0,0-9.464,0H12.846v9.442H31.773V5.735Z"
+                                    fill="none" stroke="#253378" stroke-linejoin="round" stroke-width="2.03" />
+                                  <path d="M47.549,31.714l3.435,2.9L35.693,49.1l-6.978-5.621,3.638-4.09,3.485,3.508Z"
+                                    fill="none" stroke="#253378" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2.03" />
+                                  <line x1="15.739" transform="translate(11.303 46.525)" fill="none" stroke="#253378"
+                                    stroke-linecap="round" stroke-linejoin="round" stroke-width="2.032" />
+                                  <line x1="15.209" transform="translate(11.303 41.527)" fill="none" stroke="#253378"
+                                    stroke-linecap="round" stroke-linejoin="round" stroke-width="2.032" />
+                                  <line x1="21.625" transform="translate(11.303 36.583)" fill="none" stroke="#253378"
+                                    stroke-linecap="round" stroke-linejoin="round" stroke-width="2.032" />
+                                  <line x1="21.577" transform="translate(11.304 31.118)" fill="none" stroke="#253378"
+                                    stroke-linecap="round" stroke-linejoin="round" stroke-width="2.032" />
+                                  <line x1="21.577" transform="translate(11.304 25.687)" fill="none" stroke="#253378"
+                                    stroke-linecap="round" stroke-linejoin="round" stroke-width="2.032" />
+                                  <line x1="21.577" transform="translate(11.304 20.257)" fill="none" stroke="#253378"
+                                    stroke-linecap="round" stroke-linejoin="round" stroke-width="2.032" />
+                                </g>
+                              </g>
+                            </svg>
+                            <p>과제점검중</p>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <div class="wrap">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                              width="65" height="57" viewBox="0 0 65 57">
+                              <defs>
+                                <clipPath id="clip-path">
+                                  <rect id="사각형_6" data-name="사각형 6" width="65" height="57" transform="translate(0 0)"
+                                    fill="none" />
+                                </clipPath>
+                              </defs>
+                              <g id="Vector_Smart_Object" data-name="Vector Smart Object" transform="translate(0 0)">
+                                <line id="선_13" data-name="선 13" x1="8.265" transform="translate(16.134 7.061)"
+                                  fill="none" stroke="#253378" stroke-miterlimit="10" stroke-width="2.013" />
+                                <g id="그룹_10" data-name="그룹 10">
+                                  <g id="그룹_9" data-name="그룹 9" clip-path="url(#clip-path)">
+                                    <path id="패스_24" data-name="패스 24"
+                                      d="M47.123,28.5h1.742A10.724,10.724,0,0,0,59.595,17.781h0A10.724,10.724,0,0,0,48.865,7.06H37.08"
+                                      fill="none" stroke="#253378" stroke-miterlimit="10" stroke-width="2.012" />
+                                    <line id="선_14" data-name="선 14" x2="7.534" transform="translate(26.313 28.5)"
+                                      fill="none" stroke="#253378" stroke-miterlimit="10" stroke-width="2.013" />
+                                    <path id="패스_25" data-name="패스 25"
+                                      d="M22.367,49.939H16.135A10.724,10.724,0,0,1,5.406,39.22h0a10.726,10.726,0,0,1,7.7-10.287"
+                                      fill="none" stroke="#253378" stroke-miterlimit="10" stroke-width="2.012" />
+                                    <line id="선_15" data-name="선 15" x1="8.016" transform="translate(35.881 49.94)"
+                                      fill="none" stroke="#253378" stroke-miterlimit="10" stroke-width="2.013" />
+                                    <ellipse id="타원_5" data-name="타원 5" cx="6.06" cy="6.055" rx="6.06" ry="6.055"
+                                      transform="translate(4.21 1.006)" fill="none" stroke="#253378"
+                                      stroke-miterlimit="10" stroke-width="2.012" />
+                                    <ellipse id="타원_6" data-name="타원 6" cx="6.06" cy="6.055" rx="6.06" ry="6.055"
+                                      transform="translate(24.96 1.006)" fill="none" stroke="#253378"
+                                      stroke-miterlimit="10" stroke-width="2.012" />
+                                    <ellipse id="타원_7" data-name="타원 7" cx="6.06" cy="6.055" rx="6.06" ry="6.055"
+                                      transform="translate(13.679 22.446)" fill="none" stroke="#253378"
+                                      stroke-miterlimit="10" stroke-width="2.012" />
+                                    <ellipse id="타원_8" data-name="타원 8" cx="6.06" cy="6.055" rx="6.06" ry="6.055"
+                                      transform="translate(34.428 22.446)" fill="none" stroke="#253378"
+                                      stroke-miterlimit="10" stroke-width="2.012" />
+                                    <ellipse id="타원_9" data-name="타원 9" cx="6.06" cy="6.055" rx="6.06" ry="6.055"
+                                      transform="translate(23.147 43.885)" fill="none" stroke="#253378"
+                                      stroke-miterlimit="10" stroke-width="2.012" />
+                                    <ellipse id="타원_10" data-name="타원 10" cx="6.06" cy="6.055" rx="6.06" ry="6.055"
+                                      transform="translate(43.897 43.885)" fill="none" stroke="#253378"
+                                      stroke-miterlimit="10" stroke-width="2.012" />
+                                    <path id="패스_26" data-name="패스 26" d="M54.946,13.447l4.648,5.31,4.647-5.31"
+                                      fill="none" stroke="#253378" stroke-miterlimit="10" stroke-width="2.012" />
+                                    <path id="패스_27" data-name="패스 27" d="M.758,36.091,5.406,41.4l4.647-5.31"
+                                      fill="none" stroke="#253378" stroke-miterlimit="10" stroke-width="2.012" />
+                                  </g>
+                                </g>
+                              </g>
+                            </svg>
+
+                            <p>RoadMap 점검중</p>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <div class="wrap">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                              width="65" height="54" viewBox="0 0 65 54">
+                              <defs>
+                                <clipPath id="a">
+                                  <rect width="65" height="54" transform="translate(0 0)" fill="none"></rect>
+                                </clipPath>
+                              </defs>
+                              <g transform="translate(-1315 -181)">
+                                <g transform="translate(1315 181)">
+                                  <g clip-path="url(#a)">
+                                    <path d="M7.885,18.335a25.941,25.941,0,0,1,48.935,0" fill="none" stroke="#253378"
+                                      stroke-linecap="round" stroke-linejoin="round" stroke-width="2.026"></path>
+                                    <path d="M57.173,34.594a25.942,25.942,0,0,1-49.558.259" fill="none" stroke="#253378"
+                                      stroke-linecap="round" stroke-linejoin="round" stroke-width="2.026"></path>
+                                    <path d="M15.14,18.207a19.2,19.2,0,0,1,35.039.745" fill="none" stroke="#253378"
+                                      stroke-linecap="round" stroke-linejoin="round" stroke-width="2.026"></path>
+                                    <path d="M50.188,33.946a19.2,19.2,0,0,1-35.329.143" fill="none" stroke="#253378"
+                                      stroke-linecap="round" stroke-linejoin="round" stroke-width="2.026"></path>
+                                    <path
+                                      d="M28.226,23.815h-.909v2.572h.946c1.118,0,1.649-.428,1.649-1.347s-.578-1.225-1.686-1.225"
+                                      fill="#253378"></path>
+                                    <path
+                                      d="M13.857,23.758c-1.156,0-1.9,1-1.9,2.638s.748,2.685,1.9,2.685,1.914-1.053,1.914-2.685-.758-2.638-1.914-2.638"
+                                      fill="#253378"></path>
+                                    <path
+                                      d="M56.526,23.824h-.635v5.19h.635c1.5,0,2.3-.883,2.3-2.619s-.8-2.571-2.3-2.571"
+                                      fill="#253378"></path>
+                                    <path
+                                      d="M0,20.383V32.455a2.025,2.025,0,0,0,2.024,2.027H62.975A2.025,2.025,0,0,0,65,32.455V20.383a2.025,2.025,0,0,0-2.024-2.027H2.024A2.025,2.025,0,0,0,0,20.383m8.132,9.656c-1.752,0-3.1-1.31-3.1-3.6S6.418,22.8,8.18,22.8a2.687,2.687,0,0,1,1.98.882l-.6.7A1.852,1.852,0,0,0,8.2,23.758c-1.2,0-2.037,1.006-2.037,2.647,0,1.66.777,2.676,2.008,2.676a2.017,2.017,0,0,0,1.544-.74l.587.692a2.752,2.752,0,0,1-2.169,1.006m5.725,0c-1.79,0-3.031-1.395-3.031-3.643s1.241-3.6,3.031-3.6S16.9,24.147,16.9,26.4s-1.251,3.643-3.041,3.643m10.528-.124H23.362V26.462c0-.625.085-1.527.143-2.163h-.038l-.559,1.614-1.213,3.329h-.682l-1.222-3.329-.55-1.614H19.2c.048.637.133,1.538.133,2.163v3.454h-.985V22.923h1.26l1.278,3.539c.161.465.3.94.465,1.405H21.4c.161-.465.294-.94.454-1.405l1.26-3.539h1.269Zm3.983-2.647H27.316v2.647h-1.1V22.923h2.111c1.554,0,2.662.541,2.662,2.116,0,1.528-1.108,2.23-2.623,2.23M36.4,29.915H32.349V22.923h1.1v6.063H36.4Zm5.458,0H37.638V22.923h4.12v.931H38.737V25.8h2.558v.93H38.737v2.259h3.125ZM47.9,23.853H45.844v6.062h-1.1V23.853H42.7v-.931h5.2Zm5.431,6.062H49.106V22.923h4.12v.931H50.2V25.8h2.558v.93H50.2v2.259h3.126Zm3.328,0H54.793V22.923H56.6c2.141,0,3.363,1.2,3.363,3.473s-1.223,3.52-3.307,3.52"
+                                      fill="#253378"></path>
+                                  </g>
+                                </g>
+                              </g>
+                            </svg>
+
+                            <p>Project 완료</p>
+                          </div>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="section2 w1650">
+                    <div class="com-tpy-had2">
+                      <p>
+                        Jv 미국 스텔란티스 공장 증설
+                      </p>
+                    </div>
+                    <div class="tf-trees">
+                      <div class="tf-trees__box">
+                        <div class="tf-trees__btns">
+                          <button class="tf-trees__btn">분과</button>
+                          <button class="tf-trees__btn">업무그룹</button>
+                          <button class="tf-trees__btn">Member</button>
+                          <button class="tf-trees__btn">업무 Mapping</button>
+                        </div>
+
+                        <ul class="tf-trees__wrap">
+                          <li>
+                            <!-- todo 맨위 상위요소 profile은 first 클래스 추가해서 위쪽선 없앰 -->
+                            <div class="tf-trees__profile first">
+                              <div class="tf-trees__tit" style="background:rgba(20,40,160,1)">Champion
+                              </div>
+                              <div class="tf-trees__class">
+                                <div class="tf-trees__class-left">홍길동</div>
+                                <div class="tf-trees__class-right">[부사장]</div>
+                              </div>
+                              <div class="tf-trees__part-wrap">
+                                <div class="tf-trees__part">
+                                  <div class="tf-trees__part-left">김길동</div>
+                                  <div class="tf-trees__part-right">[직급]</div>
+                                </div>
+                              </div>
+                          </li>
+                          <ul>
+                            <li>
+                              <div class="tf-trees__profile">
+                                <div class="tf-trees__tit" style="background:rgba(255,142,98,1)">추진 Leader
+                                </div>
+                                <div class="tf-trees__class">
+                                  <div class="tf-trees__class-left">홍길동</div>
+                                  <div class="tf-trees__class-right">[부사장]</div>
+                                </div>
+                                <div class="tf-trees__part-wrap">
+                                  <div class="tf-trees__part">
+                                    <div class="tf-trees__part-left">김길동</div>
+                                    <div class="tf-trees__part-right">[직급]</div>
+                                  </div>
+                                </div>
+                                <!-- 오른쪽 조직도 설정 .po-right-->
+                                <div class="tf-trees__profile po-right">
+                                  <div class="tf-trees__tit" style="background:rgba(255,142,98,1)">추진 Leader
+                                  </div>
+                                  <div class="tf-trees__class">
+                                    <div class="tf-trees__class-left">홍길동</div>
+                                    <div class="tf-trees__class-right">[부사장]</div>
+                                  </div>
+                                  <div class="tf-trees__part-wrap">
+                                    <div class="tf-trees__part">
+                                      <div class="tf-trees__part-left">김길동</div>
+                                      <div class="tf-trees__part-right">[직급]</div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </li>
+                            <ul class="flex">
+                              <li>
+                                <div class="tf-trees__profile">
+                                  <div class="tf-trees__tit" style="background:#76c447;">추진 Leader
+                                  </div>
+                                  <div class="tf-trees__class">
+                                    <div class="tf-trees__class-left">홍길동</div>
+                                    <div class="tf-trees__class-right">[부사장]</div>
+                                  </div>
+                                  <div class="tf-trees__part-wrap">
+                                    <div class="tf-trees__part">
+                                      <div class="tf-trees__part-left">김길동</div>
+                                      <div class="tf-trees__part-right">[직급]</div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <!-- 2그룹 -->
+                                <div class="tf-trees__profile">
+                                  <div class="tf-trees__tit" style="background:#9777d8;">추진 Leader
+                                  </div>
+                                  <div class="tf-trees__class">
+                                    <div class="tf-trees__class-left">홍길동</div>
+                                    <div class="tf-trees__class-right">[부사장]</div>
+                                  </div>
+                                  <div class="tf-trees__part-wrap">
+                                    <div class="tf-trees__part">
+                                      <div class="tf-trees__part-left">김길동</div>
+                                      <div class="tf-trees__part-right">[직급]</div>
+                                    </div>
+                                    <div class="tf-trees__part">
+                                      <div class="tf-trees__part-left">김길동</div>
+                                      <div class="tf-trees__part-right">[직급]</div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <!-- 3그룹 -->
+                                <div class="tf-trees__profile">
+                                  <div class="tf-trees__tit" style="background:#9777d8;">추진 Leader
+                                  </div>
+                                  <div class="tf-trees__class">
+                                    <div class="tf-trees__class-left">홍길동</div>
+                                    <div class="tf-trees__class-right">[부사장]</div>
+                                  </div>
+                                  <div class="tf-trees__part-wrap">
+                                    <div class="tf-trees__part">
+                                      <div class="tf-trees__part-left">김길동</div>
+                                      <div class="tf-trees__part-right">[직급]</div>
+                                    </div>
+                                    <div class="tf-trees__part">
+                                      <div class="tf-trees__part-left">김길동</div>
+                                      <div class="tf-trees__part-right">[직급]</div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </li>
+                              <li>
+                                <div class="tf-trees__profile">
+                                  <div class="tf-trees__tit" style="background:#76c447;">추진 Leader
+                                  </div>
+                                  <div class="tf-trees__class">
+                                    <div class="tf-trees__class-left">홍길동</div>
+                                    <div class="tf-trees__class-right">[부사장]</div>
+                                  </div>
+                                  <div class="tf-trees__part-wrap">
+                                    <div class="tf-trees__part">
+                                      <div class="tf-trees__part-left">김길동</div>
+                                      <div class="tf-trees__part-right">[직급]</div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <!-- 2그룹 -->
+                                <div class="tf-trees__profile">
+                                  <div class="tf-trees__tit" style="background:#9777d8;">추진 Leader
+                                  </div>
+                                  <div class="tf-trees__class">
+                                    <div class="tf-trees__class-left">홍길동</div>
+                                    <div class="tf-trees__class-right">[부사장]</div>
+                                  </div>
+                                  <div class="tf-trees__part-wrap">
+                                    <div class="tf-trees__part">
+                                      <div class="tf-trees__part-left">김길동</div>
+                                      <div class="tf-trees__part-right">[직급]</div>
+                                    </div>
+                                    <div class="tf-trees__part">
+                                      <div class="tf-trees__part-left">김길동</div>
+                                      <div class="tf-trees__part-right">[직급]</div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </li>
+                              <li>
+                                <div class="tf-trees__profile">
+                                  <div class="tf-trees__tit" style="background:#76c447;">추진 Leader
+                                  </div>
+                                  <div class="tf-trees__class">
+                                    <div class="tf-trees__class-left">홍길동</div>
+                                    <div class="tf-trees__class-right">[부사장]</div>
+                                  </div>
+                                  <div class="tf-trees__part-wrap">
+                                    <div class="tf-trees__part">
+                                      <div class="tf-trees__part-left">김길동</div>
+                                      <div class="tf-trees__part-right">[직급]</div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <!-- 2그룹 -->
+                                <div class="tf-trees__profile">
+                                  <div class="tf-trees__tit" style="background:#9777d8;">추진 Leader
+                                  </div>
+                                  <div class="tf-trees__class">
+                                    <div class="tf-trees__class-left">홍길동</div>
+                                    <div class="tf-trees__class-right">[부사장]</div>
+                                  </div>
+                                  <div class="tf-trees__part-wrap">
+                                    <div class="tf-trees__part">
+                                      <div class="tf-trees__part-left">김길동</div>
+                                      <div class="tf-trees__part-right">[직급]</div>
+                                    </div>
+                                    <div class="tf-trees__part">
+                                      <div class="tf-trees__part-left">김길동</div>
+                                      <div class="tf-trees__part-right">[직급]</div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </li>
+                              <li>
+                                <div class="tf-trees__profile">
+                                  <div class="tf-trees__tit" style="background:#76c447;">추진 Leader
+                                  </div>
+                                  <div class="tf-trees__class">
+                                    <div class="tf-trees__class-left">홍길동</div>
+                                    <div class="tf-trees__class-right">[부사장]</div>
+                                  </div>
+                                  <div class="tf-trees__part-wrap">
+                                    <div class="tf-trees__part">
+                                      <div class="tf-trees__part-left">김길동</div>
+                                      <div class="tf-trees__part-right">[직급]</div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <!-- 2그룹 -->
+                                <div class="tf-trees__profile">
+                                  <div class="tf-trees__tit" style="background:#9777d8;">추진 Leader
+                                  </div>
+                                  <div class="tf-trees__class">
+                                    <div class="tf-trees__class-left">홍길동</div>
+                                    <div class="tf-trees__class-right">[부사장]</div>
+                                  </div>
+                                  <div class="tf-trees__part-wrap">
+                                    <div class="tf-trees__part">
+                                      <div class="tf-trees__part-left">김길동</div>
+                                      <div class="tf-trees__part-right">[직급]</div>
+                                    </div>
+                                    <div class="tf-trees__part">
+                                      <div class="tf-trees__part-left">김길동</div>
+                                      <div class="tf-trees__part-right">[직급]</div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </li>
+                              <li>
+                                <div class="tf-trees__profile">
+                                  <div class="tf-trees__tit" style="background:#76c447;">추진 Leader
+                                  </div>
+                                  <div class="tf-trees__class">
+                                    <div class="tf-trees__class-left">홍길동</div>
+                                    <div class="tf-trees__class-right">[부사장]</div>
+                                  </div>
+                                  <div class="tf-trees__part-wrap">
+                                    <div class="tf-trees__part">
+                                      <div class="tf-trees__part-left">김길동</div>
+                                      <div class="tf-trees__part-right">[직급]</div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <!-- 2그룹 -->
+                                <div class="tf-trees__profile">
+                                  <div class="tf-trees__tit" style="background:#9777d8;">추진 Leader
+                                  </div>
+                                  <div class="tf-trees__class">
+                                    <div class="tf-trees__class-left">홍길동</div>
+                                    <div class="tf-trees__class-right">[부사장]</div>
+                                  </div>
+                                  <div class="tf-trees__part-wrap">
+                                    <div class="tf-trees__part">
+                                      <div class="tf-trees__part-left">김길동</div>
+                                      <div class="tf-trees__part-right">[직급]</div>
+                                    </div>
+                                    <div class="tf-trees__part">
+                                      <div class="tf-trees__part-left">김길동</div>
+                                      <div class="tf-trees__part-right">[직급]</div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <!-- 2그룹 -->
+                                <div class="tf-trees__profile">
+                                  <div class="tf-trees__tit" style="background:#9777d8;">추진 Leader
+                                  </div>
+                                  <div class="tf-trees__class">
+                                    <div class="tf-trees__class-left">홍길동</div>
+                                    <div class="tf-trees__class-right">[부사장]</div>
+                                  </div>
+                                  <div class="tf-trees__part-wrap">
+                                    <div class="tf-trees__part">
+                                      <div class="tf-trees__part-left">김길동</div>
+                                      <div class="tf-trees__part-right">[직급]</div>
+                                    </div>
+                                    <div class="tf-trees__part">
+                                      <div class="tf-trees__part-left">김길동</div>
+                                      <div class="tf-trees__part-right">[직급]</div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <!-- 2그룹 -->
+                                <div class="tf-trees__profile">
+                                  <div class="tf-trees__tit" style="background:#9777d8;">추진 Leader
+                                  </div>
+                                  <div class="tf-trees__class">
+                                    <div class="tf-trees__class-left">홍길동</div>
+                                    <div class="tf-trees__class-right">[부사장]</div>
+                                  </div>
+                                  <div class="tf-trees__part-wrap">
+                                    <div class="tf-trees__part">
+                                      <div class="tf-trees__part-left">김길동</div>
+                                      <div class="tf-trees__part-right">[직급]</div>
+                                    </div>
+                                    <div class="tf-trees__part">
+                                      <div class="tf-trees__part-left">김길동</div>
+                                      <div class="tf-trees__part-right">[직급]</div>
+                                    </div>
+                                  </div>
+                                </div>
+                                
+                              </li>
+                              <li>
+                                <div class="tf-trees__profile">
+                                  <div class="tf-trees__tit" style="background:#76c447;">추진 Leader
+                                  </div>
+                                  <div class="tf-trees__class">
+                                    <div class="tf-trees__class-left">홍길동</div>
+                                    <div class="tf-trees__class-right">[부사장]</div>
+                                  </div>
+                                  <div class="tf-trees__part-wrap">
+                                    <div class="tf-trees__part">
+                                      <div class="tf-trees__part-left">김길동</div>
+                                      <div class="tf-trees__part-right">[직급]</div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <!-- 2그룹 -->
+                                <div class="tf-trees__profile">
+                                  <div class="tf-trees__tit" style="background:#9777d8;">추진 Leader
+                                  </div>
+                                  <div class="tf-trees__class">
+                                    <div class="tf-trees__class-left">홍길동</div>
+                                    <div class="tf-trees__class-right">[부사장]</div>
+                                  </div>
+                                  <div class="tf-trees__part-wrap">
+                                    <div class="tf-trees__part">
+                                      <div class="tf-trees__part-left">김길동</div>
+                                      <div class="tf-trees__part-right">[직급]</div>
+                                    </div>
+                                    <div class="tf-trees__part">
+                                      <div class="tf-trees__part-left">김길동</div>
+                                      <div class="tf-trees__part-right">[직급]</div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </li>
+                              <li>
+                                <div class="tf-trees__profile">
+                                  <div class="tf-trees__tit" style="background:#76c447;">추진 Leader
+                                  </div>
+                                  <div class="tf-trees__class">
+                                    <div class="tf-trees__class-left">홍길동</div>
+                                    <div class="tf-trees__class-right">[부사장]</div>
+                                  </div>
+                                  <div class="tf-trees__part-wrap">
+                                    <div class="tf-trees__part">
+                                      <div class="tf-trees__part-left">김길동</div>
+                                      <div class="tf-trees__part-right">[직급]</div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <!-- 2그룹 -->
+                                <div class="tf-trees__profile">
+                                  <div class="tf-trees__tit" style="background:#9777d8;">추진 Leader
+                                  </div>
+                                  <div class="tf-trees__class">
+                                    <div class="tf-trees__class-left">홍길동</div>
+                                    <div class="tf-trees__class-right">[부사장]</div>
+                                  </div>
+                                  <div class="tf-trees__part-wrap">
+                                    <div class="tf-trees__part">
+                                      <div class="tf-trees__part-left">김길동</div>
+                                      <div class="tf-trees__part-right">[직급]</div>
+                                    </div>
+                                    <div class="tf-trees__part">
+                                      <div class="tf-trees__part-left">김길동</div>
+                                      <div class="tf-trees__part-right">[직급]</div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </li>
+                              <li>
+                                <div class="tf-trees__profile">
+                                  <div class="tf-trees__tit" style="background:#76c447;">추진 Leader
+                                  </div>
+                                  <div class="tf-trees__class">
+                                    <div class="tf-trees__class-left">홍길동</div>
+                                    <div class="tf-trees__class-right">[부사장]</div>
+                                  </div>
+                                  <div class="tf-trees__part-wrap">
+                                    <div class="tf-trees__part">
+                                      <div class="tf-trees__part-left">김길동</div>
+                                      <div class="tf-trees__part-right">[직급]</div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <!-- 2그룹 -->
+                                <div class="tf-trees__profile">
+                                  <div class="tf-trees__tit" style="background:#9777d8;">추진 Leader
+                                  </div>
+                                  <div class="tf-trees__class">
+                                    <div class="tf-trees__class-left">홍길동</div>
+                                    <div class="tf-trees__class-right">[부사장]</div>
+                                  </div>
+                                  <div class="tf-trees__part-wrap">
+                                    <div class="tf-trees__part">
+                                      <div class="tf-trees__part-left">김길동</div>
+                                      <div class="tf-trees__part-right">[직급]</div>
+                                    </div>
+                                    <div class="tf-trees__part">
+                                      <div class="tf-trees__part-left">김길동</div>
+                                      <div class="tf-trees__part-right">[직급]</div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </li>
+                            </ul>
+                          </ul>
+                        </ul>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="mask" style="display: none;"></div>
+
+      <!-- 콘텐츠 끝 -->
+      <!-- 다이어로그 -->
+      <div class="loadingDiv" style="display: none; height: 900px;">
+        <div class="loadingImgDiv" style="top: 426px;">
+          <img src="images/theme/blue/loading.gif">
+          <div class="loadingPercentDiv" style="display: none;"></div>
+        </div>
+        <div class="loadingBGDiv"></div>
+      </div>
+
+
+
+
+
+
+
+      <form id="command" name="logoutForm" action="logout.do" method="POST"
+        data-egovframework.double.submit.preventer.parameter.name="E0961786-7722-45DB-9480-FE0D583DFAD0">
+        <div>
+          <input type="hidden" name="_csrf" value="b4084fc7-d7f9-415d-9a28-e50c41b7192a">
+        </div>
+      </form>
+
+
+
+      <iframe name="hiddenFrame" id="hiddenFrame" frameborder="0"></iframe>
+      <form id="layoutPopForm" name="layoutPopForm" action="main.do" method="post"
+        data-egovframework.double.submit.preventer.parameter.name="E0961786-7722-45DB-9480-FE0D583DFAD0"><input
+          type="hidden" name="findYear">
+        <div>
+          <input type="hidden" name="_csrf" value="b4084fc7-d7f9-415d-9a28-e50c41b7192a">
+        </div>
+      </form>
+
+      <form id="moveMenu" name="moveMenu"></form>
+
+
+      <div id="popBoardApp">
+        <div transition="modal" class="modal-mask" style="display: none;">
+          <div class="modal-wrapper">
+            <div class="modal-container">
+              <div class="modal-header">
+                <!---->
+                <div class="header"></div>
+              </div>
+              <div class="modal-body">
+                <div class="body">
+                  <div class="popup wx800" style="min-height: 400px;">
+                    <!---->
+                    <form id="popBoardform" name="popBoardform">
+                      <div class="container">
+                        <div class="sch-bx mt10 mb10">
+                          <ul>
+                            <li><label for="popSearchKeyword" class="ptitle" style="font-weight: normal;">제목</label>
+                              <input type="text" id="popSearchKeyword" name="popSearchKeyword"
+                                onkeyup="if(event.keyCode == 13) masterVm.getList();return false;"
+                                class="t-box02 wx200">
+                            </li>
+                            <li><label for="popUserNm">등록자</label> <input type="text" id="popUserNm" name="popUserNm"
+                                onkeyup="if(event.keyCode == 13) masterVm.getList();return false;"
+                                class="t-box02 wx100"></li>
+                          </ul> <a href="#" onclick="masterVm.getList();return false;" class="btn-sch">검색</a>
+                        </div>
+                        <pop-list-component module-name="popList" list=""
+                          list-column="[object Object],[object Object],[object Object],[object Object]">
+                        </pop-list-component>
+                        <div style="text-align: center; margin-top: 10px;">
+                          <ul class="pagination">
+                            <div></div>
+                          </ul>
+                        </div>
+                        <div transition="modal" class="modal-mask" style="display: none;">
+                          <div class="modal-wrapper">
+                            <div class="modal-container">
+                              <div class="modal-header">
+                                <!---->
+                                <div class="header"></div>
+                              </div>
+                              <div class="modal-body">
+                                <div class="body"></div>
+                              </div>
+                              <div class="modal-footer"></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script type="text/javascript">
+
+      new Vue({
+        el: ".containerCellR"
+      });
+
+
+
+      //--------------------VUE 인스턴스--------------------//
+      var masterVm = new Vue({
+        el: '#popBoardApp',
+        mixins: [commonMixin],
+        data:
+        {
+          popModuleName: 'popList',
+          boardId: '',
+          popDataList: [],
+          popDataListColumn: [
+            { label: '제목', column: 'title', width: '45', 'align': 'left', 'formatter': 'fmtListTitle', data: ['seq'] },
+            { label: '등록자', column: 'userNm', width: '10', 'align': 'center' },
+            { label: '조회수', column: 'hit', width: '7', 'align': 'center' },
+            { label: '등록일', column: 'createDt', width: '10', 'align': 'center' }
+          ],
+          paging: '', nowPage: 1, totalCount: 1000, pageCount: 10, pageRecordCount: 10, totalPage: 1, params: '',
+        },
+        updated: function () {
+          var self = this;
+        },
+        mounted: function () {
+          var _s = this;
+        },
+        methods: {
+          getList: function (boardId) {
+            var self = this;
+
+            if (isNotEmpty(boardId)) {
+              self.boardId = boardId;
+            }
+
+            self.popDataList = [];
+            axios.get('comPop/system/system/board/boardList_json.do', {
+              params:
+              {
+                'page': this.nowPage,
+                'rows': this.pageRecordCount,
+                'searchKeyword': $('#popSearchKeyword').val(),
+                'userNm': $('#popUserNm').val(),
+                'colName': $('#colName').val(),
+                'boardId': self.boardId
+              }
+            }).then(function (response) {
+              self.popDataList = self.nonEscapeHTMLArrayByObject(response.data.list);
+              self.totalCount = response.data.totalCount;
+
+              masterVm.page(self.totalCount, '', 'masterVm');
+            });
+          },
+          popShowDetail: function (index) {
+            var self = this;
+            var f = document.popBoardform;
+            var config = {
+              url: 'comPop/system/system/board/boardDetail.do',
+              params: '&seq=' + this.popDataList[index].seq + '&boardId=' + self.boardId
+            }
+            self.$refs.innerCommonModal.openDialog(config);
+          }
+        }
+      });
+      //--------------------VUE 인스턴스--------------------//
+
+      var gnbApp = new Vue({
+        el: ".containerCellL",
+        mixins: [commonMixin],
+        data: function () {
+          return {
+            menuList: [],
+            subMenuList: [],
+            dialog: {
+              home: {
+                visible: false
+              }
+            },
+            lnbType: 'flat'
+          }
+        },
+        created: function () {
+
+          this.common().getMenuData();
+          this.loadProfileImg();
+
+        },
+        mounted: function () {
+          $(this.$refs.iconmenu).removeClass("hide");
+          showMenu(this);
+        },
+        methods: {
+          common: function () {
+            var _self = this;
+            return {
+              getMenuData: function () {
+                axios({
+                  method: 'post',
+                  url: 'common/menuList_ajax.do',
+                  headers: {
+                    'X-CSRF-TOKEN': 'b4084fc7-d7f9-415d-9a28-e50c41b7192a'
+                  }
+                }).then(function (response) {
+
+                  _self.menuList = response.data.menuList;
+                  _self.subMenuList = response.data.menuList;
+
+                  _self.loadDefaultMenu();
+                });
+              }
+            }
+          },
+          openHome: function () {
+            var self = this;
+            self.dialog.home.visible = !self.dialog.home.visible;
+          },
+          closeHome: function () {
+            var self = this;
+            self.dialog.home.visible = false;
+          },
+          tooltip: function (pgmId) {
+            return '메뉴설명이 나올 공간입니다!';
+          },
+          clickMenu: function () {
+            var self = this;
+            self.closeHome();
+            $(event.target).click();
+          },
+          loadDefaultMenu: function () {
+            var self = this;
+            let defaultFirstDepthPgmId;
+
+            $.each(self.menuList, function (i, el) {
+              if (isNotEmpty(el.url)) {
+                if (isNotEmpty(el.fullPgmId)) {
+                  let fullPgmIdArr = el.fullPgmId.split('/');
+                  if (fullPgmIdArr.length > 2) {
+                    defaultFirstDepthPgmId = fullPgmIdArr[2];
+                    return false;
+                  }
+                }
+              }
+            });
+
+            let nowFirstDepthPgmId;
+            let nowPgmId = getPgmId();
+            let nowPgmFullId;
+            let nowFullPgmIdArr;
+            if (isNotEmpty(nowPgmId)) {
+              nowPgmFullId = self.menuList.map(function (e) {
+                return e.fullPgmId.indexOf(nowPgmId) != -1 ? e.fullPgmId : null;
+              }).filter(function (e) {
+                return isNotEmpty(e);
+              });
+
+              if (isNotEmpty(nowPgmFullId) && isNotEmpty(nowPgmFullId[0])) {
+
+                let nowFullPgmIdArr = nowPgmFullId[0].split('/');
+                if (nowFullPgmIdArr.length > 2) {
+                  nowFirstDepthPgmId = nowFullPgmIdArr[2];
+                }
+
+                if (defaultFirstDepthPgmId != getPgmId()) {
+                  defaultFirstDepthPgmId = nowFirstDepthPgmId;
+                }
+
+              }
+
+            }
+
+            self.iconMenu().clickFirstDepthIconMenu(defaultFirstDepthPgmId, 'init');
+          },
+          popNotice: function () {
+            var self = this;
+            var config = {
+              url: 'comPop/bsc/system/system/notice/popNoticeList.do',
+              params: ''
+            }
+            self.$refs.commonModal.openDialog(config);
+
+          },
+          popQnA: function () {
+            var self = this;
+            var config = {
+              url: 'comPop/system/system/board/boardList.do?boardId=QNA',
+              params: '',
+            }
+            $('#popSearchKeyword').val("");
+            $('#popUserNm').val("");
+            masterVm.nowPage = '1';
+            masterVm.$nextTick(function () {
+              masterVm.$refs.commonModal.openWithCloseIcon();
+              masterVm.getList('QNA');
+            });
+          },
+          popMNA: function () {
+            var self = this;
+            var config = {
+              url: 'comPop/system/system/board/boardList.do?boardId=MNA',
+              params: '',
+            }
+            $('#popSearchKeyword').val("");
+            $('#popUserNm').val("");
+            masterVm.nowPage = '1';
+            masterVm.$nextTick(function () {
+              masterVm.$refs.commonModal.openWithCloseIcon();
+              masterVm.getList('MNA');
+            });
+          },
+          popPDS: function () {
+            var self = this;
+            var config = {
+              url: 'comPop/system/system/board/boardList.do?boardId=PDS',
+              params: '',
+            }
+            $('#popSearchKeyword').val("");
+            $('#popUserNm').val("");
+            masterVm.nowPage = '1';
+            masterVm.$nextTick(function () {
+              masterVm.$refs.commonModal.openWithCloseIcon();
+              masterVm.getList('PDS');
+            });
+          },
+          iconMenu: function () {
+            var self = this;
+            return {
+              clickFirstDepthIconMenu: function (pgmId, _gbn) {
+
+                let isLeafCnt = 0;
+                let lnbTypeStandCnt = 10;
+                self.subMenuList = [];
+                $.each(self.menuList, function (i, el) {
+                  if (isNotEmpty(el.fullPgmId)) {
+                    if (el.levelId == 4 && el.fullPgmId.indexOf(pgmId) != -1 && isNotEmpty(el.url)) {
+                      if (el.isLeaf == 'Y') {
+                        isLeafCnt++;
+                      }
+                      self.subMenuList.push(el);
+                    }
+                  }
+                });
+
+                self.lnbType = 'flat';
+                if (isLeafCnt > lnbTypeStandCnt) {
+                  self.lnbType = 'slide';
+                }
+
+                self.closeHome();
+
+                self.$nextTick(function () {
+                  if (_gbn === 'menu') {
+                    let url = $(".fniconbg").find("a[href*='main.do#PGM']").first().attr("href");
+                    loadPageByPgmId(url.split("#")[1]);
+                  }
+                })
+
+              },
+              clickIconMenu: function () {
+                var href3 = $(event.target).siblings('ul.icon-depth2').find('ul.icon-depth3').find('a[href*="#PGM"]:eq(0)').attr('href');
+                var href2 = $(event.target).siblings('ul.icon-depth2').find('a[href*="#PGM"]:eq(0)').attr('href');
+                self.closeHome();
+                $(event.target).attr('href', nvl(href3, href2)).click();
+              }
+            }
+          }
+        }
+      });
+
+
+      Vue.component('pop-list-component', {
+        mixins: [listComponentMixin],
+        props: ['list', 'listColumn', 'popModuleName'],
+        updated: function () {
+          var self = this;
+        },
+        template: `
+<div>
+<table ref="table" class="tbl-type02" style="table-layout:fixed">
+<thead>
+  <th v-for="header in listColumn"  class="txt-c pl0" :width="header.width+'%'">
+    <span v-if="header.formatter=='fmtListCheckbox'">
+      <input type="checkbox" v-bind:id="'list-checkbox-all'" v-on:click="listCheckAll" ref="checkboxAll" />
+      <label v-bind:for="'list-checkbox-all'" class="ml0"><span class="mr0"></span><span class="sound_only"></span></label>
+    </span>
+    <span v-else>
+      {{header.label }}
+    </span>
+  </th>
+    </thead>
+
+<tbody v-bind:id="popModuleName+'Tbody'">
+  <tr v-for="(entry, index) in list" v-on:click="clickRow" v-bind:id="popModuleName+'TbodyTr'+index">
+    <td v-for="item in listColumn" v-bind:style="'text-align:'+item.align">
+
+      <div v-if="item.formatter=='fmtListCheckbox'" style="text-align: center!important;">
+        <input type="checkbox" v-bind:id="popModuleName+'-checkbox'+index" ref="checkboxes" />
+        <label v-bind:for="popModuleName+'-checkbox'+index" class="ml0"><span class="mr0"></span><span class="sound_only"></span></label>
+      </div>
+      <div v-else>
+        <span v-for="column in item.data">
+          <input type="hidden" v-bind:class="'hidden ' + column" v-bind:value="entry[column]">
+        </span>
+        <div v-if="item.inputType=='select'">
+          <select style="width: 200px" v-bind:name="item.column" v-bind:id="item.column" v-bind:value="entry[item.column]">
+            <option v-for="code in (item.jsonData.split(';'))" v-bind:value="code.split(':')[0]">{{code.split(':')[1]}}</option>
+          </select>
+        </div>
+        <div v-else-if="item.inputType=='text'">
+          <input type="text" v-bind:name="item.column" v-bind:id="item.column" v-bind:value="entry[item.column]"/>
+        </div>
+        <div v-else>
+          <div v-if="item.formatter" style="text-overflow:ellipsis; white-space:nowrap; overflow:hidden;">
+            <a href="#" @click="masterVm.popShowDetail(index)">{{entry[item.column]}}</a>
+          </div>
+                <div v-else v-bind:class="'label ' + item.column" style="text-overflow:ellipsis; white-space:nowrap; overflow:hidden;">{{entry[item.column]}}</div>
+        </div>
+      </div>
+        </td>
+      </tr>
+      <tr v-if="list.length == 0" style="height:40px;">
+        <td colspan="4" style="text-align: center;">
+          조회된 데이터가 없습니다.
+        </td>
+      </tr>
+    </tbody>
+</table>
+</div>
+`,
+      });
+
+    </script>
+
+
+  </div>
+</body>
+
+</html>

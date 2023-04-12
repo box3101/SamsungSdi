@@ -1,0 +1,23 @@
+@charset "utf-8";
+
+table {border-collapse: collapse; border-spacing: 0;}
+
+.row1 {min-width:768px; margin: 0; padding: 0;border: 0; font: inherit; vertical-align:top; height:200px; width:100%;border-top:solid 2px #000; border-bottom:solid 1px #eaeaea;}
+.row1 tr {margin: 0px;padding: 0px; border:0; font: inherit; vertical-align:top;}
+.row1 td {margin: 0px;padding: 20px; border: 0; font: inherit; vertical-align:top;}
+
+.row2 {min-width:768px; border-collapse: collapse; border-spacing: 0; margin-top: 20px; padding: 0; border: 0; font: inherit; width:100%;}
+.row2 tr {margin: 0px;padding: 0px;border: 0;font: inherit; height:200px;}
+.row2 .td {margin: 0px;padding: 0px;border: 0;font: inherit; width:49.5%;}
+.row2 .margin {margin: 0px;padding: 0px;border: 0;font: inherit;vertical-align:middle;width:1%;} 
+.row2 .table {border-collapse: collapse;border-spacing: 0;margin: 0;padding: 0;border: 0;font-size: 100%; width:100%; font: inherit; table-layout:fixed;}
+.row2 .table .ltd {vertical-align:top;padding: 20px;margin: 0px;border: 0; width:30%; background-color:#ffffff; border-top:solid 1px #000; border-bottom:solid 1px #eaeaea;}
+.row2 .table .rtd {vertical-align:top;padding: 20px;margin: 0px;border: 0; width:20%; background-color:#f7f7f7; border-top:solid 1px #000; border-bottom:solid 1px #eaeaea;}
+
+.row3 {min-width: 768px; border-collapse: collapse;border-spacing: 0;margin-top: 20px;padding: 0;border: 0;font: inherit; width:100%;}
+.row3 tr {margin: 0px;padding: 0px;border: 0;font: inherit;}
+.row3 td {margin: 0px;padding: 0px;border: 0;font: inherit; width:100%;}
+.row3 .table {border-collapse: collapse;border-spacing: 0;margin: 0;padding: 0;border: 0;width:100%;font: inherit; table-layout:fixed;}
+.row3 .table tr {height:300px;}
+.row3 .table .ltd {vertical-align:top;padding: 20px;margin: 0px;border: 0; width:75%; background-color:#ffffff; border-top:solid 1px #000; border-bottom:solid 1px #eaeaea;}
+.row3 .table .rtd {vertical-align:top;padding: 20px;margin: 0px;border: 0; width:25%; min-width:210px; background-color:#f7f7f7; border-top:solid 1px #000; border-bottom:solid 1px #eaeaea;}
