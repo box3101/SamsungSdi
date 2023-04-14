@@ -68,3 +68,10 @@
 .contentWidth {
   height: calc(-150px + 100%) !important;
 }
+
+.bg-info .pop-tbl-type01 table tr th:first-child {
+  border-left: 1px solid #ddd !important;
+}
+.bg-info .pop-tbl-type01 table {
+  border-right: 1px solid #ddd !important;
+}
