@@ -1,1 +1,70 @@
 /* 퍼블리셔 작업 */
+
+.com-had-type02 {
+  border: var(--basic-border);
+  display: block;
+}
+
+.sectionHead {
+  margin: 39px 24px 20px;
+}
+
+.processWrap {
+  border: var(--basic-border);
+}
+
+.com-bg-info.bg-fff.processTable {
+  border: none;
+}
+
+.processTable .tit::before {
+  background: var(--basic-color);
+}
+
+.processWrap .processTable {
+  padding: 59px 24px;
+  font-size: 14px;
+  width: 100%;
+}
+.processWrap .processTable p {
+  color: var(--basic-color);
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 7px;
+}
+
+.processWrap .processTable th {
+  text-align: center !important;
+  color: #fff !important;
+  background: var(--basic-color);
+  font-weight: bold;
+}
+
+.processTable tr,
+.processTable td {
+  text-align: center !important;
+}
+
+.processTable.tlbColor {
+  padding: 59px 0;
+}
+
+.processTable tr:nth-child(odd) {
+  background: #f4f4f4;
+}
+
+.processTable.tlbColor tr:nth-child(odd) {
+  background: #fff;
+}
+.processTable.tlbColor tr:nth-child(even) {
+  background: #f4f4f4;
+}
+
+.com-had-type02.flexbl {
+  display: block;
+  padding: 39px 0 0;
+}
+
+.contentWidth {
+  height: calc(-150px + 100%) !important;
+}
