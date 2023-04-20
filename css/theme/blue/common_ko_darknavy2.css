@@ -75,3 +75,19 @@
 .bg-info .pop-tbl-type01 table {
   border-right: 1px solid #ddd !important;
 }
+
+.processTable .tbList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+.processTable .tbList .tbItem {
+  max-width: calc(32% + 2px);
+}
+
+.processTable .tbList .tbItem .tit::before {
+  display: none;
+}
+.processTable .tbList .tbItem .tit {
+  padding-left: 0;
+}
