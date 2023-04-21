@@ -1,0 +1,1369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="_csrf_parameter" content="_csrf" />
+  <meta name="_csrf_header" content="X-CSRF-TOKEN" />
+  <meta name="_csrf" content="b4084fc7-d7f9-415d-9a28-e50c41b7192a" />
+
+  <title>GSOP</title>
+
+  <link rel="shortcut icon" href="data:image/x-icon" type="image/x-icon" />
+  <link rel="stylesheet" type="text/css" href="css/smoothness/jquery-ui.min.css" />
+  <link rel="stylesheet" type="text/css" href="css/ui.jqgrid.css" />
+  <link rel="stylesheet" type="text/css" href="css/jquery.fancybox-1.3.4.css" />
+  <link rel="stylesheet" type="text/css" href="css/theme/blue/common_ko_darknavy.css?20220906162652" />
+  <link rel="stylesheet" type="text/css" href="css/theme/blue/conference.css" />
+  <link rel="stylesheet" href="css/theme/blue/common_ko_darknavy2.css" />
+  <!-- <link rel="stylesheet" type="text/css" href="css/common.vue.css?20220906162652">
+  <link rel="stylesheet" type="text/css" href="css/custom_design.css?20220906162652">
+  <link rel="stylesheet" type="text/css" href="css/jquery.minicolors.css"> -->
+
+  <link rel="stylesheet" type="text/css" href="css/select2.min.css" />
+
+  <link rel="stylesheet" type="text/css" href="css/selectize.default.css" />
+  <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+
+  <!-- pub add -->
+  <link rel="stylesheet" type="text/css" href="css/tooltip.css" />
+  <link rel="stylesheet" type="text/css" href="css/new_design.css?20220906162652" />
+  <link rel="stylesheet" type="text/css" href="css/gantt_style.css" />
+
+  <script type="text/javascript" src="js/new_design.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sortablejs@1.6.1/Sortable.min.js"></script>
+  <!-- pub add -->
+
+  <script type="text/javascript" src="js/jquery-ui.js"></script>
+  <!-- <script type="text/javascript" src="js/jquery.i18n.properties.min.js"></script>
+  <script type="text/javascript" src="js/i18n/grid.locale-ko.js"></script>
+  <script type="text/javascript" src="js/jquery.jqGrid.min.js"></script>
+  <script type="text/javascript" src="js/jquery.cookie.js"></script> -->
+  <script type="text/javascript" src="js/common.js?20220906162652"></script>
+  <!-- <script type="text/javascript" src="js/jquery.fancybox-1.3.4.pack.js"></script>
+  <script type="text/javascript" src="js/Chart.bundle.min.js"></script> -->
+  <!-- 
+  <script type="text/javascript" src="js/common.vue.js?20220906162652"></script>
+
+
+  <script type="text/javascript" src="js/cleave.min.js?20220906162652"></script> -->
+
+  <!-- 
+  <script type="text/javascript" src="js/rsa/jsbn.js"></script>
+  <script type="text/javascript" src="js/rsa/rsa.js"></script>
+  <script type="text/javascript" src="js/rsa/prng4.js"></script>
+  <script type="text/javascript" src="js/rsa/rng.js"></script> -->
+
+  <!-- custom scrollbar stylesheet -->
+  <link rel="stylesheet" href="css/jquery.mCustomScrollbar.css" />
+  <!-- custom scrollbar plugin -->
+  <script src="js/jquery.mCustomScrollbar.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
+</head>
+
+<body class="Basic">
+  <div id="wrap">
+    <!-- 콘텐츠 시작 -->
+    <div id="container" class="gnb_open">
+      <div class="containerCellL">
+        <div id="gnb" style="width: 220px">
+          <ul style="display: none">
+            <li>
+              <a href="#">
+                <img src="./images/theme/blue/m-logo.png" alt="" />
+              </a>
+            </li>
+            <li><a href="#" data-target-menu="allmenu" class="home"></a></li>
+            <li>
+              <a href="#" data-target-menu="allmenu" onclick="showMenu(this);return false;" class="gnb01">전체메뉴펼침</a>
+            </li>
+            <li>
+              <div class="fniconbg">
+                <!---->
+                <div>
+                  <div class="fnicon">
+                    <ul>
+                      <li>
+                        <a href="main.do#PGM1841" title="뷰공부" style="
+                              background: url('images/menuIcon/PGM1841.png')
+                                center 7px no-repeat;
+                            "><span>뷰공부</span></a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="fnicon">
+                    <ul>
+                      <li>
+                        <a href="main.do#PGM1831" title="Value-Up 조직부서장" style="
+                              background: url('images/menuIcon/PGM1831.png')
+                                center 7px no-repeat;
+                            "><span>Value-Up 조직부서장</span></a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="fnicon">
+                    <ul>
+                      <li>
+                        <a href="main.do#PGM1752" title="Value-Up 실행자" style="
+                              background: url('images/menuIcon/PGM1752.png')
+                                center 7px no-repeat;
+                            "><span>Value-Up 실행자</span></a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="fnicon">
+                    <ul>
+                      <li>
+                        <a href="main.do#PGM1753" title="Value-Up 리더" style="
+                              background: url('images/menuIcon/PGM1753.png')
+                                center 7px no-repeat;
+                            "><span>Value-Up 리더</span></a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="fnicon">
+                    <ul>
+                      <li>
+                        <a href="main.do#PGM1754" title="Value-Up 성장위원" style="
+                              background: url('images/menuIcon/PGM1754.png')
+                                center 7px no-repeat;
+                            "><span>Value-Up 성장위원</span></a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="fnicon">
+                    <ul>
+                      <li>
+                        <a href="main.do#PGM1751" title="Value-Up 조직구성원" style="
+                              background: url('images/menuIcon/PGM1751.png')
+                                center 7px no-repeat;
+                            "><span>Value-Up 조직구성원</span></a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="fnicon">
+                    <ul>
+                      <li>
+                        <a href="main.do#PGM1755" title="Value-Up 현황" style="
+                              background: url('images/menuIcon/PGM1755.png')
+                                center 7px no-repeat;
+                            "><span>Value-Up 현황</span></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <div id="menu01" class="menu01 depth2" style="display: block">
+            <div id="menu" class="menu">
+              <div class="logo">
+                <a href="main.do#PGM1770"><img src="images/common/main_logo.png" /></a>
+              </div>
+              <ul class="menu2 menuLvl2">
+                <li id="menu_PGM1722">
+                  <a href="main.do" onclick="return false;"><span class="leafN">대시보드</span></a>
+                  <ul class="menu3 menuLvl3">
+                    <li id="menu_PGM1770">
+                      <a href="main.do#PGM1770"><span class="leafY">대시보드</span></a>
+                    </li>
+                    <li id="menu_PGM1824">
+                      <a href="main.do#PGM1824"><span class="leafY">조직도</span></a>
+                    </li>
+                  </ul>
+                </li>
+                <li id="menu_PGM1739">
+                  <a href="main.do" onclick="return false;" class="active"><span class="leafN">표준체계</span></a>
+                  <ul class="menu3 menuLvl3 active">
+                    <li id="menu_PGM1746">
+                      <a href="main.do" onclick="return false;"><span class="leafN">분류체계현황</span></a>
+                      <ul class="menu4 menuLvl4">
+                        <li id="menu_PGM1841" class="active">
+                          <a href="main.do#PGM1841"><span class="leafY">프로세스Type </span></a>
+                        </li>
+                        <li id="menu_PGM1831" class="currentMenu">
+                          <a href="main.do#PGM1831"><span class="leafY">업무Type </span></a>
+                        </li>
+                        <li id="menu_PGM1831" class="currentMenu">
+                          <a href="main.do#PGM1831"><span class="leafY">Level1단계 </span></a>
+                        </li>
+                        <li id="menu_PGM1831" class="currentMenu">
+                          <a href="main.do#PGM1831"><span class="leafY">Level2단계 </span></a>
+                        </li>
+                        <li id="menu_PGM1831" class="currentMenu">
+                          <a href="main.do#PGM1831"><span class="leafY">Level3단계 </span></a>
+                        </li>
+                        <li id="menu_PGM1831" class="currentMenu">
+                          <a href="main.do#PGM1831"><span class="leafY">분류체계요청확인 </span></a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li id="menu_PGM1746">
+                      <a href="main.do" onclick="return false;"><span class="leafN">기준일정 및 아이템</span></a>
+                      <ul class="menu4 menuLvl4">
+                        <li id="menu_PGM1841" class="active" lass="currentMenu active">
+                          <a href="main.do#PGM1841"><span class="leafY">Phase단계 </span></a>
+                        </li>
+                        <li id="menu_PGM1831">
+                          <a href="main.do#PGM1831"><span class="leafY">건설Item </span></a>
+                        </li>
+                        <li id="menu_PGM1831">
+                          <a href="main.do#PGM1831"><span class="leafY">기술Item </span></a>
+                        </li>
+                        <li id="menu_PGM1831">
+                          <a href="main.do#PGM1831"><span class="leafY">기준일정 </span></a>
+                        </li>
+                        <li id="menu_PGM1831">
+                          <a href="main.do#PGM1831"><span class="leafY">단계및유형정보 </span></a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li id="menu_PGM1747">
+                      <a href="main.do" onclick="return false;" class="active"><span class="leafN">표준
+                          Activity</span></a>
+                      <ul class="menu4 menuLvl4 active">
+                        <li id="menu_PGM1752">
+                          <a href="main.do#PGM1752"><span class="leafY">Value-Up 실행자</span></a>
+                        </li>
+                        <li id="menu_PGM1753" class="">
+                          <a href="main.do#PGM1753" class=""><span class="leafY">Value-Up 리더</span></a>
+                        </li>
+                        <li id="menu_PGM1754" class="">
+                          <a href="main.do#PGM1754" class=""><span class="leafY">Value-Up 성장위원</span></a>
+                        </li>
+                        <li id="menu_PGM1751" class="">
+                          <a href="main.do#PGM1751" class=""><span class="leafY">Value-Up 조직구성원</span></a>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li id="menu_PGM1757">
+                  <a href="main.do" onclick="return false;" class=""><span class="leafN">업무</span></a>
+                  <ul class="menu3 menuLvl3">
+                    <li id="menu_PGM1758" class="">
+                      <a href="main.do#PGM1758" class=""><span class="leafY">수습평가설정</span></a>
+                    </li>
+                    <li id="menu_PGM1759">
+                      <a href="main.do" onclick="return false;" class=""><span class="leafN">수습평가자선정</span></a>
+                      <ul class="menu4 menuLvl4">
+                        <li id="menu_PGM1811" class="">
+                          <a href="main.do#PGM1811" class=""><span class="leafY">평가자선정</span></a>
+                        </li>
+                        <li id="menu_PGM1812" class="">
+                          <a href="main.do#PGM1812" class=""><span class="leafY">평가자승인</span></a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li id="menu_PGM1760">
+                      <a href="main.do" onclick="return false;" class=""><span class="leafN">수습평가실시</span></a>
+                      <ul class="menu4 menuLvl4">
+                        <li id="menu_PGM1813" class="">
+                          <a href="main.do#PGM1813" class=""><span class="leafY">평가실시</span></a>
+                        </li>
+                        <li id="menu_PGM1814" class="">
+                          <a href="main.do#PGM1814" class=""><span class="leafY">평가결과</span></a>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li id="menu_PGM1775">
+                  <a href="main.do" onclick="return false;" class=""><span class="leafN">커뮤니티</span></a>
+                  <ul class="menu3 menuLvl3">
+                    <li id="menu_PGM1776" class="">
+                      <a href="main.do#PGM1776" class=""><span class="leafY">진단설정</span></a>
+                    </li>
+                    <li id="menu_PGM1777">
+                      <a href="main.do" onclick="return false;" class=""><span class="leafN">진단실시</span></a>
+                      <ul class="menu4 menuLvl4">
+                        <li id="menu_PGM1782" class="">
+                          <a href="main.do#PGM1782" class=""><span class="leafY">우리의믿음진단</span></a>
+                        </li>
+                        <li id="menu_PGM1837" class="">
+                          <a href="main.do#PGM1837" class=""><span class="leafY">우리의믿음진단자확인</span></a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li id="menu_PGM1778">
+                      <a href="main.do" onclick="return false;" class=""><span class="leafN">진단결과</span></a>
+                      <ul class="menu4 menuLvl4">
+                        <li id="menu_PGM1784" class="">
+                          <a href="main.do#PGM1784" class=""><span class="leafY">진단현황</span></a>
+                        </li>
+                        <li id="menu_PGM1834" class="">
+                          <a href="main.do#PGM1834" class=""><span class="leafY">피진단자통계</span></a>
+                        </li>
+                        <li id="menu_PGM1835" class="">
+                          <a href="main.do#PGM1835" class=""><span class="leafY">진단자통계</span></a>
+                        </li>
+                        <li id="menu_PGM1836" class="">
+                          <a href="main.do#PGM1836" class=""><span class="leafY">조직별통계</span></a>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li id="menu_PGM1785">
+                  <a href="main.do" onclick="return false;" class=""><span class="leafN">설정관리</span></a>
+                  <ul class="menu3 menuLvl3">
+                    <li id="menu_PGM1786">
+                      <a href="main.do#PGM1786"><span class="leafY">S.P평가설정</span></a>
+                    </li>
+                    <li id="menu_PGM1787" class="">
+                      <a href="main.do#PGM1787" class=""><span class="leafY">Succession Plan실행</span></a>
+                    </li>
+                    <li id="menu_PGM1788" class="">
+                      <a href="main.do#PGM1788" class=""><span class="leafY">Succession Plan결과</span></a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <a href="#" onclick="showMenu(null);return false;" class="close" style="display: inline">닫기</a>
+        </div>
+        <div transition="modal" class="modal-mask" style="display: none">
+          <div class="modal-wrapper">
+            <div class="modal-container">
+              <div class="modal-header">
+                <!---->
+                <div class="header"></div>
+              </div>
+              <div class="modal-body">
+                <div class="body"></div>
+              </div>
+              <div class="modal-footer"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="containerCellR">
+        <div class="head">
+          <div class="lnb">
+            <div id="nav" class="nav" style="float: left; clear: both">
+              <ul style="margin-top: 10px">
+                <li><a href="#" class="home">홈</a></li>
+                <li>Project 관리</li>
+                <li class="active">Dashboard</li>
+              </ul>
+            </div>
+          </div>
+          <div class="rnb">
+            <div style="float: left; clear: both">
+              <div class="ico-bg has-tooltip" data-original-title="null">
+                <a href="#"><img src="images/theme/blue/ico-amenu.png" onclick="gnbApp.popMNA();return false;"
+                    alt="전체메뉴" /></a>
+              </div>
+              <div class="ico-bg has-tooltip" data-original-title="null">
+                <a href="#"><img src="images/theme/blue/ico-manual.png" onclick="gnbApp.popMNA();return false;"
+                    alt="매뉴얼" /></a>
+              </div>
+              <div class="ico-bg has-tooltip" data-original-title="null">
+                <a href="#"><img src="images/theme/blue/ico-notice.png" onclick="gnbApp.popNotice();return false;"
+                    alt="공지사항" /></a>
+              </div>
+              <div class="ico-bg has-tooltip" data-original-title="null">
+                <a href="#"><img src="images/theme/blue/ico-help.png" onclick="gnbApp.popQnA();return false;"
+                    alt="Q&amp;A" /></a>
+              </div>
+            </div>
+            <div class="user">
+              <a href="#"><img src="http://gwa.visang.com/upload/img/profile/visang/2793_thum.jpg" alt="유저 이미지"
+                  onerror="this.src='images/theme/blue/ico-user-pic.png'" class="profileImg" /></a>
+              <div id="pop-user-info" class="user-info" style="display: none">
+                <a href="#" class="mem-modify ml10 user-info-txt"><span> 민덕기 (mindk) </span> <span></span></a>
+                <div style="
+                      text-align: left;
+                      margin-top: 12px;
+                      padding-top: 6px;
+                      line-height: 130%;
+                      border-top: 1px solid rgb(234, 234, 234);
+                    ">
+                  <a class="logout-bg mt20"></a>
+                  <a href="#" onclick="doLogout();return false;" class="mem-logout" style="color: rgb(85, 85, 85)"><img
+                      src="images/theme/blue/ico-session-time.png" alt="접속시간"
+                      style="margin-top: -2px; padding-right: 3px" />time : <span id="sessionTimeCheck">59 :
+                      51</span></a>
+                  <span class="txt"><a href="#" onclick="doLogout();return false;"><img
+                        src="images/theme/blue/ico-logout.png" alt="로그아웃" />로그아웃</a></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="contents" class="contentWidth dashboardWrap">
+          <div class="contentsWrap">
+            <div class="contents" style="opacity: 1">
+              <div class="container tbl-bg">
+                <div class="section2 pt0">
+                  <div class="com-sarch-type01 comShadow">
+                    <div class="flex">
+                      <div class="lef">
+                        <ul>
+                          <li class="w40">
+                            <dl>
+                              <dt>Level1</dt>
+                              <dd>
+                                <select name="" id="" class="c-form-select">
+                                  <option value="">Project 명</option>
+                                </select>
+                              </dd>
+                            </dl>
+                          </li>
+                          <li class="w40">
+                            <dl>
+                              <dt>Project 구분</dt>
+                              <dd>
+                                <div class="form-wrap">
+                                  <div class="c-form-box">
+                                    <span class="tag-name">
+                                      홍길동
+                                      <img src="./images/theme/blue/c-close1.png" alt="닫기">
+                                    </span>
+                                    <span class="tag-name">
+                                      김길동
+                                      <img src="./images/theme/blue/c-close1.png" alt="닫기">
+                                    </span>
+                                  </div>
+                                  <button class="form-search"></button>
+                                </div>
+                              </dd>
+                            </dl>
+                          </li>
+                          <li class="w20">
+                            <dl>
+                              <dt class="wAuto">등급</dt>
+                              <dd>
+                                <div class="comCheckBoxWrap">
+                                  <div class="comCheckBox">
+                                    <input type="checkbox" class="chkInput" id="checkbox" name="checkbox">
+                                    <label for="checkbox" class="chkLabel">A</label>
+                                  </div>
+                                  <div class="comCheckBox">
+                                    <input type="checkbox" class="chkInput" id="checkbox2" name="checkbox">
+                                    <label for="checkbox2" class="chkLabel">B</label>
+                                  </div>
+                                  <div class="comCheckBox">
+                                    <input type="checkbox" class="chkInput" id="checkbox3" name="checkbox">
+                                    <label for="checkbox3" class="chkLabel">C</label>
+                                  </div>
+                                  <div class="bar"></div>
+                                  <div class="comCheckBox">
+                                    <input type="checkbox" class="chkInput" id="checkbox4" name="checkbox">
+                                    <label for="checkbox4" class="chkLabel cRed fwB">Critical</label>
+                                  </div>
+                                </div>
+                              </dd>
+                            </dl>
+                          </li>
+                          <li class="w40">
+                            <dl>
+                              <dt>소분과</dt>
+                              <dd>
+                                <div class="form-wrap">
+                                  <div class="c-form-box">
+                                    <span class="tag-name">
+                                      홍길동
+                                      <img src="./images/theme/blue/c-close1.png" alt="닫기">
+                                    </span>
+                                    <span class="tag-name">
+                                      김길동
+                                      <img src="./images/theme/blue/c-close1.png" alt="닫기">
+                                    </span>
+                                  </div>
+                                  <button class="form-search"></button>
+                                </div>
+                              </dd>
+                            </dl>
+                          </li>
+                          <li class="w40">
+                            <dl>
+                              <dt>조회단위</dt>
+                              <dd>
+                                <select name="" id="" class="c-form-select">
+                                  <option value="">당월, 누계</option>
+                                </select>
+                              </dd>
+                            </dl>
+                          </li>
+                          <li class="w20">
+                            <dl>
+                              <dt>기준일자</dt>
+                              <dd>
+                                <div class="c-form-box flex aic jc wx167">
+                                  2022.02.13
+                                </div>
+                              </dd>
+                            </dl>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="section2 dashboard">
+                  <section class="flex">
+                    <article class="lef">
+                      <!-- 계획일정 진척률 -->
+                      <div class="com-sarch-type01 comShadow">
+                        <h2>계획일정比 진척률</h2>
+                        <div class="rate">
+                          <div class="row">
+                            <p class="tit">계획일정</p>
+                            <div class="graph">
+                              <!-- 그래프 들어가는 공간 -->
+                              <!-- 그래프 들어가는 공간 eee -->
+                            </div>
+                            <div class="numCase">
+                              <span class="current"> <em>234</em> 건</span>
+                              <span class="all"> <em>1,550</em> 건</span>
+                            </div>
+                          </div>
+                          <div class="row second">
+                            <p class="tit letSpa">실적</p>
+                            <div class="graph">
+                              <!-- 그래프 들어가는 공간 -->
+                              <!-- 그래프 들어가는 공간 eee -->
+                            </div>
+                            <div class="numCase">
+                              <span class="current"> <em>234</em> 건</span>
+                              <span class="all"> <em>1,550</em> 건</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="table">
+                          <table class="table">
+                            <colgroup>
+                              <col width="80px">
+                              <col width="80px">
+                              <col width="auto">
+                              <col width="auto">
+                              <col width="auto">
+                              <col width="auto">
+                            </colgroup>
+                            <tr>
+                              <th colspan="2">구분</th>
+                              <th>실적</th>
+                              <th class="bg">
+                                정상완료
+                                <div class="before"></div>
+                              </th>
+                              <th class="bg">
+                                지연완료
+                                <div class="before"></div>
+                              </th>
+                              <th>지연 중</th>
+                            </tr>
+                            <tr>
+                              <td rowspan="2" class="bold">
+                                계획일정 <br>
+                                比
+                              </td>
+                              <td class="bold">건수</td>
+                              <td>
+                                231/234<em>건</em>
+                              </td>
+                              <td>
+                                231/234<em>건</em>
+                              </td>
+                              <td>
+                                231/234<em>건</em>
+                              </td>
+                              <td>
+                                231/234<em>건</em>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td class="bold">준수율</td>
+                              <td>
+                                98%
+                              </td>
+                              <td>
+                                98%
+                              </td>
+                              <td>
+                                98%
+                              </td>
+                              <td>
+                                98%
+                              </td>
+                            </tr>
+                          </table>
+                        </div>
+                      </div>
+                      <!-- 계획일정 진척률 eee -->
+                      <!-- Activity 완료 및 지연 건수 (소분과별) -->
+                      <div class="com-sarch-type01 comShadow mt15">
+                        <h2>Activity 완료 및 지연 건수 (소분과별)</h2>
+                        <div class="graph2">
+
+                        </div>
+                      </div>
+                      <!-- Activity 완료 및 지연 건수 (소분과별) eee -->
+                    </article>
+                    <article class="ref">
+                      <!-- 최근 완료 업무 -->
+                      <div class="com-sarch-type01 comShadow rBlue">
+                        <div class="header flex aic jcb">
+                          <h2>최근 완료 업무</h2>
+                          <a href="#" class="allMore flex aic jcb gap5">
+                            <span class="comLink">전체보기</span>
+                            <img src="../images/theme/blue/btn_viewmore.png" alt="">
+                          </a>
+                        </div>
+                        <div class="info">
+                          <div class="com-tbl-wrap mt10 mh192">
+                            <table class="comTable">
+                              <colgroup>
+                                <col width="40%">
+                                <col width="auto">
+                                <col width="auto">
+                                <col width="auto">
+                                <col width="auto">
+                                <col width="auto">
+                              </colgroup>
+                              <tr>
+                                <th>Activity 명</th>
+                                <th>시작일</th>
+                                <th>종료일</th>
+                                <th>완료일</th>
+                                <th>담당</th>
+                                <th>완료여부</th>
+                              </tr>
+                              <tr>
+                                <td class="left"><a href="#">글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트</a>
+                                </td>
+                                <td>2022.10.24
+                                </td>
+                                <td>2023.02.15
+                                </td>
+                                <td>2023.02.15
+                                </td>
+                                <td>주관노</td>
+                                <td>정상완료</td>
+                              </tr>
+                              <tr>
+                                <td class="left"><a href="#">글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트</a>
+                                </td>
+                                <td>2022.10.24
+                                </td>
+                                <td>2023.02.15
+                                </td>
+                                <td>2023.02.15
+                                </td>
+                                <td>주관노</td>
+                                <td>정상완료</td>
+                              </tr>
+                              <tr>
+                                <td class="left"><a href="#">글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트</a>
+                                </td>
+                                <td>2022.10.24
+                                </td>
+                                <td>2023.02.15
+                                </td>
+                                <td>2023.02.15
+                                </td>
+                                <td>주관노</td>
+                                <td>정상완료</td>
+                              </tr>
+                              <tr>
+                                <td class="left"><a href="#">인프라 기술표준 개정 (현지법규 반영)</a>
+                                </td>
+                                <td>2022.10.24
+                                </td>
+                                <td>2023.02.15
+                                </td>
+                                <td>2023.02.15
+                                </td>
+                                <td>주관노</td>
+                                <td>정상완료</td>
+                              </tr>
+                              <tr>
+                                <td class="left"><a href="#">인프라 기술표준 개정 (현지법규 반영)</a>
+                                </td>
+                                <td>2022.10.24
+                                </td>
+                                <td>2023.02.15
+                                </td>
+                                <td>2023.02.15
+                                </td>
+                                <td>주관노</td>
+                                <td>정상완료</td>
+                              </tr>
+                              <tr>
+                                <td class="left"><a href="#">인프라 기술표준 개정 (현지법규 반영)</a>
+                                </td>
+                                <td>2022.10.24
+                                </td>
+                                <td>2023.02.15
+                                </td>
+                                <td>2023.02.15
+                                </td>
+                                <td>주관노</td>
+                                <td>정상완료</td>
+                              </tr>
+                            </table>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- 최근 완료 업무 eee -->
+
+                      <!-- 현재 진행중 업무 -->
+                      <div class="com-sarch-type01 comShadow rGreen mt15">
+                        <div class="header flex aic jcb">
+                          <h2>현재 진행중 업무</h2>
+                          <a href="#" class="allMore flex aic jcb gap5">
+                            <span class="comLink">전체보기</span>
+                            <img src="../images/theme/blue/btn_viewmore.png" alt="">
+                          </a>
+                        </div>
+                        <div class="info">
+                          <div class="com-tbl-wrap mt10 mh192">
+                            <table class="comTable">
+                              <colgroup>
+                                <col width="40%">
+                                <col width="auto">
+                                <col width="auto">
+                                <col width="auto">
+                                <col width="auto">
+                                <col width="auto">
+                              </colgroup>
+                              <tr>
+                                <th>Activity 명</th>
+                                <th>시작일</th>
+                                <th>종료일</th>
+                                <th>완료일</th>
+                                <th>담당</th>
+                                <th>완료여부</th>
+                              </tr>
+                              <tr>
+                                <td class="left"><a href="#">글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트</a>
+                                </td>
+                                <td>2022.10.24
+                                </td>
+                                <td>2023.02.15
+                                </td>
+                                <td>2023.02.15
+                                </td>
+                                <td>주관노</td>
+                                <td>정상완료</td>
+                              </tr>
+                              <tr>
+                                <td class="left"><a href="#">인프라 기술표준 개정 (현지법규 반영)</a>
+                                </td>
+                                <td>2022.10.24
+                                </td>
+                                <td>2023.02.15
+                                </td>
+                                <td>2023.02.15
+                                </td>
+                                <td>주관노</td>
+                                <td>정상완료</td>
+                              </tr>
+                              <tr>
+                                <td class="left"><a href="#">인프라 기술표준 개정 (현지법규 반영)</a>
+                                </td>
+                                <td>2022.10.24
+                                </td>
+                                <td>2023.02.15
+                                </td>
+                                <td>2023.02.15
+                                </td>
+                                <td>주관노</td>
+                                <td>정상완료</td>
+                              </tr>
+                              <tr>
+                                <td class="left"><a href="#">인프라 기술표준 개정 (현지법규 반영)</a>
+                                </td>
+                                <td>2022.10.24
+                                </td>
+                                <td>2023.02.15
+                                </td>
+                                <td>2023.02.15
+                                </td>
+                                <td>주관노</td>
+                                <td>정상완료</td>
+                              </tr>
+                              <tr>
+                                <td class="left"><a href="#">인프라 기술표준 개정 (현지법규 반영)</a>
+                                </td>
+                                <td>2022.10.24
+                                </td>
+                                <td>2023.02.15
+                                </td>
+                                <td>2023.02.15
+                                </td>
+                                <td>주관노</td>
+                                <td>정상완료</td>
+                              </tr>
+                              <tr>
+                                <td class="left"><a href="#">인프라 기술표준 개정 (현지법규 반영)</a>
+                                </td>
+                                <td>2022.10.24
+                                </td>
+                                <td>2023.02.15
+                                </td>
+                                <td>2023.02.15
+                                </td>
+                                <td>주관노</td>
+                                <td>정상완료</td>
+                              </tr>
+                            </table>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- 현재 진행중 업무 eee -->
+
+                      <section class="flex gap12 mt15">
+                        <article class="left flex1">
+                          <!-- Activity 지연 항목 -->
+                          <div class="com-sarch-type01 comShadow rOrange">
+                            <div class="header flex aic jcb">
+                              <h2>Activity 지연 항목</h2>
+                              <a href="#" class="allMore flex aic jcb gap5">
+                                <span class="comLink">전체보기</span>
+                                <img src="../images/theme/blue/btn_viewmore.png" alt="">
+                              </a>
+                            </div>
+                            <div class="info">
+                              <div class="com-tbl-wrap mt10 mh192">
+                                <table class="comTable">
+                                  <colgroup>
+                                    <col width="60%">
+                                    <col width="auto">
+                                    <col width="auto">
+                                  </colgroup>
+                                  <tr>
+                                    <th>Activity 명</th>
+                                    <th>시작일</th>
+                                    <th>종료일</th>
+                                  </tr>
+                                  <tr>
+                                    <td class="left"><a href="#">글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트</a>
+                                    </td>
+                                    <td>2022.10.24
+                                    </td>
+                                    <td>2022.10.24
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="left"><a href="#">글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트</a>
+                                    </td>
+                                    <td>2022.10.24
+                                    </td>
+                                    <td>2022.10.24
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="left"><a href="#">글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트</a>
+                                    </td>
+                                    <td>2022.10.24
+                                    </td>
+                                    <td>2022.10.24
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="left"><a href="#">인프라 기술표준 개정 (현지법규 반영)</a>
+                                    </td>
+                                    <td>2022.10.24
+                                    </td>
+                                    <td>2022.10.24
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="left"><a href="#">인프라 기술표준 개정 (현지법규 반영)</a>
+                                    </td>
+                                    <td>2022.10.24
+                                    </td>
+                                    <td>2022.10.24
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="left"><a href="#">인프라 기술표준 개정 (현지법규 반영)</a>
+                                    </td>
+                                    <td>2022.10.24
+                                    </td>
+                                    <td>2022.10.24
+                                    </td>
+                                  </tr>
+                                </table>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- Activity 지연 항목 eee -->
+                        </article>
+                        <article class="right flex1">
+                          <!-- Activity Issue 현황 -->
+                          <div class="com-sarch-type01 comShadow rYellow">
+                            <div class="header flex aic jcb">
+                              <h2>Activity Issue 현황</h2>
+                              <a href="#" class="allMore flex aic jcb gap5">
+                                <span class="comLink">전체보기</span>
+                                <img src="../images/theme/blue/btn_viewmore.png" alt="">
+                              </a>
+                            </div>
+                            <div class="info">
+                              <div class="com-tbl-wrap mt10 mh192">
+                                <table class="comTable">
+                                  <colgroup>
+                                    <col width="230px">
+                                    <col width="auto">
+                                    <col width="auto">
+                                  </colgroup>
+                                  <tr>
+                                    <th>Activity 명</th>
+                                    <th>시작일</th>
+                                    <th>종료일</th>
+                                  </tr>
+                                  <tr>
+                                    <td class="left"><a href="#">글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트</a>
+                                    </td>
+                                    <td>2022.10.24
+                                    </td>
+                                    <td>2022.10.24
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="left"><a href="#">글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트</a>
+                                    </td>
+                                    <td>2022.10.24
+                                    </td>
+                                    <td>2022.10.24
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="left"><a href="#">글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트</a>
+                                    </td>
+                                    <td>2022.10.24
+                                    </td>
+                                    <td>2022.10.24
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="left"><a href="#">인프라 기술표준 개정 (현지법규 반영)</a>
+                                    </td>
+                                    <td>2022.10.24
+                                    </td>
+                                    <td>2022.10.24
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="left"><a href="#">인프라 기술표준 개정 (현지법규 반영)</a>
+                                    </td>
+                                    <td>2022.10.24
+                                    </td>
+                                    <td>2022.10.24
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="left"><a href="#">인프라 기술표준 개정 (현지법규 반영)</a>
+                                    </td>
+                                    <td>2022.10.24
+                                    </td>
+                                    <td>2022.10.24
+                                    </td>
+                                  </tr>
+                                </table>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- Activity Issue 현황 eee -->
+                        </article>
+                      </section>
+
+                      <!-- 주요 KPI -->
+                      <div class="com-sarch-type01 comShadow rBlack mt15">
+                        <div class="header flex aic jcb">
+                          <h2>주요 KPI</h2>
+                          <div class="tabMenu flex gap8">
+                            <button class="tablinks active" onclick="openTab(event, 'tab1')">건설</button>
+                            <button class="tablinks" onclick="openTab(event, 'tab2')">설비</button>
+                            <button class="tablinks" onclick="openTab(event, 'tab3')">인사</button>
+                          </div>
+                        </div>
+                        <div class="tabInfo">
+                          <div class="lef">
+                            진행현황
+                          </div>
+                          <div class="ref">
+                            <div id="tab1" class="tabcontent">
+                              <ul class="comStep flex">
+                                <!-- TODO li.on 일때 진행바 진행 -->
+                                <li class="on">
+                                  <div class="box">
+                                    <p class="date">'22.10.31</p>
+                                    <span class="step">
+                                      01
+                                    </span>
+                                    <p class="txt">
+                                      파일착수
+                                    </p>
+                                  </div>
+                                  <div class="progressBar">
+                                  </div>
+                                </li>
+                                <li>
+                                  <div class="box">
+                                    <p class="date">'23.02.01</p>
+                                    <span class="step">
+                                      02
+                                    </span>
+                                    <p class="txt">
+                                      파일착수
+                                    </p>
+                                  </div>
+                                  <div class="progressBar"></div>
+                                </li>
+                                <li>
+                                  <div class="box">
+                                    <p class="date">'23.06.01</p>
+                                    <span class="step">
+                                      03
+                                    </span>
+                                    <p class="txt">
+                                      파일착수
+                                    </p>
+                                  </div>
+                                  <div class="progressBar"></div>
+                                </li>
+                                <li>
+                                  <div class="box">
+                                    <p class="date">'23.12.01</p>
+                                    <span class="step">
+                                      04
+                                    </span>
+                                    <p class="txt">
+                                      파일착수
+                                    </p>
+                                  </div>
+                                  <div class="progressBar"></div>
+                                </li>
+                                <li>
+                                  <div class="box">
+                                    <p class="date">'24.04.01</p>
+                                    <span class="step">
+                                      05
+                                    </span>
+                                    <p class="txt">
+                                      파일착수
+                                    </p>
+                                  </div>
+                                  <div class="progressBar"></div>
+                                </li>
+                                <li class="last">
+                                  <div class="box">
+                                    <p class="date">'24.10.31</p>
+                                    <span class="step">
+                                      06
+                                    </span>
+                                    <p class="txt">
+                                      파일착수
+                                    </p>
+                                  </div>
+                                  <div class="progressBar"></div>
+                                </li>
+                              </ul>
+                            </div>
+
+                            <div id="tab2" class="tabcontent">
+                              <ul class="comStep flex">
+                                <!-- TODO li.on 일때 진행바 진행 -->
+                                <li class="on">
+                                  <div class="box">
+                                    <p class="date">'22.10.31</p>
+                                    <span class="step">
+                                      01
+                                    </span>
+                                    <p class="txt">
+                                      파일착수
+                                    </p>
+                                  </div>
+                                  <div class="progressBar">
+                                  </div>
+                                </li>
+                                <li class="on">
+                                  <div class="box">
+                                    <p class="date">'23.02.01</p>
+                                    <span class="step">
+                                      02
+                                    </span>
+                                    <p class="txt">
+                                      파일착수
+                                    </p>
+                                  </div>
+                                  <div class="progressBar"></div>
+                                </li>
+                                <li>
+                                  <div class="box">
+                                    <p class="date">'23.06.01</p>
+                                    <span class="step">
+                                      03
+                                    </span>
+                                    <p class="txt">
+                                      파일착수
+                                    </p>
+                                  </div>
+                                  <div class="progressBar"></div>
+                                </li>
+                                <li>
+                                  <div class="box">
+                                    <p class="date">'23.12.01</p>
+                                    <span class="step">
+                                      04
+                                    </span>
+                                    <p class="txt">
+                                      파일착수
+                                    </p>
+                                  </div>
+                                  <div class="progressBar"></div>
+                                </li>
+                                <li>
+                                  <div class="box">
+                                    <p class="date">'24.04.01</p>
+                                    <span class="step">
+                                      05
+                                    </span>
+                                    <p class="txt">
+                                      파일착수
+                                    </p>
+                                  </div>
+                                  <div class="progressBar"></div>
+                                </li>
+                                <li class="last">
+                                  <div class="box">
+                                    <p class="date">'24.10.31</p>
+                                    <span class="step">
+                                      06
+                                    </span>
+                                    <p class="txt">
+                                      파일착수
+                                    </p>
+                                  </div>
+                                  <div class="progressBar"></div>
+                                </li>
+                              </ul>
+                            </div>
+
+                            <div id="tab3" class="tabcontent">
+                              <ul class="comStep flex">
+                                <!-- TODO li.on 일때 진행바 진행 -->
+                                <li class="on">
+                                  <div class="box">
+                                    <p class="date">'22.10.31</p>
+                                    <span class="step">
+                                      01
+                                    </span>
+                                    <p class="txt">
+                                      파일착수
+                                    </p>
+                                  </div>
+                                  <div class="progressBar">
+                                  </div>
+                                </li>
+                                <li class="on">
+                                  <div class="box">
+                                    <p class="date">'23.02.01</p>
+                                    <span class="step">
+                                      02
+                                    </span>
+                                    <p class="txt">
+                                      파일착수
+                                    </p>
+                                  </div>
+                                  <div class="progressBar"></div>
+                                </li>
+                                <li class="on">
+                                  <div class="box">
+                                    <p class="date">'23.06.01</p>
+                                    <span class="step">
+                                      03
+                                    </span>
+                                    <p class="txt">
+                                      파일착수
+                                    </p>
+                                  </div>
+                                  <div class="progressBar"></div>
+                                </li>
+                                <li>
+                                  <div class="box">
+                                    <p class="date">'23.12.01</p>
+                                    <span class="step">
+                                      04
+                                    </span>
+                                    <p class="txt">
+                                      파일착수
+                                    </p>
+                                  </div>
+                                  <div class="progressBar"></div>
+                                </li>
+                                <li>
+                                  <div class="box">
+                                    <p class="date">'24.04.01</p>
+                                    <span class="step">
+                                      05
+                                    </span>
+                                    <p class="txt">
+                                      파일착수
+                                    </p>
+                                  </div>
+                                  <div class="progressBar"></div>
+                                </li>
+                                <li class="last">
+                                  <div class="box">
+                                    <p class="date">'24.10.31</p>
+                                    <span class="step">
+                                      06
+                                    </span>
+                                    <p class="txt">
+                                      파일착수
+                                    </p>
+                                  </div>
+                                  <div class="progressBar"></div>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <script>
+                        // 첫 번째 탭 내용을 기본으로 보여줌
+                        document.getElementById("tab1").classList.add("show");
+
+                        function openTab(evt, tabName) {
+                          var tabcontent, tablinks;
+
+                          // 모든 탭 내용을 숨김
+                          tabcontent = document.querySelectorAll(".tabcontent");
+                          tabcontent.forEach((el) => {
+                            el.classList.remove("show");
+                          });
+
+                          // 모든 탭 버튼의 active 클래스 제거
+                          tablinks = document.querySelectorAll(".tablinks");
+                          tablinks.forEach((el) => {
+                            el.classList.remove("active");
+                          });
+                          // 선택된 탭 내용 보여줌
+                          document.getElementById(tabName).classList.add("show");
+
+                          // 선택된 탭 버튼에 active 클래스 추가
+                          evt.currentTarget.classList.add("active");
+                        }
+
+                      </script>
+                      <!-- 주요 KPI eee -->
+                    </article>
+                  </section>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mask" style="display: none"></div>
+
+        <!-- 콘텐츠 끝 -->
+        <!-- 다이어로그 -->
+        <div class="loadingDiv" style="display: none; height: 900px">
+          <div class="loadingImgDiv" style="top: 426px">
+            <img src="images/theme/blue/loading.gif" />
+            <div class="loadingPercentDiv" style="display: none"></div>
+          </div>
+          <div class="loadingBGDiv"></div>
+        </div>
+
+        <form id="command" name="logoutForm" action="logout.do" method="POST"
+          data-egovframework.double.submit.preventer.parameter.name="E0961786-7722-45DB-9480-FE0D583DFAD0">
+          <div>
+            <input type="hidden" name="_csrf" value="b4084fc7-d7f9-415d-9a28-e50c41b7192a" />
+          </div>
+        </form>
+
+        <iframe name="hiddenFrame" id="hiddenFrame" frameborder="0"></iframe>
+        <form id="layoutPopForm" name="layoutPopForm" action="main.do" method="post"
+          data-egovframework.double.submit.preventer.parameter.name="E0961786-7722-45DB-9480-FE0D583DFAD0">
+          <input type="hidden" name="findYear" />
+          <div>
+            <input type="hidden" name="_csrf" value="b4084fc7-d7f9-415d-9a28-e50c41b7192a" />
+          </div>
+        </form>
+
+        <form id="moveMenu" name="moveMenu"></form>
+
+        <div id="popBoardApp">
+          <div transition="modal" class="modal-mask" style="display: none">
+            <div class="modal-wrapper">
+              <div class="modal-container">
+                <div class="modal-header">
+                  <!---->
+                  <div class="header"></div>
+                </div>
+                <div class="modal-body">
+                  <div class="body">
+                    <div class="popup wx800" style="min-height: 400px">
+                      <!---->
+                      <form id="popBoardform" name="popBoardform">
+                        <div class="container">
+                          <div class="sch-bx mt10 mb10">
+                            <ul>
+                              <li>
+                                <label for="popSearchKeyword" class="ptitle" style="font-weight: normal">제목</label>
+                                <input type="text" id="popSearchKeyword" name="popSearchKeyword"
+                                  onkeyup="if(event.keyCode == 13) masterVm.getList();return false;"
+                                  class="t-box02 wx200" />
+                              </li>
+                              <li>
+                                <label for="popUserNm">등록자</label>
+                                <input type="text" id="popUserNm" name="popUserNm"
+                                  onkeyup="if(event.keyCode == 13) masterVm.getList();return false;"
+                                  class="t-box02 wx100" />
+                              </li>
+                            </ul>
+                            <a href="#" onclick="masterVm.getList();return false;" class="btn-sch">검색</a>
+                          </div>
+                          <pop-list-component module-name="popList" list=""
+                            list-column="[object Object],[object Object],[object Object],[object Object]">
+                          </pop-list-component>
+                          <div style="text-align: center; margin-top: 10px">
+                            <ul class="pagination">
+                              <div></div>
+                            </ul>
+                          </div>
+                          <div transition="modal" class="modal-mask" style="display: none">
+                            <div class="modal-wrapper">
+                              <div class="modal-container">
+                                <div class="modal-header">
+                                  <!---->
+                                  <div class="header"></div>
+                                </div>
+                                <div class="modal-body">
+                                  <div class="body"></div>
+                                </div>
+                                <div class="modal-footer"></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal-footer"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+</body>
+
+</html>

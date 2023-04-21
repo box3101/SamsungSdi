@@ -596,6 +596,7 @@ border: 1px solid #fff; background: var(--basic-color-secondary);
 .wx130 {width:130px !important;}
 .wx140 {width:140px !important;}
 .wx150 {width:150px !important;}
+.wx167 {width:167px !important;}
 .wx160 {width:160px !important;}
 .wx165 {width:165px !important;}
 .wx170 {width:170px !important;}
@@ -2895,6 +2896,7 @@ a.download span{}
 }
 .c-form-input,.c-form-box{
     width: 100%; height: 30px; line-height: 30px;color: #010101; font-weight: bold; padding: 8px 10px; border: 1px solid #aaaaaa; border-radius: 3px;
+    box-sizing: border-box;
 }
 .c-form-input::placeholder{
     color: #010101; font-weight: bold;font-style: normal;
@@ -6205,4 +6207,723 @@ div.webix_column.webix_gantt_title.webix_first.webix_select_mark{
     word-wrap: break-word;
 }
 
-/* 20230412 */
+
+
+
+
+
+
+/* 20230412 새로 추가되는 css*/
+.gap1 {
+    gap: 1px;
+  }
+  
+  .gap2 {
+    gap: 2px;
+  }
+  
+  .gap3 {
+    gap: 3px;
+  }
+  
+  .gap4 {
+    gap: 4px;
+  }
+  
+  .gap5 {
+    gap: 5px;
+  }
+  
+  .gap6 {
+    gap: 6px;
+  }
+  
+  .gap7 {
+    gap: 7px;
+  }
+  
+  .gap8 {
+    gap: 8px;
+  }
+  
+  .gap9 {
+    gap: 9px;
+  }
+  
+  .gap10 {
+    gap: 10px;
+  }
+  
+  .gap11 {
+    gap: 11px;
+  }
+  
+  .gap12 {
+    gap: 12px;
+  }
+  
+  .gap13 {
+    gap: 13px;
+  }
+  
+  .gap14 {
+    gap: 14px;
+  }
+  
+  .gap15 {
+    gap: 15px;
+  }
+  
+  .gap16 {
+    gap: 16px;
+  }
+  
+  .gap17 {
+    gap: 17px;
+  }
+  
+  .gap18 {
+    gap: 18px;
+  }
+  
+  .gap19 {
+    gap: 19px;
+  }
+  
+  .gap20 {
+    gap: 20px;
+  }
+  
+  .gap21 {
+    gap: 21px;
+  }
+  
+  .gap22 {
+    gap: 22px;
+  }
+  
+  .gap23 {
+    gap: 23px;
+  }
+  
+  .gap24 {
+    gap: 24px;
+  }
+  
+  .gap25 {
+    gap: 25px;
+  }
+  
+  .gap26 {
+    gap: 26px;
+  }
+  
+  .gap27 {
+    gap: 27px;
+  }
+  
+  .gap28 {
+    gap: 28px;
+  }
+  
+  .gap29 {
+    gap: 29px;
+  }
+  
+  .gap30 {
+    gap: 30px;
+  }
+  
+  .gap31 {
+    gap: 31px;
+  }
+  
+  .gap32 {
+    gap: 32px;
+  }
+  
+  .gap33 {
+    gap: 33px;
+  }
+  
+  .gap34 {
+    gap: 34px;
+  }
+  
+  .gap35 {
+    gap: 35px;
+  }
+  
+  .gap36 {
+    gap: 36px;
+  }
+  
+  .gap37 {
+    gap: 37px;
+  }
+  
+  .gap38 {
+    gap: 38px;
+  }
+  
+  .gap39 {
+    gap: 39px;
+  }
+  
+  .gap40 {
+    gap: 40px;
+  }
+  
+  .gap41 {
+    gap: 41px;
+  }
+  
+  .gap42 {
+    gap: 42px;
+  }
+  
+  .gap43 {
+    gap: 43px;
+  }
+  
+  .gap44 {
+    gap: 44px;
+  }
+  
+  .gap45 {
+    gap: 45px;
+  }
+  
+  .gap46 {
+    gap: 46px;
+  }
+  
+  .gap47 {
+    gap: 47px;
+  }
+  
+  .gap48 {
+    gap: 48px;
+  }
+  
+  .gap49 {
+    gap: 49px;
+  }
+  
+  .gap50 {
+    gap: 50px;
+  }
+  
+
+.flex{
+    display: flex;
+}
+.flex.aic{
+    align-items: center;
+}
+.flex.jc{
+    justify-content: center;
+}
+.flex.jcb{
+    justify-content: space-between;
+}
+.flex1{
+    flex:1;
+}
+.sectionHead{
+    margin: 24px 24px 20px!important;
+}
+.fwB{
+    font-weight: bold!important;
+}
+.cRed{
+    color: #FE0900!important;
+}
+.comCheckBoxWrap{
+    display: flex;
+    align-items: center;
+}
+.comCheckBoxWrap .bar{
+    position: relative;
+    top: 1px;
+    width: 1px; height: 16px; background: #707070;
+    margin: 0 16px;
+    margin-left: 6px;
+}
+.comCheckBoxWrap .comCheckBox .chkInput{
+    display: none;
+}
+.comCheckBoxWrap .comCheckBox .chkLabel{
+    display: inline-block;
+    cursor: pointer;
+    padding-left: 25px;
+    margin-left: 0;
+    margin-right: 10px;
+    position: relative;
+    font-size: 14px;
+    font-weight: 400;
+    color:#333;
+}
+.comCheckBoxWrap .comCheckBox .chkLabel em{
+    font-weight: bold;
+}
+.comCheckBoxWrap .comCheckBox .chkLabel::before{
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    background-color: #fff;
+    border: 1px solid #aaaaaa;
+    border-radius: 5px;
+}
+.comCheckBoxWrap .comCheckBox .chkInput:checked ~ label:before {
+    content: "\2713";
+    font-size: 18px;
+    text-align: center;
+    line-height: 15px;
+    background-color: var(--basic-color);
+    border-color: var(--basic-color);
+    color: #fff;
+    font-weight: 400;
+  }
+.com-sarch-type01 .flex .lef ul li.w20{
+    flex:1 1 25%;
+    max-width:20%;
+}
+.com-sarch-type01 .flex .lef ul li.w40{
+    flex:1 1 37.5%;
+    max-width:37.5%;
+}
+.com-sarch-type01 .flex .lef ul li dl{
+    height: 100%;
+}
+.com-sarch-type01.comShadow{
+    padding: 10px 16px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    box-shadow: 0 3px 6px rgba(96,120,175,0.16);
+    border: 1px solid #eee;
+}
+.com-sarch-type01.comShadow .flex .lef ul li{
+    margin: 4px 0;
+}
+@media (max-width:1700px){
+    .com-sarch-type01 .flex .lef ul li.w20{
+        flex:1 1 25%;
+        max-width:25%;
+    }
+    .com-sarch-type01 .flex .lef ul li.w40{
+        flex:1 1 37.5%;
+        max-width:37.5%;
+    }
+}
+.section2.dashboard{
+    padding-top: 16px;
+}
+.section2.dashboard h2{
+    position: relative;
+    font-size: 18px;
+    font-weight: bold;
+    color: #111;
+    font-weight: bold;
+}
+.section2.dashboard h2::before{
+    content: '';
+    display: inline-block;
+    width: 3px;
+    height: 17px;
+    background: #333333;
+    position: relative;
+    top: 2px;
+    margin-right: 6px;
+}
+.dashboard .com-sarch-type01.comShadow{
+    padding: 10px 20px;
+}
+.dashboard>.flex{
+    gap:16px;
+}
+.dashboard .flex .lef{
+    flex: 0 0 41.530055%; /* 684px/1647 */
+}
+.dashboard .flex .ref{
+    flex:1;
+}
+.dashboard .com-sarch-type01.comShadow .rate {
+    margin-top: 32px;
+    padding-bottom: 30px;
+    border-bottom:1px solid #DDDDDD;
+}
+.dashboard .com-sarch-type01.comShadow .rate .row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 32px;
+}
+.dashboard .com-sarch-type01.comShadow .rate .row:last-of-type{
+    margin-bottom: 0;
+}
+.dashboard .com-sarch-type01.comShadow .rate .row p.tit.letSpa {
+    letter-spacing: 30px;
+    text-align: center;
+}
+.dashboard .com-sarch-type01.comShadow .rate .row p.tit {
+    padding-bottom: 0;
+    font-size: 16px;
+    font-weight: bold;
+    color: #222222;
+    margin-right: -8px;
+    /* width: 60px; */
+    flex: 0 0 90px;
+}
+.dashboard .com-sarch-type01.comShadow .rate .row .graph {
+    height: 43px;
+    border: 1px solid #aaa;
+    margin-right: 16px;
+    flex: 1;
+}
+.dashboard .com-sarch-type01.comShadow .graph2{
+    margin-top: 10px;
+    height: 321px;
+    border: 1px solid #aaa;
+}
+.dashbo
+.dashboard .com-sarch-type01.comShadow .rate .row .numCase {
+    color: #222222;
+    font-size: 14px;
+    font-weight: bold;
+}
+.dashboard .com-sarch-type01.comShadow .rate .row.second p.tit.letSpa,
+.dashboard .com-sarch-type01.comShadow .rate .row.second .numCase {
+    color: #4285F4;
+}
+.dashboard .com-sarch-type01.comShadow .rate .row.second .numCase span.all::before{
+    background: #4285F4;
+}
+.dashboard .com-sarch-type01.comShadow .table{
+    margin-top: 30px; 
+}
+.dashboard .com-sarch-type01.comShadow .table tr .bg{
+    position: relative;
+    background: #B5B5B5;
+    vertical-align: middle;
+    padding-top: 7px;
+}
+.dashboard .com-sarch-type01.comShadow .table tr .bg .before{
+    position: absolute;
+    top: 0;
+    left: -1px;
+    width: 101%;
+    height: 8px;
+    background: #848484;
+}
+.dashboard .com-sarch-type01.comShadow .table tr .bold{
+    font-weight: bold;
+    color: #222;
+    line-height: 1.7;
+}
+.dashboard .com-sarch-type01.comShadow .table tr td:first-of-type{
+    border-left: none;
+}
+.dashboard .com-sarch-type01.comShadow .table tr td:last-of-type{
+    border-right: none;
+}
+.dashboard .com-sarch-type01.comShadow .table tr th{
+    height: 60px;
+    text-align: center;
+    background: #848484;
+    font-size: 14px;
+    font-weight: bold;
+    color: #F8F8F8;
+}
+.dashboard .com-sarch-type01.comShadow .table tr td{
+    height: 50px;
+    text-align: center;
+    font-size: 14px;
+    color: #666666;
+}
+.dashboard .com-sarch-type01.comShadow .table tr th, .dashboard .com-sarch-type01.comShadow .table tr td{
+    border: 1px solid #DDDDDD;
+}
+.dashboard .com-sarch-type01.comShadow .rate .row .numCase span.all::before{
+    display: inline-block;
+    content: '';
+    display: inline-block;
+    width: 1px;
+    height: 13px;
+    background: #DDDDDD;
+    position: relative;
+    top: 2px;
+    margin: 0 6px;
+}
+.rate .row .numCase span.all {
+    position: relative; 
+    font-weight: bold;
+}
+.rate .row .numCase em {
+    font-weight: bold;
+}
+.dashboardWrap .com-sarch-type01 .flex .lef ul li dl dt{
+    color: #253378;
+    font-size: 15px;
+    font-weight: bold;
+    padding-left: 8px;
+    flex: 0 0 95px;
+}
+.dashboardWrap .c-form-select , .dashboardWrap .c-form-box{
+    font-size: 13px;
+    font-weight: 400;
+    color: #333333;
+}
+.dashboardWrap .com-sarch-type01 .flex .lef ul li dl dt.wAuto{
+    flex: 0 0 auto;
+}
+.dashboardWrap .c-form-select{
+    background: url("../../../images/theme/blue/btn_selectbox_dropdown.png")  no-repeat right 10px center!important;
+}
+.com-sarch-type01 .flex .lef ul li dl dt::before{
+    background: #253378;
+    position: absolute;
+    top: 54%;
+}
+.dashboard .com-sarch-type01.comShadow.rBlue h2{
+    color: #111111;
+}
+.dashboard .com-sarch-type01.comShadow.rBlue h2::before{
+    background: #111111;
+}
+.dashboard .com-sarch-type01.comShadow.rGreen h2{
+    color: #111111;
+}
+.dashboard .com-sarch-type01.comShadow.rGreen h2::before{
+    background: #111111;
+}
+.dashboard .com-sarch-type01.comShadow.rGreen .comTable tr th{
+    background: #D5F5CC;
+}
+.dashboard .com-sarch-type01.comShadow.rOrange h2{
+    color: #111111;
+}
+.dashboard .com-sarch-type01.comShadow.rOrange h2::before{
+    background: #111111;
+}
+.dashboard .com-sarch-type01.comShadow.rOrange .comTable tr th{
+    background: #F9E1D0;
+}
+.dashboard .com-sarch-type01.comShadow.rYellow h2{
+    color: #111111;
+}
+.dashboard .com-sarch-type01.comShadow.rYellow h2::before{
+    background: #111111;
+}
+.dashboard .com-sarch-type01.comShadow.rYellow .comTable tr th{
+    background: #FFF0CC;
+}
+.dashboard .com-sarch-type01.comShadow.rBlack h2{
+    color: #111111;
+}
+.dashboardWrap .com-tbl-wrap{
+    border:none;
+}
+.dashboardWrap .com-tbl-wrap::before , .dashboardWrap .com-tbl-wrap::after{
+    display: none;
+}
+.comLink{
+    display: inline-block;
+    font-size: 14px;
+    font-weight: bold;
+    color:#333333;
+    position: relative;
+    top: -1px;
+}
+.mh192{
+    max-height:148px;
+}
+.comTable{
+    border: none;
+    max-height: 192px;
+    overflow-y: scroll;
+}
+.comTable .left{
+    text-align: left;
+    padding-left: 20px;
+}
+.comTable tr{}
+.comTable tr th{
+    background: #ADE0FF;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+    position: sticky;
+    top: -1px;
+    z-index: 1;
+    border-top:1px solid #DDDDDD;
+    border-bottom:1px solid #DDDDDD;
+    padding: 5px 0;
+}
+.comTable tr td{
+    font-size: 14px;
+    color: #666666;
+    text-align: center;
+}
+.comTable tr td:first-of-type{
+    border-left:none;
+}
+.comTable tr td:last-of-type{
+    border-right:none;
+}
+.comTable th, .comTable td{padding: 5px 0;border:1px solid #DDDDDD;border-left: none;border-right:none;}
+.comTable tr td a {
+    width: 100%;
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-decoration: underline;
+    text-underline-position: under;
+    text-underline-offset: 2px;
+    padding-bottom: 4px;
+}
+/* 선택된 탭 버튼 스타일 */
+.tabMenu{
+    display: flex;
+}
+.tabMenu button{
+     display: inline-block;
+     width: 57px;
+     height: 26px;
+     text-align: center;
+     line-height: 24px;
+     border:1px solid #999999;
+     border-radius:16px;
+     transition: all .3s;
+}
+.tabMenu button:hover{
+    background-color: #666666;
+    color:#fff;
+}
+.tabMenu button.active {
+    background-color: #666666;
+    color:#fff;
+    font-weight: bold;
+  }
+/* 탭 내용 스타일 */
+.tabcontent {
+display: none;
+}
+
+/* 선택된 탭 내용 스타일 */
+.tabcontent.show {
+display: block;
+}
+
+.com-sarch-type01 .tabInfo{
+    margin-top: 20px;
+    height: 90px;
+    display: flex; 
+    align-items: center;
+}
+.com-sarch-type01 .tabInfo .lef{
+    flex:0 0 95px;
+    width: 95px;
+    height: 60px;
+    background: #4285F4;
+    border: 1px solid #4285F4;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    outline: 1px solid #fff;
+    outline-offset: 9px;
+    outline: 1px solid #fff;
+    outline-offset: -4px;
+    border-radius: 8px;
+    margin-right: 20px;
+}
+.com-sarch-type01 .tabInfo .ref{
+    flex:1;
+}
+.com-sarch-type01 .tabInfo .ref .comStep {
+    gap:40px;
+}
+.com-sarch-type01 .tabInfo .ref .comStep li{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex:1;
+    text-align: center;
+}
+.com-sarch-type01 .tabInfo .ref .comStep li .box{
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    gap:10px;
+}
+.com-sarch-type01 .tabInfo .ref .comStep li .box .date , .com-sarch-type01 .tabInfo .ref .comStep li .box .txt{
+    color: #999999;
+}
+.com-sarch-type01 .tabInfo .ref .comStep li.on .box .date , .com-sarch-type01 .tabInfo .ref .comStep li.on .box .txt{
+    color: #4285F4;
+    font-size: 14px;
+    font-weight: bold;
+}
+.com-sarch-type01 .tabInfo .ref .comStep li .box .step{
+    position: static;
+    z-index: 2;
+    display: flex;
+    align-items: center; justify-content: center;
+    width: 32px; height: 32px;
+    border-radius: 9999px;
+    background: #fff;
+    font-size: 14px;
+    font-weight: bold;  
+    color: #999999;
+    outline: 3px solid #ddd;
+}
+.com-sarch-type01 .tabInfo .ref .comStep li.last .box .step{
+    background: #FFA200;
+    color:#fff;
+}
+.com-sarch-type01 .tabInfo .ref .comStep li.last .progressBar{
+    display: none;
+}
+.com-sarch-type01 .tabInfo .ref .comStep li.on {
+    position: relative;
+}
+.com-sarch-type01 .tabInfo .ref .comStep li.on .box .step{
+    display: flex;
+    align-items: center; justify-content: center;
+    width: 32px; height: 32px;
+    border-radius: 9999px;
+    background: #4285F4;
+    font-size: 14px;
+    font-weight: bold;  
+    color: #fff;
+    outline:none;
+}
+.com-sarch-type01 .tabInfo .ref .comStep li .progressBar{
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 0;
+    left: 43%;
+    width: 113px;
+    height: 16px;
+    background: #ddd;
+    box-shadow: 0px 2px 4px rgba(96,120,175,0.4);
+}
+.com-sarch-type01 .tabInfo .ref .comStep li.on .progressBar{
+    z-index: 0;
+    left: 43%;
+    background: #4285F4;
+}
+.pt0{
+    padding-top: 0;
+}
