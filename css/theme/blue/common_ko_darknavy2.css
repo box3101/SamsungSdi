@@ -91,3 +91,20 @@
 .processTable .tbList .tbItem .tit {
   padding-left: 0;
 }
+
+.processWrap .section2 .tableWrap {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.processWrap .section2 .tableWrap .processTable {
+  flex: 1 0 calc(50%);
+}
+
+.processWrap .tableWrap .processTable {
+  padding: 59px 24px;
+}
+
+.com-had-type02.flexbl.tlbPd {
+  padding: 0px 24px 50px;
+}
