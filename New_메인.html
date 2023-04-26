@@ -2,45 +2,323 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="css/theme/blue/common_ko_darknavy.css?20220906162652" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="_csrf_parameter" content="_csrf" />
+  <meta name="_csrf_header" content="X-CSRF-TOKEN" />
+  <meta name="_csrf" content="b4084fc7-d7f9-415d-9a28-e50c41b7192a" />
+
   <title>GSOP</title>
+
+  <link rel="shortcut icon" href="data:image/x-icon" type="image/x-icon" />
+  <link rel="stylesheet" type="text/css" href="css/smoothness/jquery-ui.min.css" />
+  <link rel="stylesheet" type="text/css" href="css/ui.jqgrid.css" />
+  <link rel="stylesheet" type="text/css" href="css/jquery.fancybox-1.3.4.css" />
+  <link rel="stylesheet" type="text/css" href="css/theme/blue/common_ko_darknavy.css?20220906162652" />
+  <link rel="stylesheet" type="text/css" href="css/theme/blue/conference.css" />
+  <link rel="stylesheet" href="css/theme/blue/common_ko_darknavy2.css" />
+  <!-- <link rel="stylesheet" type="text/css" href="css/common.vue.css?20220906162652">
+  <link rel="stylesheet" type="text/css" href="css/custom_design.css?20220906162652">
+  <link rel="stylesheet" type="text/css" href="css/jquery.minicolors.css"> -->
+
+  <link rel="stylesheet" type="text/css" href="css/select2.min.css" />
+
+  <link rel="stylesheet" type="text/css" href="css/selectize.default.css" />
+  <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+
+  <!-- pub add -->
+  <link rel="stylesheet" type="text/css" href="css/tooltip.css" />
+  <link rel="stylesheet" type="text/css" href="css/new_design.css?20220906162652" />
+  <link rel="stylesheet" type="text/css" href="css/gantt_style.css" />
+
+  <!-- 20230425 추가 css -->
+  <link rel="stylesheet" href="css/theme/blue/new2023.css" />
+  <link rel="stylesheet" href="css/theme/blue/common_ko_darknavy2.css" />
+  <!-- 20230425 추가 css -->
+
+  <script type="text/javascript" src="js/new_design.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sortablejs@1.6.1/Sortable.min.js"></script>
+  <!-- pub add -->
+
+  <script type="text/javascript" src="js/jquery-ui.js"></script>
+  <!-- <script type="text/javascript" src="js/jquery.i18n.properties.min.js"></script>
+  <script type="text/javascript" src="js/i18n/grid.locale-ko.js"></script>
+  <script type="text/javascript" src="js/jquery.jqGrid.min.js"></script>
+  <script type="text/javascript" src="js/jquery.cookie.js"></script> -->
+  <script type="text/javascript" src="js/common.js?20220906162652"></script>
+  <!-- <script type="text/javascript" src="js/jquery.fancybox-1.3.4.pack.js"></script>
+  <script type="text/javascript" src="js/Chart.bundle.min.js"></script> -->
+  <!-- 
+  <script type="text/javascript" src="js/common.vue.js?20220906162652"></script>
+
+
+  <script type="text/javascript" src="js/cleave.min.js?20220906162652"></script> -->
+
+  <!-- 
+  <script type="text/javascript" src="js/rsa/jsbn.js"></script>
+  <script type="text/javascript" src="js/rsa/rsa.js"></script>
+  <script type="text/javascript" src="js/rsa/prng4.js"></script>
+  <script type="text/javascript" src="js/rsa/rng.js"></script> -->
+
+  <!-- custom scrollbar stylesheet -->
+  <link rel="stylesheet" href="css/jquery.mCustomScrollbar.css" />
+  <!-- custom scrollbar plugin -->
+  <script src="js/jquery.mCustomScrollbar.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
 </head>
 
-<body class="Basic">
-  <div class="mainDashborad">
-    <header class="header">
-      <div class="top">
-        <h1 class="logo">
-          <img src="./images/theme/blue/logo.png" alt="" />
-        </h1>
-        <p class="txt">Global Standard Operation Platform</p>
-      </div>
-      <div class="inner">
-        <ul id="mainGnb">
-          <li class="on">
-            <a href="#">Home</a>
-          </li>
-          <li>
-            <a href="#">Dashboard</a>
-          </li>
-          <li>
-            <a href="#">표준관리</a>
-          </li>
-          <li>
-            <a href="#">Project 관리</a>
-          </li>
-          <li>
-            <a href="#">변화 관리</a>
-          </li>
-          <li>
-            <a href="#">My Work</a>
-          </li>
-        </ul>
-      </div>
-    </header>
+<body class="Basic bgfff">
+  <div id="wrap">
+    <!-- 콘텐츠 시작 -->
+    <div class="mainDashborad">
+      <header class="header">
+        <div class="top">
+          <h1 class="logo">
+            <img src="./images/theme/blue/logo.png" alt="" />
+          </h1>
+          <p class="txt">Global Standard Operation Platform</p>
+        </div>
+        <div class="inner">
+          <ul id="mainGnb">
+            <li class="on">
+              <a href="#">Home</a>
+            </li>
+            <li>
+              <a href="#">Dashboard</a>
+            </li>
+            <li>
+              <a href="#">표준관리</a>
+            </li>
+            <li>
+              <a href="#">Project 관리</a>
+            </li>
+            <li>
+              <a href="#">변화 관리</a>
+            </li>
+            <li>
+              <a href="#">My Work</a>
+            </li>
+          </ul>
+          <ul class="utilMenu head">
+            <li>
+              <div class="rnb mr3">
+                <div style="float: left; clear: both;">
+                  <div class="ico-bg has-tooltip" data-original-title="null"><a href="#"><img
+                        src="images/theme/blue/ico-amenu.png" onclick="gnbApp.popMNA();return false;" alt="전체메뉴"></a>
+                  </div>
+                  <!-- <div class="ico-bg has-tooltip" data-original-title="null"><a href="#"><img
+                        src="images/theme/blue/ico-manual.png" onclick="gnbApp.popMNA();return false;" alt="매뉴얼"></a>
+                  </div> -->
+                  <div class="ico-bg has-tooltip" data-original-title="null"><a href="#"><img
+                        src="images/theme/blue/ico-notice.png" onclick="gnbApp.popNotice();return false;"
+                        alt="공지사항"></a>
+                  </div>
+                  <div class="ico-bg has-tooltip" data-original-title="null"><a href="#"><img
+                        src="images/theme/blue/ico-help.png" onclick="gnbApp.popQnA();return false;" alt="Q&amp;A"></a>
+                  </div>
+                </div>
+                <div class="user"><a href="#"><img src="http://gwa.visang.com/upload/img/profile/visang/2793_thum.jpg"
+                      alt="유저 이미지" onerror="this.src='images/theme/blue/ico-user-pic.png'" class="profileImg"></a>
+                  <div id="pop-user-info" class="user-info" style="display: none;"><a href="#"
+                      class="mem-modify ml10 user-info-txt"><span>
+                        민덕기
+                        (mindk)
+                      </span> <span></span></a>
+                    <div
+                      style="text-align: left; margin-top: 12px; padding-top: 6px; line-height: 130%; border-top: 1px solid rgb(234, 234, 234);">
+                      <a class="logout-bg mt20"></a> <a href="#" onclick="doLogout();return false;" class="mem-logout "
+                        style="color: rgb(85, 85, 85);"><img src="images/theme/blue/ico-session-time.png" alt="접속시간"
+                          style="margin-top: -2px; padding-right: 3px;">time : <span id="sessionTimeCheck">59 :
+                          51</span></a> <span class="txt"><a href="#" onclick="doLogout();return false;"><img
+                            src="images/theme/blue/ico-logout.png" alt="로그아웃">로그아웃</a></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </header>
+
+      <section class="mainCnt">
+        <article class="projectSection">
+          <section class="wrap">
+            <article>
+              <div class="top">
+                <div class="img">
+                  <img src="./images/theme/blue/proSec01.png" alt="">
+                </div>
+                <div class="txt">
+                  Project
+                </div>
+              </div>
+              <ul>
+                <li>
+                  <a href="#" class="oneline">
+                    <p>
+                      STLA JV TF
+                      <span class="percent"><em>00</em>%</span>
+                    </p>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="oneline">
+                    <p>
+                      말레이 2공장
+                      <span class="percent"><em>00</em>%</span>
+                    </p>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="oneline">
+                    <p>
+                      oooTF
+                      <span class="percent"><em>00</em>%</span>
+                    </p>
+                  </a>
+                </li>
+              </ul>
+            </article>
+            <article>
+              <div class="top">
+                <div class="img">
+                  <img src="./images/theme/blue/proSec02.png" alt="">
+                </div>
+                <div class="txt">
+                  My Work
+                </div>
+              </div>
+              <ul>
+                <li>
+                  <a href="#" class="oneline">
+                    현재 진행 업무
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="oneline">
+                    지연/Issue 업무
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="oneline">
+                    현재 진행 업무
+                  </a>
+                </li>
+              </ul>
+            </article>
+            <article>
+              <div class="top">
+                <div class="img">
+                  <img src="./images/theme/blue/proSec03.png" alt="">
+                </div>
+                <div class="txt">
+                  Standard
+                </div>
+              </div>
+              <ul>
+                <li>
+                  <a href="#" class="oneline">
+                    표준 2,200개
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="oneline">
+                    추가/변경 중 50개
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="oneline">
+                    표준 2,200개
+                  </a>
+                </li>
+              </ul>
+            </article>
+          </section>
+        </article>
+
+        <article class="systemLInkNotice">
+          <div class="comBox">
+            <div class="tit">
+              <p class="txt">System Link</p>
+              <a href="#" class="more">More <em>+</em></a>
+            </div>
+            <ul class="list">
+              <li>
+                <a href="#">
+                  <p class="tit">업무시스템 맵</p>
+                  <p class="txt">BUSINESS SYSYTEM MAP</p>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <p class="tit">시스템 개선 요청</p>
+                  <p class="txt">IT SERVICE DESK</p>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <p class="tit">SPPM</p>
+                  <p class="txt">SAMSUNG P P MANUAL</p>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <p class="tit">MES</p>
+                  <p class="txt">MANUFACTURING EXECUTION SYSTEM</p>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <p class="tit">EES</p>
+                  <p class="txt">EQUIPMENT ENGINEERING SYSTEM</p>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <p class="tit">추가 링크_01</p>
+                  <p class="txt">ADD LINK_01</p>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="comBox arr">
+            <div class="tit">
+              <p class="txt">공지사항</p>
+              <a href="#" class="more">More <em>+</em></a>
+            </div>
+            <ul class="list">
+              <li>
+                <a href="#">
+                  <p class="tit">GSOP 공지사항_04</p>
+                  <p class="txt">2023.04.17</p>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <p class="tit">GSOP 공지사항_04</p>
+                  <p class="txt">2023.04.17</p>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <p class="tit">GSOP 공지사항_04</p>
+                  <p class="txt">2023.04.17</p>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <p class="tit">GSOP 공지사항_04</p>
+                  <p class="txt">2023.04.17</p>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </article>
+
+      </section>
+    </div>
   </div>
 </body>
 
