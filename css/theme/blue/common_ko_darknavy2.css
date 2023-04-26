@@ -139,3 +139,26 @@
 .popupWrap .com-had-type02 .tit::before {
   background: rgb(37, 51, 120);
 }
+
+.popupWrap .tabInfo .comStep.bar {
+  gap: 50px;
+}
+
+.popupWrap .tabInfo .bar .progressBar {
+  top: 35% !important;
+  width: 100px !important;
+}
+
+.popupWrap .com-sarch-type01.comShadow .graph2 {
+  margin-top: 10px;
+  height: 321px;
+  border: 1px solid #aaa;
+}
+
+.popupWrap .com-had-type02 > div {
+  display: block;
+}
+
+.popupWrap .com-sarch-type01.comShadow {
+  border: none;
+}
