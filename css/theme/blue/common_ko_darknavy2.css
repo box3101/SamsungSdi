@@ -22,7 +22,7 @@
 }
 
 .processWrap .processTable {
-  padding: 59px 24px;
+  padding: 40px 24px;
   font-size: 14px;
   width: 100%;
 }
@@ -102,9 +102,40 @@
 }
 
 .processWrap .tableWrap .processTable {
-  padding: 59px 24px;
+  padding: 40px 24px;
 }
 
 .com-had-type02.flexbl.tlbPd {
   padding: 0px 24px 50px;
+}
+
+.conHeight #moveMenu {
+  height: 0;
+}
+
+.popupWrap .com-sarch-type01 .tabInfo {
+  margin-left: 30px;
+}
+
+.popupWrap .com-sarch-type01.comShadow {
+  box-shadow: none;
+}
+.popupWrap .tbl-bg {
+  min-height: 0;
+  margin-top: 40px;
+}
+.popupWrap .bg-info .pop-tbl-type01 table tr th {
+  text-align: center !important;
+}
+.popupWrap .com-had-type02 .tit {
+  text-align: left;
+  margin-bottom: 25px;
+}
+
+.popupWrap .com-sarch-type01.com-had-type02 .tit.frtit {
+  left: 29px;
+  margin-top: 20px;
+}
+.popupWrap .com-had-type02 .tit::before {
+  background: rgb(37, 51, 120);
 }
