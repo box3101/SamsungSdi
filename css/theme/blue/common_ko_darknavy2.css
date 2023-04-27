@@ -148,6 +148,9 @@
   top: 35% !important;
   width: 100px !important;
 }
+.popupWrap .tabInfo .barWd .progressBar {
+  width: 120px !important;
+}
 
 .popupWrap .com-sarch-type01.comShadow .graph2 {
   margin-top: 10px;
@@ -161,4 +164,42 @@
 
 .popupWrap .com-sarch-type01.comShadow {
   border: none;
+}
+.popupWrap .fixing .tabInfo {
+  margin-left: 13px;
+}
+.popupWrap .fixing .com-sarch-type01.com-had-type02 .tit.frtit {
+  left: 16px;
+}
+.popupWrap .fixing .com-sarch-type01.com-had-type02 .tit.sectit {
+  left: -2px;
+}
+.popupWrap .fixing .com-sarch-type01.com-had-type02 .bttit {
+  margin-top: 20px;
+}
+.popupWrap .graphCon .tabInfo {
+  display: flex;
+}
+
+.popupWrap .graphCon .com-sarch-type01.comShadow .graph2 {
+  height: 245px;
+  width: 500px;
+}
+
+.popupWrap .graphCon .comStep {
+  flex-direction: column;
+  gap: 10px !important;
+  color: #ddd;
+}
+.popupWrap .graphCon .comStep .on {
+  color: #d006e2;
+  font-weight: bold;
+  font-size: 15px;
+  display: inline-block !important;
+  text-align: left !important;
+}
+.popupWrap .graphCon .comStep .on::before {
+  content: "▶";
+  font-size: 12px;
+  margin-right: 3px;
 }
