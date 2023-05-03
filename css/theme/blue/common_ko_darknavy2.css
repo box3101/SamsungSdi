@@ -1,205 +1,224 @@
 /* 퍼블리셔 작업 */
 
 .com-had-type02 {
-  border: var(--basic-border);
-  display: block;
+	border: var(--basic-border);
+	display: block;
 }
 
 .sectionHead {
-  margin: 39px 24px 20px;
+	margin: 39px 24px 20px;
 }
 
 .processWrap {
-  border: var(--basic-border);
+	border: var(--basic-border);
 }
 
 .com-bg-info.bg-fff.processTable {
-  border: none;
+	border: none;
 }
 
 .processTable .tit::before {
-  background: var(--basic-color);
+	background: var(--basic-color);
 }
 
 .processWrap .processTable {
-  padding: 40px 24px;
-  font-size: 14px;
-  width: 100%;
+	padding: 11px 24px;
+  padding-bottom: 20px;
+	font-size: 14px;
+	width: 100%;
 }
 .processWrap .processTable p {
-  color: var(--basic-color);
-  font-size: 18px;
-  font-weight: bold;
-  margin-bottom: 7px;
+	color: var(--basic-color);
+	font-size: 18px;
+	font-weight: bold;
+	margin-bottom: 7px;
+	margin-bottom: 15px;
 }
 
 .processWrap .processTable th {
-  text-align: center !important;
-  color: #fff !important;
-  background: var(--basic-color);
-  font-weight: bold;
+	text-align: center !important;
+	color: #fff !important;
+	background: var(--basic-color);
+	font-weight: bold;
 }
 
 .processTable tr,
 .processTable td {
-  text-align: center !important;
+	text-align: center !important;
 }
 
 .processTable.tlbColor {
-  padding: 59px 0;
+	padding: 59px 0;
 }
 
 .processTable tr:nth-child(odd) {
-  background: #f4f4f4;
+	background: #f4f4f4;
 }
 
 .processTable.tlbColor tr:nth-child(odd) {
-  background: #fff;
+	background: #fff;
 }
 .processTable.tlbColor tr:nth-child(even) {
-  background: #f4f4f4;
+	background: #f4f4f4;
 }
 
 .com-had-type02.flexbl {
-  display: block;
-  padding: 39px 0 0;
+	display: block;
+	padding: 39px 0 0;
 }
 
 .contentWidth {
-  height: calc(-150px + 100%) !important;
+	height: calc(-150px + 100%) !important;
 }
 
 .bg-info .pop-tbl-type01 table tr th:first-child {
-  border-left: 1px solid #ddd !important;
+	border-left: 1px solid #ddd !important;
 }
 .bg-info .pop-tbl-type01 table {
-  border-right: 1px solid #ddd !important;
+	border-right: 1px solid #ddd !important;
 }
 
 .processTable .tbList {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 25px;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 25px;
 }
 .processTable .tbList .tbItem {
-  max-width: calc(32% + 2px);
+	max-width: calc(33.333% - 20px);
 }
 
 .processTable .tbList .tbItem .tit::before {
-  display: none;
+	display: none;
 }
 .processTable .tbList .tbItem .tit {
-  padding-left: 0;
+	padding-left: 0;
 }
 
 .processWrap .section2 .tableWrap {
-  display: flex;
-  align-items: flex-start;
-  flex-wrap: wrap;
+	display: flex;
+	align-items: flex-start;
+	flex-wrap: wrap;
 }
 .processWrap .section2 .tableWrap .processTable {
-  flex: 1 0 calc(50%);
-}
-
-.processWrap .tableWrap .processTable {
-  padding: 40px 24px;
+	flex: 1 0 calc(50%);
 }
 
 .com-had-type02.flexbl.tlbPd {
-  padding: 0px 24px 50px;
+	padding: 0px 24px 24px;
 }
 
 .conHeight #moveMenu {
-  height: 0;
+	height: 0;
 }
 
 .popupWrap .com-sarch-type01 .tabInfo {
-  margin-left: 30px;
+	margin-left: 30px;
 }
 
 .popupWrap .com-sarch-type01.comShadow {
-  box-shadow: none;
+	box-shadow: none;
 }
 .popupWrap .tbl-bg {
-  min-height: 0;
-  margin-top: 40px;
+	min-height: 0;
+	margin-top: 40px;
 }
 .popupWrap .bg-info .pop-tbl-type01 table tr th {
-  text-align: center !important;
+	text-align: center !important;
+	color: #fff !important;
+	background: var(--basic-color);
 }
 .popupWrap .com-had-type02 .tit {
-  text-align: left;
-  margin-bottom: 25px;
+	text-align: left;
+	margin-bottom: 25px;
+	font-size: 18px;
+	font-weight: bold;
+	margin-bottom: 7px;
+	margin-bottom: 15px;
 }
 
 .popupWrap .com-sarch-type01.com-had-type02 .tit.frtit {
-  left: 29px;
-  margin-top: 20px;
+	margin-top: 20px;
+	/* color: var(--basic-color); */
+	font-size: 18px;
+	font-weight: bold;
+	margin-bottom: 15px;
 }
 .popupWrap .com-had-type02 .tit::before {
-  background: rgb(37, 51, 120);
+	background: var(--basic-color-tertiary);
 }
-
 .popupWrap .tabInfo .comStep.bar {
-  gap: 50px;
+	gap: 50px;
 }
 
-.popupWrap .tabInfo .bar .progressBar {
-  top: 35% !important;
-  width: 100px !important;
-}
+/* .popupWrap .tabInfo .bar .progressBar {
+	top: 41% !important;
+	width: 100px !important;
+} */
+
 .popupWrap .tabInfo .barWd .progressBar {
-  width: 120px !important;
+	width: 120px !important;
 }
 
 .popupWrap .com-sarch-type01.comShadow .graph2 {
-  margin-top: 10px;
-  height: 321px;
-  border: 1px solid #aaa;
+	margin-top: 10px;
+	height: 321px;
+	border: 1px solid #aaa;
 }
 
 .popupWrap .com-had-type02 > div {
-  display: block;
+	display: block;
 }
 
 .popupWrap .com-sarch-type01.comShadow {
-  border: none;
+	border: none;
 }
 .popupWrap .fixing .tabInfo {
-  margin-left: 13px;
+	margin-left: 13px;
 }
 .popupWrap .fixing .com-sarch-type01.com-had-type02 .tit.frtit {
-  left: 16px;
+	left: 16px;
 }
 .popupWrap .fixing .com-sarch-type01.com-had-type02 .tit.sectit {
-  left: -2px;
+	left: -2px;
 }
 .popupWrap .fixing .com-sarch-type01.com-had-type02 .bttit {
-  margin-top: 20px;
+	margin-top: 20px;
+  font-size: 16px;
 }
 .popupWrap .graphCon .tabInfo {
-  display: flex;
+	display: flex;
 }
 
 .popupWrap .graphCon .com-sarch-type01.comShadow .graph2 {
-  height: 245px;
-  width: 500px;
+	height: 245px;
+	width: 500px;
 }
 
 .popupWrap .graphCon .comStep {
-  flex-direction: column;
-  gap: 10px !important;
-  color: #ddd;
+	flex-direction: column;
+	gap: 10px !important;
+	color: #ddd;
 }
 .popupWrap .graphCon .comStep .on {
-  color: #d006e2;
-  font-weight: bold;
-  font-size: 15px;
-  display: inline-block !important;
-  text-align: left !important;
+	color: #d006e2;
+	font-weight: bold;
+	font-size: 15px;
+	display: inline-block !important;
+	text-align: left !important;
 }
 .popupWrap .graphCon .comStep .on::before {
-  content: "▶";
-  font-size: 12px;
-  margin-right: 3px;
+	content: "▶";
+	font-size: 12px;
+	margin-right: 3px;
+}
+
+.pt39{
+  padding-top: 39px!important;
+}
+
+.pt11{
+  padding-top: 11px!important;
+}
+.pt0{
+  padding-top: 0!important;
 }

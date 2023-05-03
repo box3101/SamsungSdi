@@ -89,7 +89,7 @@
 }
 
 .dashboard-graph .wrap .lef .graph-box .row .ref .num.blue {
-  color: #4285f4;
+  color: var(--basic-color);
 }
 
 .dashboard-graph .wrap .ref {
@@ -1317,11 +1317,11 @@ div.webix_column.webix_gantt_title.webix_first.webix_select_mark {
 
 .dashboard .com-sarch-type01.comShadow .rate .row.second p.tit.letSpa,
 .dashboard .com-sarch-type01.comShadow .rate .row.second .numCase {
-  color: #4285f4;
+  color: var(--basic-color);
 }
 
 .dashboard .com-sarch-type01.comShadow .rate .row.second .numCase span.all::before {
-  background: #4285f4;
+  background: var(--basic-color);
 }
 
 .dashboard .com-sarch-type01.comShadow .table {
@@ -1495,6 +1495,10 @@ div.webix_column.webix_gantt_title.webix_first.webix_select_mark {
   top: -1px;
 }
 
+.mh210 {
+  max-height: 210px;
+}
+
 .mh192 {
   max-height: 148px;
 }
@@ -1595,7 +1599,6 @@ div.webix_column.webix_gantt_title.webix_first.webix_select_mark {
 
 .com-sarch-type01 .tabInfo {
   margin-top: 20px;
-  height: 90px;
   display: flex;
   align-items: center;
 }
@@ -1604,8 +1607,8 @@ div.webix_column.webix_gantt_title.webix_first.webix_select_mark {
   flex: 0 0 95px;
   width: 95px;
   height: 60px;
-  background: #4285f4;
-  border: 1px solid #4285f4;
+  background: var(--basic-color);
+  border: 1px solid var(--basic-color);
   border-radius: 8px;
   display: flex;
   align-items: center;
@@ -1636,6 +1639,10 @@ div.webix_column.webix_gantt_title.webix_first.webix_select_mark {
   align-items: flex-start;
   flex: 1;
   text-align: center;
+  max-height: 91px;
+}
+.com-sarch-type01 .tabInfo .ref .comStep li.pop {
+  align-items: center;
 }
 
 .com-sarch-type01 .tabInfo .ref .comStep li .box {
@@ -1648,11 +1655,13 @@ div.webix_column.webix_gantt_title.webix_first.webix_select_mark {
 .com-sarch-type01 .tabInfo .ref .comStep li .box .date,
 .com-sarch-type01 .tabInfo .ref .comStep li .box .txt {
   color: #999999;
+  word-break: keep-all;
+  line-height: 1.4;
 }
 
 .com-sarch-type01 .tabInfo .ref .comStep li.on .box .date,
 .com-sarch-type01 .tabInfo .ref .comStep li.on .box .txt {
-  color: #4285f4;
+  color: var(--basic-color);
   font-size: 14px;
   font-weight: bold;
 }
@@ -1693,7 +1702,7 @@ div.webix_column.webix_gantt_title.webix_first.webix_select_mark {
   width: 32px;
   height: 32px;
   border-radius: 9999px;
-  background: #4285f4;
+  background: var(--basic-color);
   font-size: 14px;
   font-weight: bold;
   color: #fff;
@@ -1710,13 +1719,16 @@ div.webix_column.webix_gantt_title.webix_first.webix_select_mark {
   width: 113px;
   height: 16px;
   background: #ddd;
-  box-shadow: 0px 2px 4px rgba(96, 120, 175, 0.4);
+}
+.com-sarch-type01 .tabInfo .ref .comStep li .progressBar.pop {
+  width: 150px !important;
+  left: 40% !important;
 }
 
 .com-sarch-type01 .tabInfo .ref .comStep li.on .progressBar {
   z-index: 0;
   left: 43%;
-  background: #4285f4;
+  background: var(--basic-color);
 }
 
 .pt0 {
@@ -1957,6 +1969,113 @@ body.bgfff {
   margin-top: 7px;
   font-size: 12px;
   color: #999999;
+}
+
+.mt0 {
+  margin-top: 0px !important;
+}
+
+.bStyle {
+  border: 1px solid #ddd;
+  padding: 21px;
+}
+
+@media (max-width: 1600px) {
+  .com-sarch-type01 .tabInfo .ref .comStep li .progressBar.pop {
+    width: 125px !important;
+  }
+}
+.tabInfoType2 {
+  text-align: left;
+}
+
+.tabInfoType2 .wrap {
+  display: flex;
+  padding-bottom: 20px;
+}
+.tabInfoType2 .wrap > div {
+  flex: 1;
+}
+.tabInfoType2 .wrap .lef {
+  flex: none;
+  margin-right: 20px;
+}
+.tabInfoType2 .wrap .ref {
+  width: 850px;
+}
+.tabInfoType2 .wrap .tabMenu2 button {
+  padding: 0;
+  position: relative;
+  display: block;
+  margin: 17px 0;
+  background: none;
+  font-size: 17px;
+  color: #aaa;
+}
+.tabInfoType2 .wrap .tabMenu2 button:first-of-type {
+  margin-top: 0;
+}
+.tabInfoType2 .wrap .tabMenu2 button.active {
+  color: var(--basic-color);
+  font-weight: bold;
+}
+.tabInfoType2 .wrap .tabMenu2 button.active::before {
+  content: "▶";
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.popupWrap .fixing .com-sarch-type01.com-had-type02 .tit.frtit.l0 {
+  left: 0;
+  margin-bottom: 30px;
+}
+
+.comTit {
+  z-index: 1;
+  position: relative;
+  display: inline-block;
+  font-size: 22px;
+  margin-bottom: 30px;
+  text-align: left;
+  margin-top: 15px;
+  font-weight: bold;
+  padding-bottom: 5px;
+  border-bottom: 2px solid var(--basic-color);
+}
+.comTit:before {
+  content: "";
+  position: absolute;
+  left: -7px;
+  top: -5px;
+  width: 17px;
+  height: 16px;
+  background: var(--basic-color);
+  border-radius: 5px;
+  z-index: -1;
+}
+
+.sticky {
+  position: sticky;
+  top: -1px;
+  z-index: 1;
+}
+
+.pop-tbl-type01.tac {
+  text-align: center;
+}
+
+.kpiLink p {
+  color: #222;
+  font-size: 14px;
+  font-weight: bold;
+}
+.kpiLink a {
+  display: inline-block;
+  color: #005DFF;
+  font-weight: bold;
+  font-size: 14px;
+  padding-bottom: 3px;
+  border-bottom: 1px solid #005DFF;
 }
 
 /*# sourceMappingURL=new2023.css.map */
