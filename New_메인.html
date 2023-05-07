@@ -101,48 +101,95 @@
               <a href="#">My Work</a>
             </li>
           </ul>
-          <ul class="utilMenu head">
-            <li>
-              <div class="rnb mr3">
-                <div style="float: left; clear: both;">
-                  <div class="ico-bg has-tooltip" data-original-title="null"><a href="#"><img
-                        src="images/theme/blue/ico-amenu.png" onclick="gnbApp.popMNA();return false;" alt="전체메뉴"></a>
+          <div class="right">
+            <div class="confidential">
+              Confidential
+            </div>
+            <ul class="utilMenu head">
+              <li>
+                <div class="rnb mr3">
+                  <div style="float: left; clear: both;position: relative;top: 2px;">
+                    <div class="ico-bg has-tooltip" data-original-title="null"><a href="#"><img
+                          src="images/theme/blue/ico-amenu.png" onclick="gnbApp.popMNA();return false;" alt="전체메뉴"></a>
+                    </div>
+                    <!-- <div class="ico-bg has-tooltip" data-original-title="null"><a href="#"><img
+                          src="images/theme/blue/ico-manual.png" onclick="gnbApp.popMNA();return false;" alt="매뉴얼"></a>
+                    </div> -->
+                    <div class="ico-bg has-tooltip" data-original-title="null"><a href="#"><img
+                          src="images/theme/blue/ico-notice.png" onclick="gnbApp.popNotice();return false;"
+                          alt="공지사항"></a>
+                    </div>
+                    <div class="ico-bg has-tooltip" data-original-title="null"><a href="#"><img
+                          src="images/theme/blue/ico-help.png" onclick="gnbApp.popQnA();return false;"
+                          alt="Q&amp;A"></a>
+                    </div>
                   </div>
-                  <!-- <div class="ico-bg has-tooltip" data-original-title="null"><a href="#"><img
-                        src="images/theme/blue/ico-manual.png" onclick="gnbApp.popMNA();return false;" alt="매뉴얼"></a>
-                  </div> -->
-                  <div class="ico-bg has-tooltip" data-original-title="null"><a href="#"><img
-                        src="images/theme/blue/ico-notice.png" onclick="gnbApp.popNotice();return false;"
-                        alt="공지사항"></a>
-                  </div>
-                  <div class="ico-bg has-tooltip" data-original-title="null"><a href="#"><img
-                        src="images/theme/blue/ico-help.png" onclick="gnbApp.popQnA();return false;" alt="Q&amp;A"></a>
-                  </div>
-                </div>
-                <div class="user"><a href="#"><img src="http://gwa.visang.com/upload/img/profile/visang/2793_thum.jpg"
-                      alt="유저 이미지" onerror="this.src='images/theme/blue/ico-user-pic.png'" class="profileImg"></a>
-                  <div id="pop-user-info" class="user-info" style="display: none;"><a href="#"
-                      class="mem-modify ml10 user-info-txt"><span>
-                        민덕기
-                        (mindk)
-                      </span> <span></span></a>
-                    <div
-                      style="text-align: left; margin-top: 12px; padding-top: 6px; line-height: 130%; border-top: 1px solid rgb(234, 234, 234);">
-                      <a class="logout-bg mt20"></a> <a href="#" onclick="doLogout();return false;" class="mem-logout "
-                        style="color: rgb(85, 85, 85);"><img src="images/theme/blue/ico-session-time.png" alt="접속시간"
-                          style="margin-top: -2px; padding-right: 3px;">time : <span id="sessionTimeCheck">59 :
-                          51</span></a> <span class="txt"><a href="#" onclick="doLogout();return false;"><img
-                            src="images/theme/blue/ico-logout.png" alt="로그아웃">로그아웃</a></span>
+                  <div class="user"><a href="#"><img src="http://gwa.visang.com/upload/img/profile/visang/2793_thum.jpg"
+                        alt="유저 이미지" onerror="this.src='images/theme/blue/ico-user-pic.png'" class="profileImg"></a>
+                    <div id="pop-user-info" class="user-info" style="display: none;"><a href="#"
+                        class="mem-modify ml10 user-info-txt"><span>
+                          민덕기
+                          (mindk)
+                        </span> <span></span></a>
+                      <div
+                        style="text-align: left; margin-top: 12px; padding-top: 6px; line-height: 130%; border-top: 1px solid rgb(234, 234, 234);">
+                        <a class="logout-bg mt20"></a> <a href="#" onclick="doLogout();return false;"
+                          class="mem-logout " style="color: rgb(85, 85, 85);"><img
+                            src="images/theme/blue/ico-session-time.png" alt="접속시간"
+                            style="margin-top: -2px; padding-right: 3px;">time : <span id="sessionTimeCheck">59 :
+                            51</span></a> <span class="txt"><a href="#" onclick="doLogout();return false;"><img
+                              src="images/theme/blue/ico-logout.png" alt="로그아웃">로그아웃</a></span>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-            </li>
-          </ul>
+              </li>
+            </ul>
+          </div>
         </div>
       </header>
 
+
       <section class="mainCnt">
+
+        <!-- 동영상 -->
+        <div class="videoBackground">
+          <div class="tit">
+            <img src="images/theme/blue/mainTitle.png" alt="">
+          </div>
+          <video class="video" id="myVideo" autoplay muted>
+            <source src="video/vidioBackground.mp4" type="video/mp4">
+          </video>
+
+          <!-- 40~45초 사이 영상만 사용 스크립트-->
+          <script>
+            (function () {
+              const $video = document.querySelector("#myVideo");
+              const $mainCnt = document.querySelector(".mainCnt");
+              const $videoBackground = document.querySelector(".videoBackground");
+              const startTime = 40;
+              const endTime = 80;
+
+              $video.addEventListener("loadedmetadata", () => {
+                $video.currentTime = startTime;
+              });
+
+              $video.addEventListener("timeupdate", () => {
+                // 동영상이 다 보여지고 나면
+                if ($video.currentTime >= endTime) {
+                  // 비디오 정지
+                  $video.pause();
+                  // 동영상 class remove시켜서 div 삭제
+                  $videoBackground.classList.add("remove");
+                  // mainCnt class on시켜서 해당 이미지로 변경
+                  $mainCnt.classList.add("on");
+                }
+              });
+            })();
+          </script>
+        </div>
+        <!-- 동영상 eee -->
+
         <article class="projectSection">
           <section class="wrap">
             <article>
@@ -192,45 +239,24 @@
               </div>
               <ul>
                 <li>
-                  <a href="#" class="oneline">
-                    현재 진행 업무
+                  <a href="#" class="oneline" onclick="alert('서비스 준비중 입니다.')">
+                    <p>
+                      현재 진행 업무
+                    </p>
                   </a>
                 </li>
                 <li>
-                  <a href="#" class="oneline">
-                    지연/Issue 업무
+                  <a href="#" class="oneline" onclick="alert('서비스 준비중 입니다.')">
+                    <p>
+                      지연/Issue 업무
+                    </p>
                   </a>
                 </li>
                 <li>
-                  <a href="#" class="oneline">
-                    현재 진행 업무
-                  </a>
-                </li>
-              </ul>
-            </article>
-            <article>
-              <div class="top">
-                <div class="img">
-                  <img src="./images/theme/blue/proSec03.png" alt="">
-                </div>
-                <div class="txt">
-                  Standard
-                </div>
-              </div>
-              <ul>
-                <li>
-                  <a href="#" class="oneline">
-                    표준 2,200개
-                  </a>
-                </li>
-                <li>
-                  <a href="#" class="oneline">
-                    추가/변경 중 50개
-                  </a>
-                </li>
-                <li>
-                  <a href="#" class="oneline">
-                    표준 2,200개
+                  <a href="#" class="oneline" onclick="alert('서비스 준비중 입니다.')">
+                    <p>
+                      현재 진행 업무
+                    </p>
                   </a>
                 </li>
               </ul>
@@ -238,84 +264,89 @@
           </section>
         </article>
 
-        <article class="systemLInkNotice">
-          <div class="comBox">
-            <div class="tit">
-              <p class="txt">System Link</p>
-              <a href="#" class="more">More <em>+</em></a>
-            </div>
-            <ul class="list">
-              <li>
-                <a href="#">
-                  <p class="tit">업무시스템 맵</p>
-                  <p class="txt">BUSINESS SYSYTEM MAP</p>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <p class="tit">시스템 개선 요청</p>
-                  <p class="txt">IT SERVICE DESK</p>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <p class="tit">SPPM</p>
-                  <p class="txt">SAMSUNG P P MANUAL</p>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <p class="tit">MES</p>
-                  <p class="txt">MANUFACTURING EXECUTION SYSTEM</p>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <p class="tit">EES</p>
-                  <p class="txt">EQUIPMENT ENGINEERING SYSTEM</p>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <p class="tit">추가 링크_01</p>
-                  <p class="txt">ADD LINK_01</p>
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div class="comBox arr">
-            <div class="tit">
-              <p class="txt">공지사항</p>
-              <a href="#" class="more">More <em>+</em></a>
-            </div>
-            <ul class="list">
-              <li>
-                <a href="#">
-                  <p class="tit">GSOP 공지사항_04</p>
-                  <p class="txt">2023.04.17</p>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <p class="tit">GSOP 공지사항_04</p>
-                  <p class="txt">2023.04.17</p>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <p class="tit">GSOP 공지사항_04</p>
-                  <p class="txt">2023.04.17</p>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <p class="tit">GSOP 공지사항_04</p>
-                  <p class="txt">2023.04.17</p>
-                </a>
-              </li>
-            </ul>
-          </div>
+        <article class="systemLink">
+          <ul>
+            <li>
+              System Link
+            </li>
+            <li>
+              <a href="#">
+                <div class="tit">시스템 개선 요청</div>
+                <div class="txt">IT SERVICE DESK</div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="tit">표준 프로세스관리</div>
+                <div class="txt">SPPM</div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="tit">MES</div>
+                <div class="txt">MANUFACTURING <br>
+                  EXECUTION SYSTEM</div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="tit">EES</div>
+                <div class="txt">EQUIPMENT <br>
+                  ENGINEERING SYSTEM</div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="tit">AQMS</div>
+                <div class="txt">ADVANCED QUALITY <br>
+                  MANAGE’ SYSTEM</div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="tit">ERP</div>
+                <div class="txt">ENTERPRISE RESOURCE <br>
+                  PLANNING</div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="tit">SCM</div>
+                <div class="txt">SUPPLY CHAIN <br>
+                  MANAGEMENT</div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="tit">PLM</div>
+                <div class="txt">PRODUCT LIFECYCLE <br>
+                  MANAGEMENT</div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="tit">업무시스템 맵</div>
+                <div class="txt">BUSSINESS SYSTEM <br>
+                  MAP</div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="tit">시스템 개선 요청</div>
+                <div class="txt">IT SERVICE DESK</div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="tit">시스템 개선 요청</div>
+                <div class="txt">IT SERVICE DESK</div>
+              </a>
+            </li>
+          </ul>
         </article>
+
+
+
 
       </section>
     </div>
